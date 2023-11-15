@@ -7,43 +7,86 @@ In this exercise, you'll take a look at a prebuilt model in Document Intelligenc
 
 How does Document Intelligence build upon optical character recognition (OCR)? While OCR can read printed or handwritten documents, OCR extracts text in an unstructured format which is difficult to store in a database or analyze. Document intelligence makes sense of the unstructured data by capturing the structure of the text, such as key/value pairs and information in tables. 
 
-
-
 > **NOTE**
 > Azure AI Document Intelligence is the new name for Azure Form Recognizer. You may still see Azure Form Recognizer in the Azure portal or Document Intelligence Studio.
 
-## Create Document Intelligence resource
+# Lab objectives
+
+In this lab, you will perform:
+
+- Creating Document Intelligence resource
+- Analyzing a receipt in Document Intelligence Studio
+
+## Estimated timing: 30 minutes
+
+## Architecture Diagram
+
+
+## Exercise 1: Extract form data in Document 
+
+### Task 1: Create Document Intelligence resource
 
 You can use Azure AI Document Intelligence by creating either a *Document Intelligence* resource or an *Azure AI services* resource. In this exercise, you will create *Document Intelligence* resource, if you don’t already have one.
 
-1. In another browser tab, open [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio), signing in with your Microsoft account.
-1. Select **Settings** and select the **Resource** tab. Select **Create a new resource**.
+1. In another browser tab, open [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio), signing in with your following credentials:
+
+  - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+  - **Password:** <inject key="AzureAdUserPassword"></inject>
+
+1. Select **Settings (1)** and select the **Resource (2)** tab. Select **Create a new resource (3)**.
+
+   ![](media/lab10-08.png)
+
 1. On the Create resource dialog box, enter the following:
-    - **Subscription**: Select your **Existing Azure subscription**.
-    - **Resource group**: Select **ODL-AI-900-10-<inject key="DeploymentID" enableCopy="false" />-02**
-    - **New resource name**:  Enter **intelligence<inject key="DeploymentID" enableCopy="false" />**
-    - **Location**: Select **<inject key="location" enableCopy="false"/>** 
-    - **Pricing tier**: *Free FO (if available, otherwise select Standard SO)*.
-1. Select **Continue** and then **Finish**. Wait for the resource to be deployed.
+    - **Subscription (1)**: Select your **Existing Azure subscription**.
+    - **Resource group (2)**: Select **ODL-AI-900-10-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **New resource namem(3)**:  Enter **intelligence<inject key="DeploymentID" enableCopy="false" />**
+    - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
+    - **Pricing tier(5)**: *Free FO (if available, otherwise select Standard SO)*.
+   - Select **Continue (6)** 
+
+     ![](media/lab10-07.png)
+
+1. Click on **Finish**. Wait for the resource to be deployed.
+
+   ![](media/lab10-06.png).
 
     >**Note**
     > If your resource is not yet displayed, you may need to **Refresh** the page.
 
 Keep Document Intelligence Studio open.
 
-## Analyze a receipt in Document Intelligence Studio
+### Task 2: Analyze a receipt in Document Intelligence Studio
 
 You are now ready to analyze a receipt for the fictitious Northwind Traders retail company.
 
-1. Select [**https://aka.ms/mslearn-receipt**](https://aka.ms/mslearn-receipt) to download a sample document to your computer. Open the folder. 
+1. Select [**https://aka.ms/mslearn-receipt**](https://aka.ms/mslearn-receipt) to download and and save the sample document to your computer. Open the folder
+
+   ![](media/lab10-05.png).
+
 1. Select **Form Recognizer Studio** to return to the **Get Started with Document Intelligence Studio** page, and under Receipts select **Try it out**.
+
+   ![](media/lab10-04.png)
+
 1. In the Prebuilt drop-down list, make sure that **Receipts** is selected.
 1. Select **Browse for files** and navigate to the folder where you saved the picture. Select the picture of the receipt and then **Open**. The image appears on the left side of the screen.
 
-    ![Northwind receipt.](media/document-intelligence/northwind-receipt.jpg)
+    ![](media/lab10-03.png)
 
 1. On the right, select **Run analysis**.
+
+    ![](media/lab10-02.png)
+
 1. When the analysis has run, the results are returned. Notice that the service has recognized specific data fields such as the merchant’s name, the address, phone number, and the transaction date and time, as well as the line items, subtotal, tax, and total amounts. Next to each field is a percentage probability that the field is correct.
+
+   ![](media/lab10-01.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Learn more
 
