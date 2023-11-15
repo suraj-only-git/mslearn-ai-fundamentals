@@ -1,9 +1,6 @@
----
-lab:
-    title: 'Analyze text with Language Studio'
----
+# Module: 6 Analyze text with Language Studio
 
-# Analyze text with Language Studio
+## Lab overview
 
 In this exercise you will explore the capabilities of Azure AI Language by analyzing some example hotel reviews. You'll use Language Studio to understand whether the reviews are mostly positive or negative.
 
@@ -13,7 +10,18 @@ For example, suppose the fictitious travel agent Margie's Travel encourages cust
 
 Azure AI Language Service includes text analysis and NLP capabilities. These include the identification of key phrases in text, and the classification of text based on sentiment.
 
-## Create a *Language* resource
+## Lab objectives
+
+In this lab, you will perform:
+
+- Create a *Language* resource
+- Configure your resource in Azure AI Language Studio
+- Analyze reviews in Language Studio
+
+## Estimated timing: 30 minutes
+
+# Exercise 1: Analyze text with Language Studio
+## Task 1: Create a *Language* resource
 
 You can use many Azure AI Language features with either a **Language** or **Azure AI services** resource. There are some instances where only a Language resource can be used. For the exercise below, we will use a **Language** resource. If you haven't already done so, create a **Language** resource in your Azure subscription.
 
@@ -31,7 +39,7 @@ You can use many Azure AI Language features with either a **Language** or **Azur
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
-## Configure your resource in Azure AI Language Studio
+## Task 2: Configure your resource in Azure AI Language Studio
 
 1. In another browser tab, open [Language Studio](https://language.cognitive.azure.com?azure-portal=true) and sign in.
 
@@ -52,7 +60,7 @@ Then select **Done**.
 > ![Enable language resource.](media/analyze-text-language-service/language-resource-enabled.png)
 > 1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
-## Analyze reviews in Language Studio
+## Task 3: Analyze reviews in Language Studio
 
 1. In a web browser, navigate to [Language Studio](https://language.cognitive.azure.com?azure-portal=true).
 
@@ -101,13 +109,6 @@ Select **Sentence 1** again to close.
 1. Select **Run** and review the sentiment together with the confidence level. Have a look at the text and compare the text to the sentiment analysis that the service returned.
 
 In this exercise you used Language Studio to either create a new Language resource or use an existing Language resource. You enabled the resource in Settings before trying out the Sentiment and opinion mining service. You then tested the service with three pieces of text.
-
-## Clean up
-
-If you don’t intend to do more exercises, delete any resources that you no longer need. This avoids accruing any unnecessary costs.
-
-1. Open the [Azure portal]( https://portal.azure.com) and select the resource group that contains the resource you created.
-1. Select the resource and select **Delete** and then **Yes** to confirm. The resource is then deleted.
 
 ## Learn more
 
