@@ -1,15 +1,23 @@
----
-lab:
-    title: 'Explore Speech Studio'
----
+# Module 09: Explore Speech Studio
 
-# Explore Speech Studio
+## Lab overview
 
-The **Azure AI Speech** service transcribes speech into text, and text into audible speech. You might use AI Speech to create an application that can transcribe meeting notes or generate text from the recording of interviews.
+In this exercise, you will try out the capabilities of Azure AI Speech using Azure AI Speech Studio. The **Azure AI Speech** service transcribes speech into text, and text into audible speech. You might use AI Speech to create an application that can transcribe meeting notes or generate text from the recording of interviews. 
+ 
+## Lab objectives
+In this lab, you will perform:
+- Using AI with Bing Copilot prompts to generate responses
+- Trying image generation using AI with Bing Copilot
+- Trying code generation using AI with Bing Copilot
+  
+## Estimated timing: 30 minutes
 
-In this exercise, you will try out the capabilities of Azure AI Speech using Azure AI Speech Studio. 
+## Architecture Diagram
 
-## Create an *Azure AI Speech* resource
+
+## Exercise 1: Explore Speech Studio
+
+### Task 1: Create an *Azure AI Speech* resource
 
 You can use the Speech service by creating either a **Speech** resource or an **Azure AI services** resource.
 
@@ -18,14 +26,14 @@ In this exercise, you will create an AI Speech resource, unless you already have
 1. In another browser tab, open [Azure AI Speech Studio](https://speech.microsoft.com/), signing in with your Microsoft account.
 
 1. Select **Settings** then **Create a resource.** Configure it with the following settings:
-    - **Name of new resource**: *Enter a unique name*.
+    - **Name of new resource**: speech<inject key="DeploymentID" enableCopy="false" />**
     - **Subscription**: *Your Azure subscription*.
     - **Region**: *Select a [supported region](https://learn.microsoft.com/azure/ai-services/speech-service/regions)*.
     - **Pricing tier**: *Free FO (if available, otherwise select Standard S0).*
     - **Resource group**: *Select or create a resource group with a unique name*.
 1. Select **Create resource.** Wait until the resource has been created and then select **Use resource**. The Get started with Speech page is displayed.
 
-## Explore speech to text in Speech Studio
+### Task 2: Explore speech to text in Speech Studio
 
 1. Select [**https://aka.ms/mslearn-speech-files**](https://aka.ms/mslearn-speech-files) to download **speech.zip**. Open the folder. 
 
@@ -45,13 +53,13 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
 In this exercise you created an AI Speech resource in Speech Studio. You then used the Real-time speech to text service to transcribe an audio recording. You were able to see the text transcription being generated as the audio file was played.
 
-## Clean up
-
-If you don’t intend to do more exercises, delete any resources that you no longer need. This avoids accruing any unnecessary costs.
-
-1. Open the [Azure portal]( https://portal.azure.com) and select the resource group that contains the resource you created.
-1. Select the resource and select **Delete** and then **Yes** to confirm. The resource is then deleted.
-
 ## Learn more
 
 This exercise demonstrated only some of the capabilities of the Speech service. To learn more about what you can do with this service, see the [Speech page](https://azure.microsoft.com/services/cognitive-services/speech-services).
+
+### Review
+In this lab, you have completed:
+
+
+  
+## You have successfully completed this lab.
