@@ -44,7 +44,8 @@ To implement natural language understanding with Conversational Language Underst
 1. If prompted to choose a Language resource, select the following settings:
     - **Azure directory**: *The Azure directory containing your subscription*.
     - **Azure subscription**: *Your Azure subscription*.
-    - **Language resource**: *The Language resource you created previously.*
+    - **Resource type**: *Language*.
+    - **Resource name**: *select the Language service resource you just created*
 
    If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
     1. On the bar at the top if the page, select **Settings (&#9881;)**.
