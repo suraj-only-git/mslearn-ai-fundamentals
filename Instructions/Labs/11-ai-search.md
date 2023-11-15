@@ -1,9 +1,7 @@
----
-lab:
-    title: 'Explore an Azure Cognitive Search index (UI)'
----
+# Module 11: Explore an Azure Cognitive Search index (UI)'
 
-# Explore an Azure Cognitive Search index (UI)
+
+
 
 Let's imagine you work for Fourth Coffee, a national coffee chain. You're asked to help build a knowledge mining solution that makes it easy to search for insights about customer experiences. You decide to build an Azure Cognitive Search index using data extracted from customer reviews.  
 
@@ -16,7 +14,9 @@ In this lab you'll:
 - Query your search index
 - Review results saved to a Knowledge Store
 
-## Azure resources needed
+## Exercise 1 : Explore an Azure Cognitive Search index (UI)
+
+### Task 1: Azure resources needed
 
 The solution you'll create for Fourth Coffee requires the following resources in your Azure subscription:
 
@@ -28,7 +28,7 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 - A **Storage account** with blob containers, which will store raw documents and other collections of tables, objects, or files.
 
-### Create an *Azure Cognitive Search* resource
+### Task 1: Create an *Azure Cognitive Search* resource
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
@@ -44,7 +44,7 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 1. After deployment completes, select **Go to resource**. On the Azure Cognitive Search overview page, you can add indexes, import data, and search created indexes.
 
-### Create an Azure AI services resource
+### Task 2: Create an Azure AI services resource
 
 You'll need to provision an **Azure AI services** resource that's in the same location as your Azure Cognitive Search resource. Your search solution will use this resource to enrich the data in the datastore with AI-generated insights.
 
@@ -60,7 +60,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
 1. Wait for deployment to complete, then view the deployment details.
 
-### Create a storage account
+### Task 3: Create a storage account
 
 1. Return to the home page of the Azure portal, and then select the **+ Create a resource** button.
 
@@ -77,7 +77,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 1. In the Azure Storage account you created, in the left-hand menu pane, select **Configuration** (under **Settings**).
 1. Change the setting for *Allow Blob anonymous access* to **Enabled** and then select **Save**.
 
-## Upload Documents to Azure Storage
+### Task 4: Upload Documents to Azure Storage
 
 1. In the left-hand menu pane, select **Containers**.
 
@@ -104,7 +104,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
 1. After the upload is complete, you can close the **Upload blob** pane. Your documents are now in your *coffee-reviews* storage container.
 
-## Index the documents
+### Task 5: Index the documents
 
 After you have the documents in storage, you can use Azure Cognitive Search to extract insights from the documents. The Azure portal provides an *Import data wizard*. With this wizard, you can automatically create an index and indexer for supported data sources. You'll use the wizard to create an index, and import your search documents from storage into the Azure Cognitive Search index.
 
@@ -192,7 +192,7 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
 
     ![Screenshot that shows the coffee-indexer Indexer successfully created.](media/create-cognitive-search-solution/6a-search-indexer-success.png)
 
-## Query the index
+### Task 6: Query the index
 
 Use the Search explorer to write and test queries. Search explorer is a tool built into the Azure portal that gives you an easy way to validate the quality of your search index. You can use Search explorer to write queries and review results in JSON.
 
@@ -218,7 +218,7 @@ Use the Search explorer to write and test queries. Search explorer is a tool bui
 
 1. One of the problems we might want to solve for is why there might be certain reviews. Let's take a look at the key phrases associated with the negative review. What do you think might be the cause of the review?
 
-## Review the knowledge store
+### Task 7: Review the knowledge store
 
 Let's see the power of the knowledge store in action. When you ran the *Import data wizard*, you also created a knowledge store. Inside the knowledge store, you'll find the enriched data extracted by AI skills persists in the form of projections and tables.
 
