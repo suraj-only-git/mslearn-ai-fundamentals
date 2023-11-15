@@ -24,27 +24,47 @@ You can use the Speech service by creating either a **Speech** resource or an **
 
 In this exercise, you will create an AI Speech resource, unless you already have a resource that you can use.
 
-1. In another browser tab, open [Azure AI Speech Studio](https://speech.microsoft.com/), signing in with your Microsoft account.
+1. In another browser tab, open [Azure AI Speech Studio](https://speech.microsoft.com/), signing in with your following credentials:
+
+  - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+  - **Password:** <inject key="AzureAdUserPassword"></inject>
 
 1. Select **Settings** then **Create a resource.** Configure it with the following settings:
-    - **Name of new resource**: Enter **speech<inject key="DeploymentID" enableCopy="false" />**
-    - **Subscription**: Select your **Your Azure subscription**.
-    - **Region**: *Select a [supported region](https://learn.microsoft.com/azure/ai-services/speech-service/regions)*.
-    - **Pricing tier**: *Free FO (if available, otherwise select Standard S0).*
-    - **Resource group**: Select **ODL-AI-900-09-<inject key="DeploymentID" enableCopy="false" />-02**
-1. Select **Create resource.** Wait until the resource has been created and then select **Use resource**. The Get started with Speech page is displayed.
+    - **Name of new resource (1)**: Enter **speech<inject key="DeploymentID" enableCopy="false" />**
+    - **Subscription (2)**: Select your **Your Azure subscription**.
+    - **Region (3)**:  Select **<inject key="location" enableCopy="false"/>**
+    - **Pricing tier (4)**: *Free FO (if available, otherwise select Standard S0).*
+    - **Resource group (5)**: Select **ODL-AI-900-09-<inject key="DeploymentID" enableCopy="false" />-02**
+    - Select **Create resource. (6)**
+
+      ![](media/07.png)
+
+1.  Wait until the resource has been created.
+
+1. Select **Use resource**. The Get started with Speech page is displayed.
+
+    ![Browse files](media/06.png)
 
 ### Task 2: Explore speech to text in Speech Studio
 
-1. Select [**https://aka.ms/mslearn-speech-files**](https://aka.ms/mslearn-speech-files) to download **speech.zip**. Open the folder. 
+1. Select [**https://aka.ms/mslearn-speech-files**](https://aka.ms/mslearn-speech-files) to download **speech.zip**. 
+
+1. Open the zip file in labvm and **Extract** the zip file.
+
+   ![Browse files](media/03.png)
 
 1. On the Get started with Speech page, under *Speech* find *Real-time speech to text*. Select **Try out Real-time speech to text**.
 
-    ![Getting started with Speech](media/recognize-synthesize-speech/try-out-speech-to-text.png)
+    ![Getting started with Speech](media/02.png)
 
-1. Under *Choose audio files*, select **Browse files** and navigate to the folder where you saved the file. Select **WhatAICanDo.m4a** and then **Open**.
+1. Under *Choose audio files*, select **Browse files** .
 
-    ![Browse files](media/recognize-synthesize-speech/browse-files-speech.png)
+    ![Browse files](media/05.png)
+
+1. Navigate to the folder where you saved the file. Select **WhatAICanDo.m4a** and then **Open**.
+
+    ![Browse files](media/01.png)
 
 1. The Speech service transcribes and displays the text in real time. If you have audio on your computer, you can listen to the recording as the text is being transcribed.
 1. Review the output, which should have successfully recognized and transcribed the audio into text.
