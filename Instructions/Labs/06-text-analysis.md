@@ -1,4 +1,4 @@
-# Module: 6 Analyze text with Language Studio
+# Module 06: Analyze text with Language Studio
 
 ## Lab overview
 
