@@ -1,15 +1,22 @@
----
-lab:
-    title: 'Read text in Vision Studio​'
----
+# Module 05: Read text in Vision Studio
 
-# Read text in Vision Studio
+## Lab overview
 
 In this exercise you'll use Azure AI service to explore the optical character recognition capabilities of Azure AI Vision. You'll use Vision Studio to experiment with extracting text from images, without having to write any code.
 
 A common computer vision challenge is to detect and interpret text embedded within an image. This is known as optical character recognition (OCR). In this exercise you’ll use an Azure AI services resource, which includes Azure AI Vision services. You'll then use Vision Studio to try out OCR with different types of images.
 
-## Create an *Azure AI services* resource
+## Lab objectives
+
+In this lab, you will perform:
+
+- Creating an *Azure AI Speech* resource
+- Connect your Azure AI service resource to Vision Studio
+- Extract text from images in the Vision Studio
+
+## Estimated timing: 30 minutes
+
+## Task 1: Create an *Azure AI services* resource
 
 You can use Azure AI Vision's OCR capabilities with an **Azure AI services** multi-service resource. If you haven't already done so, create an **Azure AI services** resource in your Azure subscription.
 
@@ -18,14 +25,14 @@ You can use Azure AI Vision's OCR capabilities with an **Azure AI services** mul
 1. Click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: **ODL-AI-900-05-<inject key="DeploymentID" enableCopy="false" />-02**
-    - **Region**: East US.
-    - **Name**: *Enter a unique name*.
+    - **Region**: Select **<inject key="location" enableCopy="false"/>**
+    - **Name**: Enter **text<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: *Standard S0.*
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
-## Connect your Azure AI service resource to Vision Studio
+## Task 2: Connect your Azure AI service resource to Vision Studio
 
 Next, connect the Azure AI services resource you provisioned above to Vision Studio.
 
@@ -45,7 +52,7 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
-## Extract text from images in the Vision Studio
+## Task 3: Extract text from images in the Vision Studio
     
 1. In a web browser, navigate to [Vision Studio](https://portal.vision.cognitive.azure.com?azure-portal=true).
 
@@ -69,13 +76,11 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. Review the results of the second image. It should return the text and bounding boxes of the text. If you have time, try **note.jpg** and **receipt.jpg**.
 
-## Clean up
-
-If you don’t intend to do more exercises, delete any resources that you no longer need. This avoids accruing any unnecessary costs.
-
-1. Open the [Azure portal]( https://portal.azure.com) and select the resource group that contains the resource you created.
-1. Select the resource and select **Delete** and then **Yes** to confirm. The resource is then deleted.
-
 ## Learn more
 
 To learn more about what you can do with this service, see Azure AI Vision's documentation on [optical character recognition](https://learn.microsoft.com/azure/ai-services/computer-vision/overview-ocr).
+
+### Review
+In this lab, you have created an azure AI speech resource, connected it to the vision studio and extracted text from images in the studio.
+  
+## You have successfully completed this lab.
