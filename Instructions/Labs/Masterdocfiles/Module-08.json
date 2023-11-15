@@ -1,0 +1,17 @@
+[
+    {
+      "Name": "AI 900 AI Fundamentals-Module-08-conversational-language-understanding",
+      "Language": "English",
+      "Files": [
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/GettingStarted.md",
+          "Order": 1
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/08-conversational-language-understanding.md",
+          "Order": 2
+        }
+      ]
+    }
+  ]
+  
