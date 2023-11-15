@@ -171,9 +171,9 @@ When the automated machine learning job has completed, you can review the best m
     - **Description**: Predict cycle rentals
     - **Compute type**: Azure Container Instance
     - **Enable authentication**: *Selected*
-  
-   
-       ![Picture1](media/AI-900-module-T3-01.jpg)  
+    
+     ![Picture1](media/AI-900-module-T3-01.jpg)
+      
 
 1. Wait for the deployment to start - this may take a few seconds. The **Deploy status** for the **predict-rentals** endpoint will be indicated in the main part of the page as *Running*.
 1. Wait for the **Deploy status** to change to *Succeeded*. This may take 5-10 minutes.
