@@ -20,8 +20,13 @@ In this lab, you will perform:
 
 You can use Azure AI Vision's OCR capabilities with an **Azure AI services** multi-service resource. If you haven't already done so, create an **Azure AI services** resource in your Azure subscription.
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with the Microsoft account associated with your Azure subscription.
+1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true)
 
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
+    
+1. Select **Yes** when asked for **Stay signed in**
+   
 1. Click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: **ODL-AI-900-05-<inject key="DeploymentID" enableCopy="false" />-02**
