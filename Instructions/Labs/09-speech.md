@@ -5,11 +5,12 @@
 In this exercise, you will try out the capabilities of Azure AI Speech using Azure AI Speech Studio. The **Azure AI Speech** service transcribes speech into text, and text into audible speech. You might use AI Speech to create an application that can transcribe meeting notes or generate text from the recording of interviews. 
  
 ## Lab objectives
+
 In this lab, you will perform:
-- Using AI with Bing Copilot prompts to generate responses
-- Trying image generation using AI with Bing Copilot
-- Trying code generation using AI with Bing Copilot
-  
+
+- Creating an *Azure AI Speech* resource
+- Exploring speech to text in Speech Studio
+
 ## Estimated timing: 30 minutes
 
 ## Architecture Diagram
@@ -60,6 +61,7 @@ This exercise demonstrated only some of the capabilities of the Speech service. 
 ### Review
 In this lab, you have completed:
 
-
+- Creating an *Azure AI Speech* resource
+- Exploring speech to text in Speech Studio
   
 ## You have successfully completed this lab.
