@@ -31,10 +31,10 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 1. Click the **+ Create a resource** button, search for *Azure Cognitive Search*, and create a **Azure Cognitive Search** resource with the following settings:
 
-    - **Subscription**: *Your Azure subscription*.
-    - **Resource group**: *Select or create a resource group with a unique name*.
-    - **Service name**: *A unique name*.
-    - **Location**: *Choose any available region*.
+    - **Subscription**: Select your **Existing Azure subscription**.
+    - **Resource group**: Select **ODL-AI-900-11-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Service name**: **aisearch<inject key="DeploymentID" enableCopy="false" />**
+    - **Location**: Select **<inject key="location" enableCopy="false"/>** 
     - **Pricing tier**: Basic
 
 1. Select **Review + create**, and after you see the response **Validation Success**, select **Create**.
@@ -46,10 +46,11 @@ The solution you'll create for Fourth Coffee requires the following resources in
 You'll need to provision an **Azure AI services** resource that's in the same location as your Azure Cognitive Search resource. Your search solution will use this resource to enrich the data in the datastore with AI-generated insights.
 
 1. Return to the home page of the Azure portal. Click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
-    - **Subscription**: *Your Azure subscription*.
-    - **Resource group**: *The same resource group as your Azure Cognitive Search resource*.
-    - **Region**: *The same location as your Azure Cognitive Search resource*.
-    - **Name**: *A unique name*.
+
+    - **Subscription**: *Select your **Existing Azure subscription**.
+    - **Resource group**: Select **ODL-AI-900-11-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Region**: Select **<inject key="location" enableCopy="false"/>** 
+    - **Name**: Enter **aiservice<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: Standard S0
     - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected
 
@@ -62,10 +63,10 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 1. Return to the home page of the Azure portal, and then select the **+ Create a resource** button.
 
 1. Search for *storage account*, and create a **Storage account** resource with the following settings:
-    - **Subscription**: *Your Azure subscription*.
-    - **Resource group**: *The same resource group as your Azure Cognitive Search and Azure AI services resources*.
-    - **Storage account name**: *A unique name*.
-    - **Location**: *Choose any available location*.
+    - **Subscription**: Select your **Existing Azure subscription**.
+    - **Resource group**: Select **ODL-AI-900-11-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Storage account name**: Enter **cognitivestorage<inject key="DeploymentID" enableCopy="false" />**.
+    - **Location**: Select **<inject key="location" enableCopy="false"/>** 
     - **Performance**: Standard
     - **Redundancy**: Locally redundant storage (LRS)
 
