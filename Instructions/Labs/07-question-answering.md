@@ -1,8 +1,3 @@
----
-lab:
-    title: 'Use Question Answering with Language Studio'
----
-
 # Use Question Answering model with Language Studio
 
 In this exercise you will use Language Studio to create and train a knowledge base of question and answers that will be used by a customer services bot. Content for the knowledge base will come from an existing FAQ page from the web site of Margie’s Travel, a fictitious travel agency. You will then use Language Studio to see how it would work when used by customers.
@@ -31,8 +26,8 @@ To use question answering, you need a **Language** resource.
         - **Subscription**: *Your Azure subscription*.
         - **Resource group**: Select **ODL-AI-900-07-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Instance Details**
-        - **Region**: *Select a region*      
-        - **Name**: *A unique name for your Language resource*.
+        - **Region**: Select **<inject key="location" enableCopy="false"/>**      
+        - **Name**: Enter **language<inject key="DeploymentID" enableCopy="false" />**
         - **Pricing tier**: S (1K Calls per minute)
     - **Custom question answering**
         - **Azure search region**: *Any available location*.
