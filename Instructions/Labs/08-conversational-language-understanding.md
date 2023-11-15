@@ -152,7 +152,7 @@ To use your trained model in a client application, you must deploy it as an endp
 1. On the left-hand side of Language Studio, select **Deploying a model**.
 
 1. Select your model name and then **Add deployment**. Use these settings:
-    - **Create or select an existing deployment name**: *Select create a new deployment name. Add a unique name*.
+    - **Create or select an existing deployment name**: ***Deploy<inject key="DeploymentID" enableCopy="false" />**
     - **Assign trained model to your deployment name**: *Select the name of the trained model*.
     - Select **Deploy**
 
