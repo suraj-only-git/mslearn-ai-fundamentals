@@ -19,7 +19,7 @@ In this lab, you will perform:
 
 ## Exercise 1: Explore Automated Machine Learning in Azure Machine Learning
 
-### Task 1:Create an Azure Machine Learning workspace
+### Task 1: Create an Azure Machine Learning workspace
 
 1. Select **+ Create a resource**, search for Machine Learning.
 
@@ -69,7 +69,7 @@ Some features of Azure Machine Learning are in preview, and need to be explicitl
 
     - *Guided experience for submitting training jobs with serverless compute*
 
-## Use automated machine learning to train a model
+### Task 2: Use automated machine learning to train a model
 
 Automated machine learning enables you to try multiple algorithms and parameters to train multiple models, and identify the best one for your data. In this exercise, you'll use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
 
@@ -163,7 +163,7 @@ When the automated machine learning job has completed, you can review the best m
 
     Review the charts which show the performance of the model. The **residuals** chart shows the *residuals* (the differences between predicted and actual values) as a histogram. The **predicted_true** chart compares the predicted values against the true values. 
 
-## Deploy and test the model
+### Task 3: Deploy and test the model
 
 1. On the **Model** tab for the best model trained by your automated machine learning job, select **Deploy** and use the **Web service** option to deploy the model with the following settings:
     - **Name**: predict-rentals
