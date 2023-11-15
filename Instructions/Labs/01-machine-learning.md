@@ -1,37 +1,61 @@
----
-lab:
-    title: 'Explore Automated Machine Learning in Azure Machine Learning'
----
+# Module 01: Explore Automated Machine Learning in Azure Machine Learning
 
-# Explore Automated Machine Learning in Azure Machine Learning
+## Lab overview
 
-In this exercise, you'll use the automated machine learning feature in Azure Machine Learning to train and evaluate a machine learning model. You'll then deploy and test the trained model.
+In this exercise, you'll use the automated machine learning feature in **Azure Machine Learning** to train and evaluate a machine learning model. You'll then deploy and test the trained model.
 
-This exercise should take approximately **30** minutes to complete.
+ 
+## Lab objectives
 
-## Create an Azure Machine Learning workspace
+In this lab, you will perform:
 
-To use Azure Machine Learning, you need to provision an Azure Machine Learning workspace in your Azure subscription. Then you'll be able to use Azure Machine Learning studio to work with the resources in your workspace.
+- Creating an *Azure Machine Learning workspace* resource
+- Use automated machine learning to train a model
 
-> **Tip**: If you already have an Azure Machine Learning workspace, you can use that and skip to the next task.
+## Estimated timing: 60 minutes
 
-1. Sign into the [Azure portal](https://portal.azure.com) at `https://portal.azure.com` using your Microsoft credentials.
+## Architecture Diagram
 
-1. Select **+ Create a resource**, search for *Machine Learning*, and create a new **Azure Machine Learning** resource with the following settings:
-    - **Subscription**: *Your Azure subscription*.
-    - **Resource group**: *Create or select a resource group*.
-    - **Name**: *Enter a unique name for your workspace*.
-    - **Region**: *Select the closest geographical region*.
-    - **Storage account**: *Note the default new storage account that will be created for your workspace*.
-    - **Key vault**: *Note the default new key vault that will be created for your workspace*.
-    - **Application insights**: *Note the default new application insights resource that will be created for your workspace*.
-    - **Container registry**: None (*one will be created automatically the first time you deploy a model to a container*).
 
-1. Select **Review + create**, then select **Create**. Wait for your workspace to be created (it can take a few minutes), and then go to the deployed resource.
+## Exercise 1: Explore Automated Machine Learning in Azure Machine Learning
+
+### Task 1: Create an Azure Machine Learning workspace
+
+1. Select **+ Create a resource**, search for Machine Learning.
+
+    ![Picture1](media/ai900mod1img1.png)
+
+1. In the Marketplace page search for **Azure Machine Learning** and Select **Azure Machine Learning**.
+ 
+   ![Picture1](media/ai900mod1cimg1.png)
+
+1. On **Azure Machine Learning** Page Click on **Create**.
+
+   ![Picture1](media/ai900mod1cimg2.png)
+  
+1. Create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
+
+    - **Subscription**: Use existing Azure subscription. **(1)**
+    - **Resource group**: Select **ODL-AI-900-01-<inject key="DeploymentID" enableCopy="false" /> (2)**
+    - **Workspace name**: Give name **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" /> (3)**
+    - **Region**: Select <inject key="location" enableCopy="false" /> **(4)**
+    - **Storage account**: Note the default new storage account that will be created for your workspace. **(5)**
+    - **Key vault**: Note the default new key vault that will be created for your workspace. **(6)**
+    - **Application insights**: Note the default new application insights resource that will be created for your workspace. **(7)**
+    - **Container registry**: None (one will be created automatically the first time you deploy a model to a container) **(8)**
+
+1. Select **Review + create (9)**.
+  
+   
+
+1. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
+   
+1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your workspace resource.
 
 1. Select **Launch studio** (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign into Azure Machine Learning studio using your Microsoft account). Close any messages that are displayed.
 
 1. In Azure Machine Learning studio, you should see your newly created workspace. If not, select **All workspaces** in the left-hand menu and then select the workspace you just created.
+    ![Picture1](media/ai900mod1cimg4.png)
 
 ## Enable preview features
 
@@ -45,7 +69,7 @@ Some features of Azure Machine Learning are in preview, and need to be explicitl
 
     - *Guided experience for submitting training jobs with serverless compute*
 
-## Use automated machine learning to train a model
+### Task 2: Use automated machine learning to train a model
 
 Automated machine learning enables you to try multiple algorithms and parameters to train multiple models, and identify the best one for your data. In this exercise, you'll use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
 
@@ -139,7 +163,7 @@ When the automated machine learning job has completed, you can review the best m
 
     Review the charts which show the performance of the model. The **residuals** chart shows the *residuals* (the differences between predicted and actual values) as a histogram. The **predicted_true** chart compares the predicted values against the true values. 
 
-## Deploy and test the model
+### Task 3: Deploy and test the model
 
 1. On the **Model** tab for the best model trained by your automated machine learning job, select **Deploy** and use the **Web service** option to deploy the model with the following settings:
     - **Name**: predict-rentals
@@ -200,15 +224,3 @@ Now you can test your deployed service.
 
 Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*.
 
-## Clean-up
-
-The web service you created is hosted in an *Azure Container Instance*. If you don't intend to experiment with it further, you should delete the endpoint to avoid accruing unnecessary Azure usage.
-
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Endpoints** tab, select the **predict-rentals** endpoint. Then select **Delete** and confirm that you want to delete the endpoint.
-
-    Deleting your compute ensures your subscription won't be charged for compute resources. You will however be charged a small amount for data storage as long as the Azure Machine Learning workspace exists in your subscription. If you have finished exploring Azure Machine Learning, you can delete the Azure Machine Learning workspace and associated resources.
-
-To delete your workspace:
-
-1. In the [Azure portal](https://portal.azure.com?azure-portal=true), in the **Resource groups** page, open the resource group you specified when creating your Azure Machine Learning workspace.
-2. Click **Delete resource group**, type the resource group name to confirm you want to delete it, and select **Delete**.
