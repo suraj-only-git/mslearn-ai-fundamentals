@@ -1,15 +1,23 @@
----
-lab:
-    title: 'Use Conversational Language Understanding with Language Studio'
----
+# Module 08: Use Conversational Language Understanding with Language Studio
 
-# Use Conversational Language Understanding with Language Studio
-
+## Lab overview
 Increasingly, we expect computers to be able to use AI to understand natural language commands, either spoken or typed. For example, you might want a home automation system to control devices in your home by using voice commands such as “switch on the light” or “put the fan on.” AI-powered devices can understand these commands and take appropriate action.
 
 In this exercise, you will use Language Studio to create and test a project that sends instructions to devices such as lights or fans. You’ll use the capabilities of the Conversational Language Understanding service to configure your project. 
 
-## Create a *Language* resource
+## Lab objectives
+
+In this lab, you will perform:
+
+- Create a *Language* resource
+- Create a Conversational Language Understanding App
+- Create intents, utterances, and entities
+- Train the model
+- Deploy and test the model
+
+## Estimated timing: 30 minutes
+
+## Task 1: Create a *Language* resource
 
 You can use many Azure AI Language features with either a **Language** or **Azure AI services** resource. There are some instances where only a Language resource can be used. For the exercise below, we will use a **Language** resource. If you haven't already done so, create a **Language** resource in your Azure subscription.
 
@@ -19,16 +27,15 @@ You can use many Azure AI Language features with either a **Language** or **Azur
 
 1. On the page **Create Language**, configure it with the following settings:
     - **Subscription**: *Your Azure subscription*.
-    - **Resource group**: *Select or create a resource group with a unique name*.
-    - **Region**: East US.
-    - **Name**: *Enter a unique name*.
+    - **Resource group**: **ODL-AI-900-05-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Region**: Select **<inject key="location" enableCopy="false"/>**
+    - **Name**: Enter **Conversational<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: *Free F0 or S if Free F0 is not available*
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
-
-### Create a Conversational Language Understanding App
+### Task 2: Create a Conversational Language Understanding App
 
 To implement natural language understanding with Conversational Language Understanding, you create an app; and then add entities, intents, and utterances to define the commands you want the app to execute.
 
@@ -57,7 +64,7 @@ To implement natural language understanding with Conversational Language Underst
 
 1. On the **Review and finish** page, select **Create**.
 
-### Create intents, utterances, and entities
+### Task 3: Create intents, utterances, and entities
 
 An *intent* is an action you want to perform - for example, you might want to switch on a light, or turn off a fan. In this case, you'll define two intents: one to switch on a device, and another to switch off a device. For each intent, you'll specify sample *utterances* that indicate the kind of language used to indicate the intent.
 
@@ -125,7 +132,7 @@ An *intent* is an action you want to perform - for example, you might want to sw
     | switch_off   | Switch off the fan | Device - *select fan* |
     | switch_off   | Turn the light off | Device - *select light* |
 
-### Train the model
+### Task 4: Train the model
 
 Now you're ready to use the intents and entities you have defined to train the conversational language model for your app.
 
@@ -137,7 +144,7 @@ Now you're ready to use the intents and entities you have defined to train the c
 
 1. Wait for training to complete.
 
-### Deploy and test the model
+### Task 5: Deploy and test the model
 
 To use your trained model in a client application, you must deploy it as an endpoint to which the client applications can send new utterances; from which intents and entities will be predicted.
 
@@ -168,13 +175,6 @@ To use your trained model in a client application, you must deploy it as an endp
 You have now successfully configured a conversational language project, and defined entities, intents, and utterances. You have seen how to train and deploy a model in the Language Studio. And you have tried it out with both utterances you defined, and some that you did not explicitly define but the model was able to determine.
 
 > **NOTE**: Conversational language understanding provides the intelligence to interpret the intention of the input; it doesn't perform any actions such as turning on the light or the fan. A developer would need to build an application that uses the Conversational Language Understanding model to determine the user's intent, and then automate the appropriate action.
-
-## Clean up
-
-If you don’t intend to do more exercises, delete any resources that you no longer need. This avoids accruing any unnecessary costs.
-
-1.Open the [Azure portal]( https://portal.azure.com) and select the resource group that contains the resource you created. 
-1.Select the resource and select **Delete** and then **Yes** to confirm. The resource is then deleted.
 
 ## Learn more
 
