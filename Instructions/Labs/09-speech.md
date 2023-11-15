@@ -32,7 +32,7 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
 1. Select **Settings** then **Create a resource.** Configure it with the following settings:
     - **Name of new resource (1)**: Enter **speech<inject key="DeploymentID" enableCopy="false" />**
-    - **Subscription (2)**: Select your **Your Azure subscription**.
+    - **Subscription (2)**: Select your **Existing Azure subscription**.
     - **Region (3)**:  Select **<inject key="location" enableCopy="false"/>**
     - **Pricing tier (4)**: *Free FO (if available, otherwise select Standard S0).*
     - **Resource group (5)**: Select **ODL-AI-900-09-<inject key="DeploymentID" enableCopy="false" />-02**
@@ -75,7 +75,6 @@ In this exercise, you will create an AI Speech resource, unless you already have
     ![](media/08.png)
 
     > **Note**: If you get an error message, wait a few minutes before trying again. It takes a little time for the Speech resource to be available for first use.
-
 
 ## Learn more
 
