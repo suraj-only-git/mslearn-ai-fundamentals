@@ -1,31 +1,41 @@
----
-lab:
-    title: 'Analyze images in Vision Studio'
----
+# Module 03:  Analyze images in Vision Studio  
 
-# Analyze images in Vision Studio 
+## Lab overview
 
 **Azure AI Vision** includes numerous capabilities for understanding image content and context and extracting information from images. Azure AI Vision Studio allows you to try out many of the capabilities of image analysis. 
 
-In this exercise, you will use Vision Studio to analyze images using the built-in try-it-out experiences. Suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using Azure AI Vision, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
+In this exercise, you will use Vision Studio to analyze images using the built-in try-it-out experiences. Suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using Azure AI Vision, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict
 
-## Create an *Azure AI services* resource
+## Lab objectives
+In this lab, you will perform:
+  - Create an *Azure AI services* resource
+  - Connect Azure AI Service Resource to Vision Studio
+  - Image Analysis with Azure AI Vision Services
+
+## Estimated timing: 60 minutes
+
+## Architecture Diagram
+
+## Exercise 1: Analyze images in Vision Studio
+
+### Task 1:Create an *Azure AI services* resource
 
 You can use Azure AI Vision's image analysis capabilities with an **Azure AI services** multi-service resource. If you haven't already done so, create an **Azure AI services** resource in your Azure subscription.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with the Microsoft account associated with your Azure subscription.
 
 1. Click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
-    - **Subscription**: *Your Azure subscription*.
-    - **Resource group**: *Select or create a resource group with a unique name*.
-    - **Region**: East US.
-    - **Name**: *Enter a unique name*.
-    - **Pricing tier**: *Standard S0.*
+   
+    - **Subscription (1)**: Use the existing Azure subscription.
+    - **Resource group (2)**: Select **ODL-AI-900-Lab03-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
+    - **Name (4)**: Enter **AI-service<inject key="DeploymentID" enableCopy="false"/>**
+    - **Pricing tier (5)**:Select **Standard S0**.
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
-## Connect your Azure AI service resource to Vision Studio
+### Task 2: Connect your Azure AI service resource to Vision Studio
 
 Next, connect the Azure AI service resource you provisioned above to Vision Studio.
 
@@ -45,7 +55,7 @@ Next, connect the Azure AI service resource you provisioned above to Vision Stud
 
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
-## Generate captions for an image
+### Task 3: Generate captions for an image
 
 Now you are ready to use Vision Studio to analyze images taken by a camera in the *Northwind Traders* store.
 
@@ -97,7 +107,7 @@ The next feature you will try is the **Extract Tags** functionality. Extract tag
 
     ![A screenshot of the detect attributes panel in the Vision Studio with text and confidence scores displayed next to the original image.](./media/analyze-images-vision/detect-attributes.png)
 
-## Object detection
+### Task 3: Object detection
 
 In this task, you use the **Object detection** feature of Image Analysis. Object detection detects and extracts bounding boxes based on thousands of recognizable objects and living beings.
 
@@ -117,12 +127,6 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 
 1. Move the **Threshold value** slider until a value of 70 is displayed to the right of the slider. Observe what happens to the objects in the list. The threshold slider specifies that only objects identified with a confidence score or probability greater than the threshold should be displayed.
 
-## Clean up
-
-If you don’t intend to do more exercises, delete any resources that you no longer need. This avoids accruing any unnecessary costs.
-
-1.	Open the [Azure portal]( https://portal.azure.com) and select the resource group that contains the resource you created. 
-1.	Select the resource and select **Delete** and then **Yes** to confirm. The resource is then deleted.
 
 ## Learn more
 
