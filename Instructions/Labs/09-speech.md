@@ -27,11 +27,11 @@ In this exercise, you will create an AI Speech resource, unless you already have
 1. In another browser tab, open [Azure AI Speech Studio](https://speech.microsoft.com/), signing in with your Microsoft account.
 
 1. Select **Settings** then **Create a resource.** Configure it with the following settings:
-    - **Name of new resource**:Enter **speech<inject key="DeploymentID" enableCopy="false" />**
+    - **Name of new resource**: Enter **speech<inject key="DeploymentID" enableCopy="false" />**
     - **Subscription**: *Your Azure subscription*.
     - **Region**: *Select a [supported region](https://learn.microsoft.com/azure/ai-services/speech-service/regions)*.
     - **Pricing tier**: *Free FO (if available, otherwise select Standard S0).*
-    - **Resource group**: *Select or create a resource group with a unique name*.
+    - **Resource group**: Select **ODL-AI-900-09-<inject key="DeploymentID" enableCopy="false" />-02**
 1. Select **Create resource.** Wait until the resource has been created and then select **Use resource**. The Get started with Speech page is displayed.
 
 ### Task 2: Explore speech to text in Speech Studio
