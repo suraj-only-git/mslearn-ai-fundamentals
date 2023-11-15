@@ -33,7 +33,7 @@ You can use many Azure AI Language features with either a **Language** or **Azur
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: **ODL-AI-900-06-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Region**: Select **<inject key="location" enableCopy="false"/>**
-    - **Name**: Enter **text<inject key="DeploymentID" enableCopy="false" />**
+    - **Name**: Enter **studio<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: *Free F0 or S if Free F0 is not available*
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
