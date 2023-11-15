@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 ## Exercise 1: Explore Speech Studio
 
-### Task 1: Create an *Azure AI Speech* resource
+### Task 1: Create an **Azure AI Speech** resource
 
 You can use the Speech service by creating either a **Speech** resource or an **Azure AI services** resource.
 
@@ -28,7 +28,7 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
 1. Select **Settings** then **Create a resource.** Configure it with the following settings:
     - **Name of new resource**: Enter **speech<inject key="DeploymentID" enableCopy="false" />**
-    - **Subscription**: *Your Azure subscription*.
+    - **Subscription**: Select your **Your Azure subscription**.
     - **Region**: *Select a [supported region](https://learn.microsoft.com/azure/ai-services/speech-service/regions)*.
     - **Pricing tier**: *Free FO (if available, otherwise select Standard S0).*
     - **Resource group**: Select **ODL-AI-900-09-<inject key="DeploymentID" enableCopy="false" />-02**
