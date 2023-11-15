@@ -44,7 +44,7 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
 1. Select **Use resource**. The Get started with Speech page is displayed.
 
-    ![Browse files](media/06.png)
+    ![](media/06.png)
 
 ### Task 2: Explore speech to text in Speech Studio
 
@@ -67,21 +67,21 @@ In this exercise, you will create an AI Speech resource, unless you already have
     ![Browse files](media/01.png)
 
 1. The Speech service transcribes and displays the text in real time. If you have audio on your computer, you can listen to the recording as the text is being transcribed.
+
+     ![](media/09.png)
+
 1. Review the output, which should have successfully recognized and transcribed the audio into text.
 
-    > **Note**
-    > If you get an error message, wait a few minutes before trying again. It takes a little time for the Speech resource to be available for first use.
+    ![](media/08.png)
 
-In this exercise you created an AI Speech resource in Speech Studio. You then used the Real-time speech to text service to transcribe an audio recording. You were able to see the text transcription being generated as the audio file was played.
+    > **Note**: If you get an error message, wait a few minutes before trying again. It takes a little time for the Speech resource to be available for first use.
+
 
 ## Learn more
 
 This exercise demonstrated only some of the capabilities of the Speech service. To learn more about what you can do with this service, see the [Speech page](https://azure.microsoft.com/services/cognitive-services/speech-services).
 
 ### Review
-In this lab, you have completed:
-
-- Creating an *Azure AI Speech* resource
-- Exploring speech to text in Speech Studio
+In this exercise you created an AI Speech resource in Speech Studio. You then used the Real-time speech to text service to transcribe an audio recording. You were able to see the text transcription being generated as the audio file was played.
   
 ## You have successfully completed this lab.
