@@ -85,11 +85,11 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
     - In **Detected attributes**, any text found in the image is organized into a hierarchical structure of regions, lines, and words.
     - On the image, the location of text is indicated by a bounding box, as shown here:
 
-    ![An image of the text in the image outlined](media/read-text-computer-vision/text-bounding-boxes.png)
+       ![An image of the text in the image outlined](media/read-text-computer-vision/text-bounding-boxes(1).png)
 
 1. You can now try another image. Select **Browse for a file** and navigate to the folder where you saved the files from GitHub. Select **letter.jpg**.
 
-    ![An image of a typed letter.](media/read-text-computer-vision/letter.jpg)
+   ![An image of a typed letter.](media/read-text-computer-vision/letter(1).jpg)
 
 1. Review the results of the second image. It should return the text and bounding boxes of the text. If you have time, try **note.jpg** and **receipt.jpg**.
 
