@@ -56,14 +56,14 @@ To implement natural language understanding with Conversational Language Underst
 1. At the top of the portal, in the **Create new** menu, select **Conversational language understanding**.
 
 1. In the **Create a project** dialog box, on the **Enter basic information** page, enter the following details and select **Next**:
-    - **Name**: *Create a unique name*
+    - **Name**: **Project<inject key="DeploymentID" enableCopy="false" />**
     - **Utterances primary language**: *English*
     - **Enable multiple languages in project**: *Do not select*
     - **Description**: `Simple home automation`
 
     > **Tip**: Make a note of your *project name*, you will use it later.
 
-1. On the **Review and finish** page, select **Create**.
+1. Click **Next**, on the **Review and finish** page, select **Create**.
 
 ### Task 3: Create intents, utterances, and entities
 
@@ -138,7 +138,7 @@ An *intent* is an action you want to perform - for example, you might want to sw
 Now you're ready to use the intents and entities you have defined to train the conversational language model for your app.
 
 1. On the left hand side of Language Studio, select **Training jobs**, then select **Start a training job**. Use the following settings:
-    - **Train a new model**: *Selected and choose a model name*
+    - **Train a new model**: **Train<inject key="DeploymentID" enableCopy="false" />**
     - **Training mode**: Standard training (free)
     - **Data Splitting**: *select Automatically split the testing set from the training data, keep default percentages*
     - Select **Train** at the bottom of the page.
