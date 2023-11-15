@@ -46,7 +46,8 @@ To use question answering, you need a **Language** resource.
 1. If prompted to choose a Language resource, select the following settings:
     - **Azure directory**: *The Azure directory containing your subscription*.
     - **Azure subscription**: *Your Azure subscription*.
-    - **Language resource**: *The Language resource you created previously*.
+    - **Resource type**: *Language*.
+    - **Resource name**: *select the Language service resource you just created*
 
     If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
     1. On the bar at the top if the page, select **Settings (&#9881;)**.      
@@ -62,13 +63,13 @@ To use question answering, you need a **Language** resource.
   ![I want to select the language](media/create-a-bot/create-project.png)
 
 1. On the **Enter basic information** page, enter the following details and click **Next**:
-    - **Language resource**: *choose your language resource*.  
-    - **Azure search resource**: *choose your Azure search resource*.
+    - **Language resource**: *choose your language resource* (**if not already chosen**).  
+    - **Azure search resource**: *choose your Azure search resource* (**if not already chosen**).
     - **Name**: `MargiesTravel`
     - **Description**: `A simple knowledge base`
     - **Source language**: English
     - **Default answer when no answer is returned**: `No answer found`
-1. On the **Review and finish** page, select **Create project**.
+1. Click **Next** page, select **Create project**.
 1. You will be taken to the **Manage sources** page. Select **&#65291;Add source** and select **URLs**.
 1. In the **Add URLs** box, select **+ Add url**. Type in the following and select **Add all**:
     - **URL name**: `MargiesKB`
@@ -85,18 +86,18 @@ Your knowledge base is based on the details in the FAQ document and some pre-def
 1. Expand the left panel and select **Edit knowledge base**. Then select **+** to add a new question pair.
 1. In the **Add a new question answer pair** dialog box, in the **Question** type `Hello`, and in the **Answer** type `Hi`, then select **Done**.
 1. Expand **Alternate questions** and select **+ Add alternate question**. Then enter `Hiya`as an alternative phrasing for "Hello".
-1. At the top of the **Question answer pairs** pane, select **Save** to save your knowledge base.
+1. At the bottom of the **Question answer pairs** pane, select **Save** to save your knowledge base.
 
 ## Train and test the knowledge base
 
 Now that you have a knowledge base, you can test it.
 
-1. At the top of the **Question answer pairs** pane, select **Test** to test your knowledge base.
+1. At the bottom of the **Question answer pairs** pane, select **Test** to test your knowledge base.
 1. In the test pane, at the bottom enter the message `Hi`. The response *Hi* should be returned.
 1. In the test pane, at the bottom enter the message `I want to book a flight`. An appropriate response from the FAQ should be returned.
 
     > **Note**
-    > The response includes a *short answer* as well as a more verbose *answer passage* - the answer passage shows the full text in the FAQ document for the closest matched question, while the short answer is intelligently extracted from the passage. You can control whether the short answer is from the response by using the **Display short answer** checkbox at the top of the test pane.
+    > The response includes a *short answer* as well as a more verbose *answer passage* - the answer passage shows the full text in the FAQ document for the closest matched question, while the short answer is intelligently extracted from the passage. You can control whether the short answer is from the response by using the **Include short answer** checkbox at the top of the test pane.
 
 1. Try another question, such as `How can I cancel a reservation?`
 1. When you're done testing the knowledge base, select **Test** to close the test pane.
@@ -115,7 +116,7 @@ The knowledge base provides a back-end service that client applications can use 
 
     - **Project Details**
         - **Subscription**: *Your Azure subscription*
-        - **Resource group**: *The resource group containing your Language resource*
+        - **Resource group**: Select **ODL-AI-900-07-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Instance details**
         - **Resource group Location**: *The same location as your Language service*.
     - **Azure Bot**

@@ -45,8 +45,7 @@ In this lab, you will perform:
     - **Container registry**: None (one will be created automatically the first time you deploy a model to a container) **(8)**
 
 1. Select **Review + create (9)**.
-  
-   
+    
 
 1. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
    
@@ -68,6 +67,7 @@ Some features of Azure Machine Learning are in preview, and need to be explicitl
 1. Enable the following preview feature:
 
     - *Guided experience for submitting training jobs with serverless compute*
+      ![Picture1](media/AI-9000module01-01.jpg)
 
 ### Task 2: Use automated machine learning to train a model
 
@@ -76,6 +76,7 @@ Automated machine learning enables you to try multiple algorithms and parameters
 > **Citation**: *The data used in this exercise is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement)*.
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Automated ML** page (under **Authoring**).
+ ![Picture1](media/AI-900-Module01-02.jpg)   
 
 1. Create a new Automated ML job with the following settings, using **Next** as required to progress through the user interface:
 
@@ -170,6 +171,8 @@ When the automated machine learning job has completed, you can review the best m
     - **Description**: Predict cycle rentals
     - **Compute type**: Azure Container Instance
     - **Enable authentication**: *Selected*
+
+    ![Picture1](media/AI-900-modulet3-01.jpg)
 
 1. Wait for the deployment to start - this may take a few seconds. The **Deploy status** for the **predict-rentals** endpoint will be indicated in the main part of the page as *Running*.
 1. Wait for the **Deploy status** to change to *Succeeded*. This may take 5-10 minutes.
