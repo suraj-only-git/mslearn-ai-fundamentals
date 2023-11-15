@@ -41,6 +41,13 @@ You can use Azure AI Vision's OCR capabilities with an **Azure AI services** mul
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  
 ## Task 2: Connect your Azure AI service resource to Vision Studio
 
 Next, connect the Azure AI services resource you provisioned above to Vision Studio.
@@ -92,6 +99,13 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
    ![An image of a typed letter.](media/read-text-computer-vision/letter(1).jpg)
 
 1. Review the results of the second image. It should return the text and bounding boxes of the text. If you have time, try **note.jpg** and **receipt.jpg**.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Learn more
 
