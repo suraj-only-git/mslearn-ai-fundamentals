@@ -27,7 +27,7 @@ You can use many Azure AI Language features with either a **Language** or **Azur
 
 1. On the page **Create Language**, configure it with the following settings:
     - **Subscription**: *Your Azure subscription*.
-    - **Resource group**: **ODL-AI-900-05-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Resource group**: **ODL-AI-900-08-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Region**: Select **<inject key="location" enableCopy="false"/>**
     - **Name**: Enter **Conversational<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: *Free F0 or S if Free F0 is not available*
@@ -152,7 +152,7 @@ To use your trained model in a client application, you must deploy it as an endp
 1. On the left-hand side of Language Studio, select **Deploying a model**.
 
 1. Select your model name and then **Add deployment**. Use these settings:
-    - **Create or select an existing deployment name**: *Select create a new deployment name. Add a unique name*.
+    - **Create or select an existing deployment name**: ***Deploy<inject key="DeploymentID" enableCopy="false" />**
     - **Assign trained model to your deployment name**: *Select the name of the trained model*.
     - Select **Deploy**
 

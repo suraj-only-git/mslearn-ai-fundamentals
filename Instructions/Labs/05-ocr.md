@@ -27,7 +27,11 @@ You can use Azure AI Vision's OCR capabilities with an **Azure AI services** mul
     
 1. Select **Yes** when asked for **Stay signed in**
    
-1. Click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
+1. Click the **&#65291;Create a resource** button
+
+    ![An image of the text in the image outlined](media/lab-5(1).png)
+
+   and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure      AI services resource. Configure it with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: **ODL-AI-900-05-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Region**: Select **<inject key="location" enableCopy="false"/>**
@@ -37,6 +41,13 @@ You can use Azure AI Vision's OCR capabilities with an **Azure AI services** mul
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  
 ## Task 2: Connect your Azure AI service resource to Vision Studio
 
 Next, connect the Azure AI services resource you provisioned above to Vision Studio.
@@ -45,15 +56,17 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. Sign in with your account and making sure you are using the same directory as the one where you have created your Azure AI services resource.
 
+   ![An image of the text in the image outlined](media/lab-5(2).png)
+
 1. On the Vision Studio home page, select **View all resources** under the **Getting started with Vision** heading.
 
-    ![The View all resource link is highlighted under Getting started with Vision in Vision Studio.](./media/analyze-images-vision/vision-resources.png)
+    ![The View all resource link is highlighted under Getting started with Vision in Vision Studio.](./media/lab-5(3).png)
 
 1. On the **Select a resource to work with** page, hover your mouse cursor over the resource you created above in the list and then check the box to the left of the resource name, then select **Select as default resource**.
 
     > **Note** : If your resource is not listed, you may need to **Refresh** the page.
 
-    ![The Select a resource to work with dialog is displayed with the cog-ms-learn-vision-SUFFIX Cognitive Services resource highlighted and checked. The Select as default resource button is highlighted.](./media/analyze-images-vision/default-resource.png)
+    ![The Select a resource to work with dialog is displayed with the cog-ms-learn-vision-SUFFIX Cognitive Services resource highlighted and checked. The Select as default resource button is highlighted.](./media/lab-5(4).png)
 
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
@@ -63,23 +76,36 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. On the **Getting started with Vision** landing page, select **Optical character recognition**, and then the **Extract text from images** tile.
 
-1. Under the **Try It Out** subheading, acknowledge the resource usage policy by reading and checking the box.  
+   ![An image of the text in the image outlined](media/lab-5(5).png)
+
+1. Under the **Try It Out** subheading, acknowledge the resource usage policy by reading and checking the box.
+
+   ![An image of the text in the image outlined](media/lab-5(6).png)
 
 1. Select [**https://aka.ms/mslearn-ocr-images**](https://aka.ms/mslearn-ocr-images) to download **ocr-images.zip**. Then open the folder.
 
 1. On the portal, select **Browse for a file** and navigate to the folder on your computer where you downloaded **ocr-images.zip**. Select **advert.jpg** and select **Open**.
 
+   ![An image of the text in the image outlined](media/lab-5(7).png)
+
 1. Now review what is returned:
     - In **Detected attributes**, any text found in the image is organized into a hierarchical structure of regions, lines, and words.
     - On the image, the location of text is indicated by a bounding box, as shown here:
 
-    ![An image of the text in the image outlined](media/read-text-computer-vision/text-bounding-boxes.png)
+       ![An image of the text in the image outlined](media/read-text-computer-vision/text-bounding-boxes(1).png)
 
 1. You can now try another image. Select **Browse for a file** and navigate to the folder where you saved the files from GitHub. Select **letter.jpg**.
 
-    ![An image of a typed letter.](media/read-text-computer-vision/letter.jpg)
+   ![An image of a typed letter.](media/read-text-computer-vision/letter(1).jpg)
 
 1. Review the results of the second image. It should return the text and bounding boxes of the text. If you have time, try **note.jpg** and **receipt.jpg**.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Learn more
 
