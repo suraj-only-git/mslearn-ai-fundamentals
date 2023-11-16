@@ -1,5 +1,6 @@
-# Use Question Answering model with Language Studio
+# Module 07: Use Question Answering model with Language Studio
 
+## Lab overview
 In this exercise you will use Language Studio to create and train a knowledge base of question and answers that will be used by a customer services bot. Content for the knowledge base will come from an existing FAQ page from the web site of Margie’s Travel, a fictitious travel agency. You will then use Language Studio to see how it would work when used by customers.
 
 When implementing a bot, the first step is to create a knowledge base of question and answer pairs. This is used together with built-in natural language processing capabilities so that the bot can interpret questions and find the most appropriate answer for the user.
@@ -8,11 +9,29 @@ Azure AI Language includes *question answering* capabilities, which you will use
 
 The Language service's question answering feature enables you to quickly create a knowledge base, either by entering question and answer pairs or from an existing document or web page. It can then use some built-in natural language processing capabilities to interpret questions and find appropriate answers.
 
-## Create a *Language* resource
+## Lab objectives
+In this lab, you will perform:
+
+- Create a *Language* resource
+- Create a new project
+- Edit the knowledge base
+- Train and test the knowledge base
+- Create a bot for the knowledge base
+
+## Estimated timing: 45 minutes
+
+# Exercise 1: Use Question Answering model with Language Studio
+## Task 1: Create a *Language* resource
 
 To use question answering, you need a **Language** resource.
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with the Microsoft account associated with your Azure subscription.
+1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true)
+
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+    
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
+    
+1. Select **Yes** when asked for **Stay signed in**
 
 1. Click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Use the following settings:
     - **Select Additional Features**:
@@ -40,7 +59,14 @@ To use question answering, you need a **Language** resource.
     > **Note**
     > If you have already provisioned a free-tier **Azure Cognitive Search** resource, your quota may not allow you to create another one. In which case, select a tier other than **Free F**.
 
-## Create a new project
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+## Task 2: Create a new project
 
 1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com?azure-portal=true) and sign in using the Microsoft account associated with your Azure subscription.
 1. If prompted to choose a Language resource, select the following settings:
@@ -79,7 +105,14 @@ To use question answering, you need a **Language** resource.
 
  ![Add URL](media/create-a-bot/add-url.png)
 
-## Edit the knowledge base
+ > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+## Task 3: Edit the knowledge base
 
 Your knowledge base is based on the details in the FAQ document and some pre-defined responses. You can add custom question-and-answer pairs to supplement these.
 
@@ -88,7 +121,7 @@ Your knowledge base is based on the details in the FAQ document and some pre-def
 1. Expand **Alternate questions** and select **+ Add alternate question**. Then enter `Hiya`as an alternative phrasing for "Hello".
 1. At the bottom of the **Question answer pairs** pane, select **Save** to save your knowledge base.
 
-## Train and test the knowledge base
+## Task 4: Train and test the knowledge base
 
 Now that you have a knowledge base, you can test it.
 
@@ -102,7 +135,7 @@ Now that you have a knowledge base, you can test it.
 1. Try another question, such as `How can I cancel a reservation?`
 1. When you're done testing the knowledge base, select **Test** to close the test pane.
 
-## Create a bot for the knowledge base
+## Task 5: Create a bot for the knowledge base
 
 The knowledge base provides a back-end service that client applications can use to answer questions through some sort of user interface. Commonly, these client applications are bots. To make the knowledge base available to a bot, you must publish it as a service that can be accessed over HTTP. You can then use the Azure Bot Service to create and host a bot that uses the knowledge base to answer user questions.
 
@@ -151,14 +184,19 @@ The knowledge base provides a back-end service that client applications can use 
 
 Experiment with the bot. You'll probably find that it can answer questions from the FAQ quite accurately, but it will have limited ability to interpret questions that it has not been trained with. You can always use the Language Studio to edit the knowledge base to improve it, and republish it.
 
-## Clean up
-
-If you don’t intend to do more exercises, delete any resources that you no longer need. This avoids accruing any unnecessary costs.
-
-1. Open the [Azure portal]( https://portal.azure.com) and select the resource group that contains the resource you created. 
-1. Select the resource and select **Delete** and then **Yes** to confirm. The resource is then deleted.
-
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  
 ## Learn more
 
 - To learn more about the Question Answering service, view [the documentation](https://docs.microsoft.com/azure/cognitive-services/language-service/question-answering/overview).
 - To learn more about the Microsoft Bot Service, view [the Azure Bot Service page](https://azure.microsoft.com/services/bot-service/).
+
+### Review
+In this lab, you have created an azure AI language resource, a new project, edited,trained and tested the knowledge base and created a bot for the knowledge bot.
+  
+## You have successfully completed this lab.
