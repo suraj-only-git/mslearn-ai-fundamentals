@@ -249,3 +249,8 @@ Now you can test your deployed service.
 
 Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*.
 
+### Review
+In this lab, you have created an Azure Machine Learning workspace resource, and use automated machine learning to train a model and deploy and test it.
+  
+## You have successfully completed this lab.
+
