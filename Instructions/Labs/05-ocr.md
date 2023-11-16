@@ -23,6 +23,7 @@ You can use Azure AI Vision's OCR capabilities with an **Azure AI services** mul
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true)
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+    
     - **Password:** <inject key="AzureAdUserPassword"></inject>
     
 1. Select **Yes** when asked for **Stay signed in**
