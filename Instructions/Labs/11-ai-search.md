@@ -1,8 +1,10 @@
 # Module 11: Explore an Azure Cognitive Search index (UI)
 
+## Lab overview
+
 Let's imagine you work for Fourth Coffee, a national coffee chain. You're asked to help build a knowledge mining solution that makes it easy to search for insights about customer experiences. You decide to build an Azure Cognitive Search index using data extracted from customer reviews.  
 
-In this lab you'll:
+In this lab you will:
 
 - Create Azure resources
 - Extract data from a data source
@@ -11,13 +13,20 @@ In this lab you'll:
 - Query your search index
 - Review results saved to a Knowledge Store
 
+## Estimated timing: 2 hours
+
+## Architecture Diagram
+
+  ![](media/Module0005.png)
+
 ## Exercise 1 : Explore an Azure Cognitive Search index (UI)
 
-### Task 1: Azure resources needed
+ ## Pre-requisites Required
 
 The solution you'll create for Fourth Coffee requires the following resources in your Azure subscription:
 
 - An **Azure Cognitive Search** resource, which will manage indexing and querying.
+
 - An **Azure AI services** resource, which provides AI services for skills that your search solution can use to enrich the data in the data source with AI-generated insights.
 
     > **Note**
@@ -25,13 +34,13 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 - A **Storage account** with blob containers, which will store raw documents and other collections of tables, objects, or files.
 
-### Task 2: Create an *Azure Cognitive Search* resource
+### Task 1: Create an Azure Cognitive Search resource
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. Click the **+ Create a resource** button, search for *Azure Cognitive Search*, and create a **Azure Cognitive Search** resource with the following settings:
 
-    - **Subscription**: Select your **Existing Azure subscription**.
+    - **Subscription**: Select your **existing azure subscription**.
     - **Resource group**: Select **ODL-AI-900-11-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Service name**: **aisearch<inject key="DeploymentID" enableCopy="false" />**
     - **Location**: Select **<inject key="location" enableCopy="false"/>** 
@@ -41,13 +50,13 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 1. After deployment completes, select **Go to resource**. On the Azure Cognitive Search overview page, you can add indexes, import data, and search created indexes.
 
-### Task 3: Create an Azure AI services resource
+### Task 2: Create a Cognitive Services resource
 
 You'll need to provision an **Azure AI services** resource that's in the same location as your Azure Cognitive Search resource. Your search solution will use this resource to enrich the data in the datastore with AI-generated insights.
 
 1. Return to the home page of the Azure portal. Click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
 
-    - **Subscription**: *Select your **Existing Azure subscription**.
+    - **Subscription**: *Select your **existing azure subscription**.
     - **Resource group**: Select **ODL-AI-900-11-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Region**: Select **<inject key="location" enableCopy="false"/>** 
     - **Name**: Enter **aiservice<inject key="DeploymentID" enableCopy="false" />**
@@ -58,12 +67,12 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
 1. Wait for deployment to complete, then view the deployment details.
 
-### Task 4: Create a storage account
+### Task 3: Create a storage account
 
 1. Return to the home page of the Azure portal, and then select the **+ Create a resource** button.
 
 1. Search for *storage account*, and create a **Storage account** resource with the following settings:
-    - **Subscription**: Select your **Existing Azure subscription**.
+    - **Subscription**: Select your **existing azure subscription**.
     - **Resource group**: Select **ODL-AI-900-11-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Storage account name**: Enter **cognitivestorage<inject key="DeploymentID" enableCopy="false" />**.
     - **Location**: Select **<inject key="location" enableCopy="false"/>** 
@@ -75,7 +84,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 1. In the Azure Storage account you created, in the left-hand menu pane, select **Configuration** (under **Settings**).
 1. Change the setting for *Allow Blob anonymous access* to **Enabled** and then select **Save**.
 
-### Task 5: Upload Documents to Azure Storage
+## Exercise 1: Upload Documents to Azure Storage
 
 1. In the left-hand menu pane, select **Containers**.
 
@@ -102,7 +111,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
 1. After the upload is complete, you can close the **Upload blob** pane. Your documents are now in your *coffee-reviews* storage container.
 
-### Task 6: Index the documents
+## Exercise 2: Index the documents
 
 After you have the documents in storage, you can use Azure Cognitive Search to extract insights from the documents. The Azure portal provides an *Import data wizard*. With this wizard, you can automatically create an index and indexer for supported data sources. You'll use the wizard to create an index, and import your search documents from storage into the Azure Cognitive Search index.
 
@@ -115,7 +124,7 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
     - **Data source name**: coffee-customer-data
     - **Data to extract**: Content and metadata
     - **Parsing mode**: Default
-    - **Connection string**: *Select **Choose an existing connection**. Select your storage account, select the **coffee-reviews** container, and then click **Select**.
+    - **Connection string**: Select **Choose an existing connection**. Select your storage account, select the **coffee-reviews** container, and then click **Select**.
     - **Managed identity authentication**: None
     - **Container name**: *this setting is auto-populated after you choose an existing connection*.
     - **Blob folder**: *Leave this blank*.
@@ -190,7 +199,7 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
 
     ![Screenshot that shows the coffee-indexer Indexer successfully created.](media/create-cognitive-search-solution/6a-search-indexer-success.png)
 
-### Task 7: Query the index
+## Exercise 3: Query the index
 
 Use the Search explorer to write and test queries. Search explorer is a tool built into the Azure portal that gives you an easy way to validate the quality of your search index. You can use Search explorer to write queries and review results in JSON.
 
@@ -216,7 +225,7 @@ Use the Search explorer to write and test queries. Search explorer is a tool bui
 
 1. One of the problems we might want to solve for is why there might be certain reviews. Let's take a look at the key phrases associated with the negative review. What do you think might be the cause of the review?
 
-### Task 8: Review the knowledge store
+## Exercise 4: Review the knowledge store
 
 Let's see the power of the knowledge store in action. When you ran the *Import data wizard*, you also created a knowledge store. Inside the knowledge store, you'll find the enriched data extracted by AI skills persists in the form of projections and tables.
 
@@ -255,3 +264,16 @@ Let's see the power of the knowledge store in action. When you ran the *Import d
 ## Learn more
 
 This simple search index only some of the capabilities of the Azure Cognitive Search service. To learn more about what you can do with this service, see the [Azure Cognitive Search service page](/azure/search/search-what-is-azure-search).
+
+## Review
+
+In this exercise you:
+
+- Created Azure resources
+- Extracted data from a data source
+- Enriched data with AI skills
+- Used Azure's indexer in the Azure portal
+- Queried your search index
+- Reviewed results saved to a Knowledge Store
+
+## You have successfully completed this lab.
