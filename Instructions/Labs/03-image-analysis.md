@@ -27,13 +27,20 @@ You can use Azure AI Vision's image analysis capabilities with an **Azure AI ser
 1. Click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
    
     - **Subscription (1)**: Use the existing Azure subscription.
-    - **Resource group (2)**: Select **ODL-AI-900-Lab03-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Resource group (2)**: Select **ODL-AI-900-03-<inject key="DeploymentID" enableCopy="false"/>**
     - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
     - **Name (4)**: Enter **AI-service<inject key="DeploymentID" enableCopy="false"/>**
     - **Pricing tier (5)**:Select **Standard S0**.
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
+
+     > -**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 2: Connect your Azure AI service resource to Vision Studio
 
