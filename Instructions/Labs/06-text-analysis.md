@@ -32,7 +32,9 @@ You can use many Azure AI Language features with either a **Language** or **Azur
     
 1. Select **Yes** when asked for **Stay signed in**
    
-1. Click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Keep the default selection and click **Continue to create your resource**. 
+1. Click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Keep the default selection and click **Continue to create your resource**.
+
+   ![An image of the text in the image outlined](media/lab-6(1).png)
 
 1. On the page **Create Language**, configure it with the following settings:
     - **Subscription**: *Your Azure subscription*.
@@ -68,8 +70,9 @@ Then select **Done**.
 > **Note**: If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
 > 1. On the bar at the top if the page, select **Settings (&#9881;)**. 
 > 1. On the **Settings** page, view the **Resources** tab.
+> 1.![An image of the text in the image outlined](media/lab-6(4).png)
 > 1. Select the resource you just created, and select **Switch resource**. Ensure Managed identity is **Enabled**.
-> ![Enable language resource.](media/analyze-text-language-service/language-resource-enabled.png)
+> ![An image of the text in the image outlined](media/lab-6(3).png)
 > 1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
 ## Task 3: Analyze reviews in Language Studio
@@ -77,6 +80,8 @@ Then select **Done**.
 1. In a web browser, navigate to [Language Studio](https://language.cognitive.azure.com?azure-portal=true).
 
 1. On the **Welcome to Language Studio** landing page, select the **Classify text** tab, then select the **Analyze sentiment and mine opinions** tile.
+
+   ![An image of the text in the image outlined](media/lab-6(6).png)
 
 1. Under *Select text language*, select **English**.
 
@@ -93,6 +98,8 @@ Then select **Done**.
 
 1. Check the box to acknowledge that the demo will incur usage and may incur costs, and then select **Run**.
 
+   ![An image of the text in the image outlined](media/lab-6(7).png)
+   
 1. Review the output. Notice that the *document* is analyzed for sentiment, as well as each *sentence*. Select **Sentence 1** to show the sentiment analysis for that sentence. 
 
 Notice that there is an overall sentiment followed by scores next to three categories, *positive score*, *neutral score*, *negative score*. In each of the categories, a score between 0 and 1 is provided. These confidence scores indicate how likely the provided text is a particular sentiment. 
