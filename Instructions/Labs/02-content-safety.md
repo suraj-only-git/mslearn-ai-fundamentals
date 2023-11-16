@@ -11,6 +11,8 @@ In this lab, you will perform:
 - Trying out text moderation in the Content Safety Studio
 - Checking out the keys and endpoint
 
+## Estimated timing: 30 minutes
+
 ## Architecture Diagram
 
 ![](media/Module1.1.png)
