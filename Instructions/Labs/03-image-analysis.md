@@ -138,3 +138,8 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 ## Learn more
 
 To learn more about what you can do with this service, see the [Azure AI Vision page](https://learn.microsoft.com/azure/ai-services/computer-vision/overview).
+
+### Review
+In this lab, you have created an Azure AI Service resource, connected it to the vision studio and Image Analysis in the studio.
+  
+## You have successfully completed this lab.
