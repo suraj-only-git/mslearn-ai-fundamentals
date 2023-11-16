@@ -16,6 +16,7 @@ In this lab, you will perform:
 
 ## Estimated timing: 30 minutes
 
+# Exercise 1: Read text in Vision Studio
 ## Task 1: Create an *Azure AI services* resource
 
 You can use Azure AI Vision's OCR capabilities with an **Azure AI services** multi-service resource. If you haven't already done so, create an **Azure AI services** resource in your Azure subscription.
