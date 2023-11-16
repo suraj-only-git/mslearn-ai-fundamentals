@@ -100,3 +100,8 @@ In this exercise you have explored how Azure AI services can detect faces in ima
 ## Learn more
 
 To learn more about what you can do with this service, see the [Azure AI Face service page](https://learn.microsoft.com/azure/ai-services/computer-vision/overview-identity).
+
+### Review
+In this lab, you have created an Azure AI Service resource, connected it to the vision studio and detect faces in the Studio 
+  
+## You have successfully completed this lab.
