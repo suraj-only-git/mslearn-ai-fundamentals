@@ -38,7 +38,8 @@ To use question answering, you need a **Language** resource.
         - **Default features**: *Keep the default features*.
         - **Custom features**: *Select custom question answering*.
      - Select **Continue to create your resource**
-    ![Creating a Language Service resource with custom question answering enabled.](media/create-a-bot/create-language-service-resource.png)
+       
+       ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(1).png)
 
 1. On the **Create Language** page, specify the following settings:
     - **Project Details**
@@ -69,6 +70,9 @@ To use question answering, you need a **Language** resource.
 ## Task 2: Create a new project
 
 1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com?azure-portal=true) and sign in using the Microsoft account associated with your Azure subscription.
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(2).png)
+   
 1. If prompted to choose a Language resource, select the following settings:
     - **Azure directory**: *The Azure directory containing your subscription*.
     - **Azure subscription**: *Your Azure subscription*.
@@ -83,10 +87,11 @@ To use question answering, you need a **Language** resource.
 
 1. At the top of the Language Studio portal, in the **Create new** menu, select **Custom question answering**.
 
-    ![Custom question answering](media/create-a-bot/create-custom-question-answering.png)
+    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(3).png)
 
-1. On the **Choose language setting for resource *your resource*** page, select **I want to select the language when I create a project in this resource** and click **Next**.
-  ![I want to select the language](media/create-a-bot/create-project.png)
+1. On the **Choose language setting for resource *your resource*** page, select **I want to select the language when I create a project in this resource** (1) and click **Next** (2).
+
+    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(4).png)
 
 1. On the **Enter basic information** page, enter the following details and click **Next**:
     - **Language resource**: *choose your language resource* (**if not already chosen**).  
@@ -96,14 +101,21 @@ To use question answering, you need a **Language** resource.
     - **Source language**: English
     - **Default answer when no answer is returned**: `No answer found`
 1. Click **Next** page, select **Create project**.
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(5).png)
+   
 1. You will be taken to the **Manage sources** page. Select **&#65291;Add source** and select **URLs**.
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(6).png)
+   
 1. In the **Add URLs** box, select **+ Add url**. Type in the following and select **Add all**:
     - **URL name**: `MargiesKB`
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/main/data/natural-language/margies_faq.docx`
+
+      ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(8).png)
+      
     - **Classify file structure**: *Auto-detect*
 1. Select **Add all.**  
-
- ![Add URL](media/create-a-bot/add-url.png)
 
  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
@@ -117,16 +129,30 @@ To use question answering, you need a **Language** resource.
 Your knowledge base is based on the details in the FAQ document and some pre-defined responses. You can add custom question-and-answer pairs to supplement these.
 
 1. Expand the left panel and select **Edit knowledge base**. Then select **+** to add a new question pair.
+   
+    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(7).png)
+   
 1. In the **Add a new question answer pair** dialog box, in the **Question** type `Hello`, and in the **Answer** type `Hi`, then select **Done**.
 1. Expand **Alternate questions** and select **+ Add alternate question**. Then enter `Hiya`as an alternative phrasing for "Hello".
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(10).png)
+   
 1. At the bottom of the **Question answer pairs** pane, select **Save** to save your knowledge base.
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(9).png)
 
 ## Task 4: Train and test the knowledge base
 
 Now that you have a knowledge base, you can test it.
 
 1. At the bottom of the **Question answer pairs** pane, select **Test** to test your knowledge base.
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(12).png)
+   
 1. In the test pane, at the bottom enter the message `Hi`. The response *Hi* should be returned.
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(11).png)
+   
 1. In the test pane, at the bottom enter the message `I want to book a flight`. An appropriate response from the FAQ should be returned.
 
     > **Note**
@@ -139,10 +165,11 @@ Now that you have a knowledge base, you can test it.
 
 The knowledge base provides a back-end service that client applications can use to answer questions through some sort of user interface. Commonly, these client applications are bots. To make the knowledge base available to a bot, you must publish it as a service that can be accessed over HTTP. You can then use the Azure Bot Service to create and host a bot that uses the knowledge base to answer user questions.
 
-1. In the left panel, select **Deploy knowledge base**.
-1. At the top of the page, select **Deploy**. A dialogue box will ask if you want to deploy the project. Select **Deploy**.
+1. In the left panel, select **Deploy knowledge base**. At the top of the page, select **Deploy**.
 
- ![Deploy knowledge base.](media/create-a-bot/deploy-knowledge-base.png)
+   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(13).png)
+
+1. A dialogue box will ask if you want to deploy the project. Select **Deploy**.
 
 1. After the service has been deployed, select **Create a bot**. This opens the Azure portal in a new browser tab so you can create a Web App Bot in your Azure subscription.
 1. In the Azure portal, create a **Web App Bot**. (You may see a warning message to check that the source of the template is trustworthy. You do not need to take any action for that message.) Continue by updating the following settings:
@@ -178,6 +205,10 @@ The knowledge base provides a back-end service that client applications can use 
         - **Resource Group Name**: *Pre-populated with your resource group name*
         - **Account Name**: *Pre-populated with your resource name*
 
+1. Select **Review and Create**.
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(14).png)
+
 1. Select **Create**. Then  wait for your bot to be created (the notification icon at the top right, which looks like a bell, will be animated while you wait). Then in the notification that deployment has completed, select **Go to resource** (or alternatively, on the home page, click **Resource groups**, open the resource group where you created the bot, and select the **Azure bot** resource.)
 1. In the left-hand pane of your bot look for **Settings**, select on **Test in Web Chat**, and wait until the bot displays the message **Hello and Welcome** (it may take a few seconds to initialize).
 1. Use the test chat interface to ensure your bot answers questions from your knowledge base as expected. For example, try submitting `I need to cancel my hotel`.
@@ -197,6 +228,6 @@ Experiment with the bot. You'll probably find that it can answer questions from 
 - To learn more about the Microsoft Bot Service, view [the Azure Bot Service page](https://azure.microsoft.com/services/bot-service/).
 
 ### Review
-In this lab, you have created an azure AI language resource, a new project, edited,trained and tested the knowledge base and created a bot for the knowledge bot.
+In this lab, you have created an azure AI language resource, a new project, edited, trained and tested the knowledge base and created a bot for the knowledge base.
   
 ## You have successfully completed this lab.
