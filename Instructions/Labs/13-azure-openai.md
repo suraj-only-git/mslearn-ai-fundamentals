@@ -1,9 +1,9 @@
 # Module 13: Explore Azure OpenAI Service
 
 ## Lab overview
-Azure OpenAI Service brings the generative AI models developed by OpenAI to the Azure platform, enabling you to develop powerful AI solutions that benefit from the security, scalability, and integration of services provided by the Azure cloud platform.
 
 In this exercise, you'll explore Azure OpenAI Service and use it to deploy and experiment with generative AI models.
+Azure OpenAI Service brings the generative AI models developed by OpenAI to the Azure platform, enabling you to develop powerful AI solutions that benefit from the security, scalability, and integration of services provided by the Azure cloud platform.
 
 ## Lab objectives
 
