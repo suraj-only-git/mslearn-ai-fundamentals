@@ -1,4 +1,3 @@
-
 # Lab Scenario Preview: Module 11: Explore an Azure Cognitive Search index (UI)
 
 ## Lab overview

@@ -21,6 +21,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
+  ![](media/module10.png)
 
 ## Exercise 1: Extract form data in Document 
 

@@ -1,4 +1,3 @@
-
 # Lab Scenario Preview: Module 12: Explore generative AI with Bing
 
 ## Lab overview

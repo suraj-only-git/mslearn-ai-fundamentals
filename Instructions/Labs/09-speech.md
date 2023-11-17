@@ -15,6 +15,8 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
+  ![](media/module09.png)
+
 
 ## Exercise 1: Explore Speech Studio
 
