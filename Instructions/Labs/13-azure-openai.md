@@ -1,15 +1,18 @@
----
-lab:
-    title: 'Explore Azure OpenAI Service'
----
+# Module 13: Explore Azure OpenAI Service
 
-# Explore Azure OpenAI
-
+## Lab overview
 Azure OpenAI Service brings the generative AI models developed by OpenAI to the Azure platform, enabling you to develop powerful AI solutions that benefit from the security, scalability, and integration of services provided by the Azure cloud platform.
 
 In this exercise, you'll explore Azure OpenAI Service and use it to deploy and experiment with generative AI models.
 
-This exercise will take approximately **25** minutes.
+## Lab objectives
+
+In this lab, you will perform:
+- Provision an Azure OpenAI resource
+- Deploy and Interact with Language Generation Model
+- Explore Image Generation with DALL-E
+
+## Estimated timing: 30 minutes
 
 ## Before you start
 
@@ -112,6 +115,4 @@ In addition to language generation models, Azure OpenAI Service supports the DAL
 
     ![Screenshot of DALL-E generated images in Azure OpenAI Studio.](./media/generative-ai/dall-e-results.png)
 
-## Clean up
 
-When you're done with your Azure OpenAI resource, remember to delete the deployment or the entire resource in the [Azure portal](https://portal.azure.com/?azure-portal=true).
