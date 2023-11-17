@@ -20,6 +20,9 @@ In this lab, you will perform:
 
 ## Estimated timing: 45 minutes
 
+# Architecture Diagram
+![Creating a Language Service resource with custom question answering enabled.](media/arch7.PNG)
+
 # Exercise 1: Use Question Answering model with Language Studio
 ## Task 1: Create a *Language* resource
 
