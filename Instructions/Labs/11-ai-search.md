@@ -19,8 +19,6 @@ In this lab you will:
 
   ![](media/Module0005.png)
 
-## Exercise 1 : Explore an Azure Cognitive Search index (UI)
-
  ## Pre-requisites Required
 
 The solution you'll create for Fourth Coffee requires the following resources in your Azure subscription:
