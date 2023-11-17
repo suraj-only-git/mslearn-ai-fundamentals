@@ -115,4 +115,11 @@ In addition to language generation models, Azure OpenAI Service supports the DAL
 
     ![Screenshot of DALL-E generated images in Azure OpenAI Studio.](./media/generative-ai/dall-e-results.png)
 
+### Review
 
+In this lab, you have completed:
+- Provisioned Provision an Azure OpenAI resource
+- Deploying and Interact with Language Generation Model
+- Exploring Image Generation with DALL-E
+
+## You have successfully completed this lab.
