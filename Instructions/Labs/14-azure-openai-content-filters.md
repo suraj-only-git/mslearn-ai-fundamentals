@@ -1,12 +1,19 @@
 # Module 14: Explore content filters in Azure OpenAI
 
-# Explore content filters in Azure OpenAI
+## Lab overview
 
+In this exercise you'll explore the affect of the default content filters in Azure OpenAI.
 Azure OpenAI includes default content filters to help ensure that potentially harmful prompts and completions are identified and removed from interactions with the service. Additionally, you can apply for permission to define custom content filters for your specific needs to ensure your model deployments enforce the appropriate responsible AI principals for your generative AI scenario. Content filtering is one element of an effective approach to responsible AI when working with generative AI models.
 
-In this exercise, you'll explore the affect of the default content filters in Azure OpenAI.
+## Lab objectives
 
-This exercise will take approximately **25** minutes.
+In this lab, you will perform:
+- Provision an Azure OpenAI resource
+- Deploy a model
+- Generate natural language output
+- Explore content filters
+
+## Estimated timing: 25 minutes
 
 ## Before you start
 
@@ -20,6 +27,7 @@ You will need an Azure subscription that has been approved for access to the Azu
 Before you can use Azure OpenAI models, you must provision an Azure OpenAI resource in your Azure subscription.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
+
 2. Create an **Azure OpenAI** resource with the following settings:
     - **Subscription**: *An Azure subscription that has been approved for access to the Azure OpenAI service.*
     - **Resource group**: *Choose an existing resource group or create a new one with a name of your choice.*
@@ -33,6 +41,7 @@ Before you can use Azure OpenAI models, you must provision an Azure OpenAI resou
 Now you're ready to deploy a model to use through the **Azure OpenAI Studio**. Once deployed, you will use the model to generate natural language content.
 
 1. On the **Overview** page for your Azure OpenAI resource, use the **Explore** button to open Azure OpenAI Studio in a new browser tab. Alternatively, navigate to [Azure OpenAI Studio](https://oai.azure.com/) directly.
+
 2. In Azure OpenAI Studio, create a new deployment with the following settings:
     - **Model**: gpt-35-turbo
     - **Model version**: Auto-update to default
@@ -45,7 +54,9 @@ Now you're ready to deploy a model to use through the **Azure OpenAI Studio**. O
 Let's see how the model behaves in a conversational interaction.
 
 1. In [Azure OpenAI Studio](https://oai.azure.com/), navigate to the **Chat** playground in the left pane.
+
 1. In the **Assistant setup** section at the top, select the **Default** system message template.
+
 1. In the **Chat session** section, enter the following prompt.
 
     ```
@@ -74,6 +85,7 @@ Let's see how the model behaves in a conversational interaction.
 Content filters are applied to prompts and completions to prevent potentially harmful or offensive language being generated.
 
 1. In Azure OpenAI Studio, view the **Content filters** page.
+
 1. Select **Create customized content filter** and review the default settings for a content filter.
 
     Content filters are based on restrictions for four categories of potentially harmful content:
@@ -88,3 +100,13 @@ Content filters are applied to prompts and completions to prevent potentially ha
 1. Observe that the default settings (which are applied when no custom content filter is present) allow **low** severity language for each category. You can create a more restrictive custom filter by applying filters to one or more **low** severity levels. You cannot however make the filters less restrictive (by allowing **medium** or **high** severity language) unless you have applied for and received permission to do so in your subscription. Permission to do so is based on the requirements of your specific generative AI scenario.
 
     > **Tip**: For more details about the categories and severity levels used in content filters, see [Content filtering](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/content-filter) in the Azure OpenAI service documentation.
+
+### Review
+
+In this lab, you have completed:
+- Provisioned an Azure OpenAI resource
+- Deploying a model
+- Generating natural language output
+- Exploring content filters
+
+## You have successfully completed this lab.
