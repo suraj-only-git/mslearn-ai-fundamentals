@@ -17,6 +17,9 @@ In this lab, you will perform:
 
 ## Estimated timing: 45 minutes
 
+# Architecture Diagram
+![Select add under Intents on the Build Schema pane.](media/arch8.PNG)
+
 # Exercise 1: Use Conversational Language Understanding with Language Studio
 ## Task 1: Create a *Language* resource
 
