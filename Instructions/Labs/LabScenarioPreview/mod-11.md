@@ -13,7 +13,7 @@ In this lab you will:
 - Query your search index
 - Review results saved to a Knowledge Store
 
-## Estimated timing: 2 hours
+## Estimated timing: 120 minutes
 
 ## Solution Architecture
 
