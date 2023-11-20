@@ -66,13 +66,6 @@ Next, connect the Azure AI service resource you provisioned above to Vision Stud
 
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ### Task 3: Generate captions for an image
 
 Now you are ready to use Vision Studio to analyze images taken by a camera in the *Northwind Traders* store.
@@ -107,7 +100,14 @@ Let's look at the image captioning functionality of Azure AI Vision. Image capti
 
     Move your mouse cursor over the other captions in the list, and notice how the bounding box shifts in the image to highlight the portion of the image used to generate the caption.
 
-## Tagging images
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+## Task: 4 Tagging images
 
 The next feature you will try is the **Extract Tags** functionality. Extract tags is based on thousands of recognizable objects, including living beings, scenery, and actions.
 
@@ -125,7 +125,7 @@ The next feature you will try is the **Extract Tags** functionality. Extract tag
 
     ![A screenshot of the detect attributes panel in the Vision Studio with text and confidence scores displayed next to the original image.](./media/analyze-images-vision/detect-attributes.png)
 
-### Task 3: Object detection
+### Task 5: Object detection
 
 In this task, you use the **Object detection** feature of Image Analysis. Object detection detects and extracts bounding boxes based on thousands of recognizable objects and living beings.
 
