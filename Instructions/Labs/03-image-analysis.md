@@ -33,7 +33,7 @@ You can use Azure AI Vision's image analysis capabilities with an **Azure AI ser
 1. Click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
    
     - **Subscription (1)**: Use the existing Azure subscription.
-    - **Resource group (2)**: **ODL-AI-900-03-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Resource group (2)**: **ODL-AI-900-lab03-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
     - **Name (4)**: Enter **visionimageai<inject key="DeploymentID" enableCopy="false"/>**
     - **Pricing tier (5)**:Select **Standard S0**.
