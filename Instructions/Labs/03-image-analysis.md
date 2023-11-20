@@ -66,6 +66,13 @@ Next, connect the Azure AI service resource you provisioned above to Vision Stud
 
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ### Task 3: Generate captions for an image
 
 Now you are ready to use Vision Studio to analyze images taken by a camera in the *Northwind Traders* store.
@@ -136,7 +143,7 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 
 1. Hover your mouse cursor over the objects in the **Detected attributes** list to highlight the object's bounding box in the image.
 
-1. Move the **Threshold value** slider until a value of 70 is displayed to the right of the slider. Observe what happens to the objects in the list. The threshold slider specifies that only objects identified with a confidence score or probability greater than the threshold should be displayed.
+1. Move the **Threshold value** slider until a value of 74 is displayed to the right of the slider. Observe what happens to the objects in the list. The threshold slider specifies that only objects identified with a confidence score or probability greater than the threshold should be displayed.
 
 
 ## Learn more
