@@ -36,7 +36,7 @@ In this lab, you will perform:
 1. Create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
 
     - **Subscription**: Use existing Azure subscription. **(1)**
-    - **Resource group**: Select **ODL-AI-900-01-<inject key="DeploymentID" enableCopy="false" /> (2)**
+    - **Resource group**: Select **ODL-AI-900-01-<inject key="DeploymentID" enableCopy="false" />-02 (2)**
     - **Workspace name**: Give name **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" /> (3)**
     - **Region**: Select <inject key="location" enableCopy="false" /> **(4)**
     - **Storage account**: Note the default new storage account that will be created for your workspace. **(5)**
