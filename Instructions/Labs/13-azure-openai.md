@@ -11,30 +11,27 @@ In this lab, you will perform:
 - Provision an Azure OpenAI resource
 - Deploy and Interact with Language Generation Model
 - Explore Image Generation with DALL-E
+- Use the *Chat* playground to work with the model
+- Use the *DALL-E* playground to generate images
 
 ## Estimated timing: 30 minutes
 
-## Before you start
 
-You will need an Azure subscription that has been approved for access to the Azure OpenAI service for both text and code models, and DALL-E image generation models.
+## Exercise 1: Explore Azure OpenAI Service
 
-- To sign up for a free Azure subscription, visit [https://azure.microsoft.com/free](https://azure.microsoft.com/free).
-- To request access to the Azure OpenAI service, visit [https://aka.ms/oaiapply](https://aka.ms/oaiapply).
+### Task 1: Provision an Azure OpenAI resource
 
-## Provision an Azure OpenAI resource
+1. Create an **Azure OpenAI** resource with the following settings:
 
-Before you can use Azure OpenAI models, you must provision an Azure OpenAI resource in your Azure subscription.
-
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Create an **Azure OpenAI** resource with the following settings:
-    - **Subscription**: *An Azure subscription that has been approved for access to the Azure OpenAI service.*
-    - **Resource group**: *Choose an existing resource group or create a new one with a name of your choice.*
-    - **Region**: *Choose any available region.*
-    - **Name**: *A unique name of your choice.*
+    - **Subscription**: Select your **existing azure subscription**.
+    - **Resource group**: Select **ODL-AI-900-13-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Region**: Select **<inject key="location" enableCopy="false"/>** 
+    - **Name**: **openai<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: Standard S0
+
 3. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
 
-## Explore Azure OpenAI Studio
+### Task 2: Explore Azure OpenAI Studio
 
 You can deploy, manage, and explore models in your Azure OpenAI Service by using Azure OpenAI Studio.
 
@@ -48,7 +45,7 @@ You can deploy, manage, and explore models in your Azure OpenAI Service by using
     - Experiment with models in a *playground*.
     - Manage model deployments and data.
 
-## Deploy a model for language generation
+### Task 3: Deploy a model for language generation
 
 To experiment with natural language generation, you must first deploy a model.
 
@@ -62,7 +59,7 @@ To experiment with natural language generation, you must first deploy a model.
     - **Model version**: Auto-update to default
     - **Deployment name**: *A unique name for your model deployment*
 
-## Use the *Chat* playground to work with the model
+### Task 4: Use the *Chat* playground to work with the model
 
 Now that you have deployed a model, you can use it in the *Chat* playground to generate natural language output from prompts that you submit in a chat interface.
 
@@ -89,7 +86,7 @@ Now that you have deployed a model, you can use it in the *Chat* playground to g
 
 1. Review the output, noting that the chat session has kept track of the previous input and response to provide context (so it correctly interprets "it" as referring to "generative AI") and that it provides a suitable response based on what was requested (it should return three benefits of generative AI).
 
-## Use the *DALL-E* playground to generate images
+### Task 5: Use the *DALL-E* playground to generate images
 
 In addition to language generation models, Azure OpenAI Service supports the DALL-E 2 model for image generation.
 
@@ -118,8 +115,10 @@ In addition to language generation models, Azure OpenAI Service supports the DAL
 ### Review
 
 In this lab, you have completed:
-- Provisioned Provision an Azure OpenAI resource
-- Deploying and Interact with Language Generation Model
-- Exploring Image Generation with DALL-E
+- Provisioned an Azure OpenAI resource
+- Deployed and Interact with Language Generation Model
+- Explored Image Generation with DALL-E
+- Used the *Chat* playground to work with the model
+- Used the *DALL-E* playground to generate images
 
 ## You have successfully completed this lab.
