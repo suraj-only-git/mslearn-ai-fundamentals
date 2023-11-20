@@ -36,7 +36,7 @@ In this lab, you will perform:
     - **Name**: **openai<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: Standard S0
 
-2. Click **Next** twice and click on **Review and Create**. Click **Create**
+2. Click **Next** twice and click on **Review and Create**. Click on **Create**.
 
 3. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
 
