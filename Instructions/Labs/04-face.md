@@ -24,26 +24,32 @@ In this lab, you will perform:
 
 You can use Azure AI Face service with an **Azure AI services** multi-service resource. If you haven't already done so, create an **Azure AI services** resource in your Azure subscription.
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with the Microsoft account associated with your Azure subscription.
+1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true)
+
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+    
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
+    
+1. Select **Yes** when asked for **Stay signed in**
 
 1. Click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
    
     - **Subscription (1)**: Use the existing Azure subscription.
-    - **Resource group (2)**: Select **ODL-AI-900-04-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Resource group (2)**: **ODL-AI-900-lab04-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
-    - **Name (4)**: Enter **AI-service<inject key="DeploymentID" enableCopy="false"/>**
+    - **Name (4)**: Enter **detectvision<inject key="DeploymentID" enableCopy="false"/>**
     - **Pricing tier (5)**:Select **Standard S0**.
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
-     > -**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
 - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
+  
 ### Task 2: Connect your Azure AI service resource to Vision Studio
 
 Next, connect the Azure AI services resource you provisioned above to Vision Studio.
