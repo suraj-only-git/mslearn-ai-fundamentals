@@ -47,7 +47,7 @@ To use question answering, you need a **Language** resource.
 1. On the **Create Language** page, specify the following settings:
     - **Project Details**
         - **Subscription**: *Your Azure subscription*.
-        - **Resource group**: Select **ODL-AI-900-07-<inject key="DeploymentID" enableCopy="false" />-02**
+        - **Resource group**: Select **ODL-AI-900-lab07-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Instance Details**
         - **Region**: Select **<inject key="location" enableCopy="false"/>**      
         - **Name**: Enter **language<inject key="DeploymentID" enableCopy="false" />**
