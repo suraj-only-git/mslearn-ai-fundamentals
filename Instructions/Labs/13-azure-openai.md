@@ -16,12 +16,19 @@ In this lab, you will perform:
 
 ## Estimated timing: 30 minutes
 
-
 ## Exercise 1: Explore Azure OpenAI Service
 
 ### Task 1: Provision an Azure OpenAI resource
 
-1. Create an **Azure OpenAI** resource with the following settings:
+1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true)
+
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+    
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
+    
+1. Select **Yes** when asked for **Stay signed in**
+
+1. Search for **Azure OpenAI** and click on **Create** resource with the following settings:
 
     - **Subscription**: Select your **existing azure subscription**.
     - **Resource group**: Select **ODL-AI-900-13-<inject key="DeploymentID" enableCopy="false" />-02**
@@ -29,13 +36,15 @@ In this lab, you will perform:
     - **Name**: **openai<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: Standard S0
 
+2. Click **Next** twice and click on **Review and Create**. Click **Create**
+
 3. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
 
 ### Task 2: Explore Azure OpenAI Studio
 
 You can deploy, manage, and explore models in your Azure OpenAI Service by using Azure OpenAI Studio.
 
-1. On the **Overview** page for your Azure OpenAI resource, use the **Explore** button to open Azure OpenAI Studio in a new browser tab. Alternatively, navigate to [Azure OpenAI Studio](https://oai.azure.com/) directly.
+1. On the **Overview** page for your Azure OpenAI resource, click on the **Go to Azure OpenAI Studio** button to open Azure OpenAI Studio in a new browser tab. Alternatively, navigate to [Azure OpenAI Studio](https://oai.azure.com/) directly.
 
     When you first open Azure OpenAI Studio, it should look similar to this:
 
@@ -57,7 +66,7 @@ To experiment with natural language generation, you must first deploy a model.
 1. Create a new deployment with the following settings:
     - **Model**: gpt-35-turbo
     - **Model version**: Auto-update to default
-    - **Deployment name**: *A unique name for your model deployment*
+    - **Deployment name**: **model<inject key="DeploymentID" enableCopy="false" />**
 
 ### Task 4: Use the *Chat* playground to work with the model
 
@@ -70,7 +79,7 @@ Now that you have deployed a model, you can use it in the *Chat* playground to g
     ![Screenshot of the Chat playground in Azure OpenAI Studio.](./media/generative-ai/chat-playground.png)
 
 1. In the **Configuration** pane, ensure that your model deployment is selected.
-1. In the **Assistant setup** pane, select the **Default** system message template, and view the system message this template creates. The system message defines how the model will behave in your chat session.
+1. In the **Assistant setup** pane, select the **Default** system message template, and view the system message this template creates. The system message defines how the model will behave in your chat session. Click on **Save changes** on the top.
 1. In the **Chat session** section, enter the following user message.
 
     ```
