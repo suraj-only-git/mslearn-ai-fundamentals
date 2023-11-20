@@ -22,20 +22,26 @@ In this lab, you will perform:
 
 You can use Azure AI Vision's image analysis capabilities with an **Azure AI services** multi-service resource. If you haven't already done so, create an **Azure AI services** resource in your Azure subscription.
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with the Microsoft account associated with your Azure subscription.
+1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true)
 
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+    
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
+    
+1. Select **Yes** when asked for **Stay signed in**
+   
 1. Click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
    
     - **Subscription (1)**: Use the existing Azure subscription.
-    - **Resource group (2)**: Select **ODL-AI-900-03-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Resource group (2)**: **ODL-AI-900-03-<inject key="DeploymentID" enableCopy="false" />-02**
     - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
-    - **Name (4)**: Enter **AI-service<inject key="DeploymentID" enableCopy="false"/>**
+    - **Name (4)**: Enter **visionimageai<inject key="DeploymentID" enableCopy="false"/>**
     - **Pricing tier (5)**:Select **Standard S0**.
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
-     > -**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
 - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -58,8 +64,6 @@ Next, connect the Azure AI service resource you provisioned above to Vision Stud
 
     > **Note** : If your resource is not listed, you may need to **Refresh** the page.
 
-    ![The Select a resource to work with dialog is displayed with the cog-ms-learn-vision-SUFFIX Cognitive Services resource highlighted and checked. The Select as default resource button is highlighted.](./media/analyze-images-vision/default-resource.png)
-
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
 ### Task 3: Generate captions for an image
@@ -80,7 +84,7 @@ Let's look at the image captioning functionality of Azure AI Vision. Image capti
 
     ![An image of a parent using a cellphone camera to take a picture of a child in in a store](./media/analyze-images-vision/store-camera-1.jpg)
 
-1. Upload the **store-camera-1.jpg** image by dragging it to the **Drag and drop files here** box, or by browsing to it on your file system.
+1. Unzip the file and upload the **store-camera-1.jpg** image by dragging it to the **Drag and drop files here** box, or by browsing to it on your file system.
 
 1. Observe the generated caption text, visible in the **Detected attributes** panel to the right of the image.
 
