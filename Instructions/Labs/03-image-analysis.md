@@ -86,7 +86,7 @@ Let's look at the image captioning functionality of Azure AI Vision. Image capti
 
 1. On the **Getting started with Vision** landing page, select the **Image analysis** tab and then select the **Add captions to images** tile.
 
-    ![The image and its captions are displayed.](./media/lab3-8.png)
+    ![The image and its captions are displayed.](./media/update1.png)
 
 1. Under the **Try It Out** subheading, acknowledge the resource usage policy by reading and checking the box.  
 
@@ -104,7 +104,7 @@ Let's look at the image captioning functionality of Azure AI Vision. Image capti
 
 1. Next, use the same image to perform **Dense captioning**. Return to the **Vision Studio** home page, and as you did before, select the **Image analysis** tab, then select the **Dense captioning** tile.
 
-   ![The image and its captions are displayed.](./media/lab3-7.png)
+   ![The image and its captions are displayed.](./media/update2.png)
 
     The **Dense Captions** feature differs from the **Caption** capability in that it provides multiple human-readable captions for an image, one describing the image's content and others, each covering the essential objects detected in the picture. Each detected object includes a bounding box, which defines the pixel coordinates within the image associated with the object.
 
@@ -127,7 +127,7 @@ The next feature you will try is the **Extract Tags** functionality. Extract tag
 
 1. Return to the home page of Vision Studio, then select the **Extract common tags from images** tile under the **Image analysis** tab.
 
-   ![The image and its captions are displayed.](./media/lab3-10.png)
+   ![The image and its captions are displayed.](./media/update3.png)
 
 3. In the **Choose the model you want to try out**, leave **Prebuilt product vs. gap model** selected. In the **Choose your language**, select **English** or a language of your preference. Upload the **store-camera-2.jpg** image by dragging it to the **Drag and drop files here** box, or by browsing to it on your file system.
 
@@ -143,7 +143,7 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 
 1. Return to the home page of Vision Studio, then select the **Detect common objects in images** tile under the **Image analysis** tab.
 
-   ![The image and its captions are displayed.](./media/lab3-9.png)
+   ![The image and its captions are displayed.](./media/update4.png)
 
 1. In the **Choose the model you want to try out**, leave **Prebuilt product vs. gap model** selected.
 
