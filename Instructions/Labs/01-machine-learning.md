@@ -35,16 +35,16 @@ In this lab, you will perform:
   
 1. Create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
 
-    - **Subscription**: Use existing Azure subscription. **(1)**
-    - **Resource group**: Select **ODL-AI-900-01-<inject key="DeploymentID" enableCopy="false" />-02 (2)**
-    - **Workspace name**: Give name **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" /> (3)**
-    - **Region**: Select <inject key="location" enableCopy="false" /> **(4)**
-    - **Storage account**: Note the default new storage account that will be created for your workspace. **(5)**
-    - **Key vault**: Note the default new key vault that will be created for your workspace. **(6)**
-    - **Application insights**: Note the default new application insights resource that will be created for your workspace. **(7)**
-    - **Container registry**: None (one will be created automatically the first time you deploy a model to a container) **(8)**
+    - **Subscription**: Use existing Azure subscription. 
+    - **Resource group**: Select **ODL-AI-900-01-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Workspace name**: Give name **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" />**
+    - **Region**: Select <inject key="location" enableCopy="false" /> 
+    - **Storage account**: Note the default new storage account that will be created for your workspace. 
+    - **Key vault**: Note the default new key vault that will be created for your workspace. 
+    - **Application insights**: Note the default new application insights resource that will be created for your workspace. 
+    - **Container registry**: None (one will be created automatically the first time you deploy a model to a container) 
 
-1. Select **Review + create (9)**.
+1. Select **Review + create**.
     
 
 1. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
