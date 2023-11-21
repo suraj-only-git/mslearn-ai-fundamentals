@@ -17,8 +17,7 @@ In this lab, you will perform:
 
 ![](media/Module1.1.png)
 
-> **Note**
-> The goal of this exercise is to get a general sense of how Azure AI services are provisioned and used. Content Safety is used as an example, but you are not expected to gain a comprehensive knowledge of content safety in this exercise!
+> **Note:** The goal of this exercise is to get a general sense of how Azure AI services are provisioned and used. Content Safety is used as an example, but you are not expected to gain a comprehensive knowledge of content safety in this exercise!
 
 ## Exercise 1:  Explore the Content Safety Studio 
 
