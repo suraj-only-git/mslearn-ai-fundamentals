@@ -146,7 +146,6 @@ Automated machine learning enables you to try multiple algorithms and parameters
         - **Test dataset**: None
 
     **Compute**:
-
     - **Select compute type**: Serverless
     - **Virtual machine type**: CPU
     - **Virtual machine tier**: Dedicated
