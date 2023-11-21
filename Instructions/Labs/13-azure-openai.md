@@ -36,8 +36,8 @@ In this lab, you will perform:
 
     - **Subscription**: Select your **existing azure subscription**.
     - **Resource group**: Select **ODL-AI-900-13-<inject key="DeploymentID" enableCopy="false" />-02**
-    - **Region**: Select **<inject key="location" enableCopy="false"/>** 
-    - **Name**: **openai<inject key="DeploymentID" enableCopy="false" />**
+    - **Region**: Select **<inject key="location" enableCopy="false"/>**
+    - **Name**: Enter **openai<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: Standard S0
 
 2. Click **Next** twice and click on **Review and Create**. Click on **Create**.
