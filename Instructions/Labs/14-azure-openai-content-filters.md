@@ -15,6 +15,10 @@ In this lab, you will perform:
 
 ## Estimated timing: 30 minutes
 
+## Architecture Diagram
+
+ ![](media/lab14-arch.jpg)
+ 
 ## Exercise 1: Explore content filters in Azure OpenAI
 
 ### Task 1: Provision an Azure OpenAI resource
@@ -45,7 +49,7 @@ Now you're ready to deploy a model to use through the **Azure OpenAI Studio**. O
 
 1. On the **Overview** page for your Azure OpenAI resource, use the **Explore** button to open Azure OpenAI Studio in a new browser tab. Alternatively, navigate to [Azure OpenAI Studio](https://oai.azure.com/) directly.
 
-   ![](./media/generative-ai/ai-studio.png)
+   ![](./media/lab14-aistudio.png)
 
 3. In Azure OpenAI Studio, create a new deployment with the following settings:
     - **Model**: gpt-35-turbo
