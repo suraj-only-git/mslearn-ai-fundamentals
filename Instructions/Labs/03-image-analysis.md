@@ -70,6 +70,8 @@ Next, connect the Azure AI service resource you provisioned above to Vision Stud
 
 1. On the **Select a resource to work with** page, hover your mouse cursor over the resource you created above in the list and then check the box to the left of the resource name, then select **Select as default resource**.
 
+   ![The image and its captions are displayed.](./media/lab3-11.png)
+
     > **Note** : If your resource is not listed, you may need to **Refresh** the page.
 
 1. Close the settings page by selecting the "x" at the top right of the screen.
