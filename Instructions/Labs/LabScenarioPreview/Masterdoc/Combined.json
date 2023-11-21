@@ -1,0 +1,65 @@
+[
+    {
+      "Name": "AI 900 AI Fundamentals-Module-01-machine-learning",
+      "Language": "English",
+      "Files": [
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-01.md",
+          "Order": 1
+        },
+        {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-02.md",
+            "Order": 2
+        },
+        {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-03.md",
+            "Order": 3
+        },
+        {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-04.md",
+            "Order": 4
+        },
+        {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-05.md",
+            "Order": 5
+         },
+         {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-06.md",
+            "Order": 6
+          },
+          {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-07.md",
+            "Order": 7
+          },
+          {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-08.md",
+            "Order": 8
+          },
+           {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-09.md",
+            "Order": 9
+          },
+          {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-10.md",
+            "Order": 10
+          },
+          {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-11.md",
+            "Order": 11
+          },
+          {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-12.md",
+            "Order": 12
+          },
+          {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-13.md",
+            "Order": 13
+          },
+          {
+            "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-14.md",
+            "Order": 1
+          }
+
+      ]
+    }
+  ]
