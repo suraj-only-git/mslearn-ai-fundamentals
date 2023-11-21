@@ -82,7 +82,7 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. Now let's try with some of our own images. Select [**https://aka.ms/mslearn-detect-faces**](https://aka.ms/mslearn-detect-faces) to download **detect-faces.zip**. Then open the folder on your computer.
 
-1. Locate the file named **store-camera-1.jpg**; which contains the following image:
+1. Unzip the file and locate the file named **store-camera-1.jpg**; which contains the following image:
 
     ![An image of people in a store.](./media/create-face-solutions/store-camera-1.jpg)
 
