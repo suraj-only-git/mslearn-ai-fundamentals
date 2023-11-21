@@ -159,7 +159,7 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 
 1. Move the **Threshold value** slider until a value of 74 is displayed to the right of the slider. Observe what happens to the objects in the list. The threshold slider specifies that only objects identified with a confidence score or probability greater than the threshold should be displayed.
 
-     ![An image of person with a shopping basket in a supermarket](./media/lab3-6jpg)
+     ![An image of person with a shopping basket in a supermarket](./media/lab3-6.png)
 
 ## Learn more
 
