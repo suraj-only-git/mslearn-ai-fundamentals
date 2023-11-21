@@ -72,7 +72,7 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
     > **Note** : If your resource is not listed, you may need to **Refresh** the page.
 
-    ![The Select a resource to work with dialog is displayed with the cog-ms-learn-vision-SUFFIX Cognitive Services resource highlighted and checked. The Select as default resource button is highlighted.](./media/lab-5(4).png)
+    ![The Select a resource to work with dialog is displayed with the cog-ms-learn-vision-SUFFIX Cognitive Services resource highlighted and checked. The Select as default resource button is highlighted.](./media/text.png)
 
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
@@ -86,7 +86,7 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. Under the **Try It Out** subheading, acknowledge the resource usage policy by reading and checking the box.
 
-   ![An image of the text in the image outlined](media/lab-5(6).png)
+   ![An image of the text in the image outlined](media/text(2).png)
 
 1. Select [**https://aka.ms/mslearn-ocr-images**](https://aka.ms/mslearn-ocr-images) to download **ocr-images.zip**. Then open the folder.
 
