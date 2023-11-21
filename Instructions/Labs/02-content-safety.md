@@ -61,12 +61,12 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
    > **Note**: The **Directory** tab allows users to select different directories from which to create resources. You do not need to change its settings unless you wish to use a different directory. 
 
-1. On the *Create Content Safety* page in the [Azure Portal](https://portal.azure.com?auzre-portal=true), you need to configure several details to create your resource. Configure it with the following settings:
+1. On the Create Content Safety page in the [Azure Portal](https://portal.azure.com?auzre-portal=true), you need to configure several details to create your resource. Configure it with the following settings:
     - **Subscription (1)**: Use the existing Azure subscription.
     - **Resource group (2)**: Select **ODL-AI-900-02-<inject key="DeploymentID" enableCopy="false" />-02 (2)**
     - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
     - **Name (4)**: Enter **contentsafety<inject key="DeploymentID" enableCopy="false"/>**
-    - **Pricing tier (5)**:Select **Free F0** from the drop-down.
+    - **Pricing tier (5)**: Select **Free F0** from the drop-down.
     - Select **Review + Create (6)**
 
       ![](media/25.png)
