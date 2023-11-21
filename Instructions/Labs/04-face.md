@@ -17,6 +17,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
+![An image](media/lab-04.PNG)
 
 ## Exercise 1:  Detect faces in Vision Studio 
 
