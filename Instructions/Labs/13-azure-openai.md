@@ -14,7 +14,7 @@ In this lab, you will perform:
 - Use the *Chat* playground to work with the model
 - Use the *DALL-E* playground to generate images
 
-## Estimated timing: 30 minutes
+## Estimated timing: 45 minutes
 
 ## Exercise 1: Explore Azure OpenAI Service
 
