@@ -16,6 +16,10 @@ In this lab, you will perform:
 
 ## Estimated timing: 45 minutes
 
+# Architecture Diagram
+
+![An image](media/lab13.PNG)
+
 ## Exercise 1: Explore Azure OpenAI Service
 
 ### Task 1: Provision an Azure OpenAI resource

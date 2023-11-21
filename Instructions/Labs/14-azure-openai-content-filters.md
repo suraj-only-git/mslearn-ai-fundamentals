@@ -54,7 +54,7 @@ Now you're ready to deploy a model to use through the **Azure OpenAI Studio**. O
 
 > **Note**: Each Azure OpenAI model is optimized for a different balance of capabilities and performance. We'll use the **GPT 3.5 Turbo** model in this exercise, which is highly capable for natural language generation and chat scenarios.
 
-### Task 2: Generate natural language output
+### Task 3: Generate natural language output
 
 Let's see how the model behaves in a conversational interaction.
 
