@@ -16,6 +16,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
+ ![](media/lab01-arch.JPG)
 
 ## Exercise 1: Explore Automated Machine Learning in Azure Machine Learning
 
@@ -35,17 +36,18 @@ In this lab, you will perform:
   
 1. Create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
 
-    - **Subscription**: Use existing Azure subscription. 
-    - **Resource group**: Select **ODL-AI-900-01-<inject key="DeploymentID" enableCopy="false" />-02**
-    - **Workspace name**: Give name **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" />**
-    - **Region**: Select <inject key="location" enableCopy="false" /> 
-    - **Storage account**: Note the default new storage account that will be created for your workspace. 
-    - **Key vault**: Note the default new key vault that will be created for your workspace. 
-    - **Application insights**: Note the default new application insights resource that will be created for your workspace. 
-    - **Container registry**: None (one will be created automatically the first time you deploy a model to a container) 
+    - **Subscription**: Use existing Azure subscription. **(1)**
+    - **Resource group**: Select **ODL-AI-900-01-<inject key="DeploymentID" enableCopy="false" />-02 (2)**
+    - **Workspace name**: Give name **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" /> (3)**
+    - **Region**: Select <inject key="location" enableCopy="false" /> **(4)**
+    - **Storage account**: Note the default new storage account that will be created for your workspace. **(5)**
+    - **Key vault**: Note the default new key vault that will be created for your workspace. **(6)**
+    - **Application insights**: Note the default new application insights resource that will be created for your workspace. **(7)**
+    - **Container registry**: None (one will be created automatically the first time you deploy a model to a container) **(8)**
 
-1. Select **Review + create**.
-    
+1. Select **Review + create (9)**.
+
+      ![](media/lab01-ML.jpg)
 
 1. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
    
@@ -70,12 +72,12 @@ Some features of Azure Machine Learning are in preview, and need to be explicitl
 
 1. In Azure Machine Learning Studio, click on **manage preview features** (the loud speaker icon - &#128363;).
 
-    ![A screenshot of the manage preview features button on the menu.](./media/use-automated-machine-learning/severless-compute-1.png)
+     ![](media/lab01-features.jpg)
 
 1. Enable the following preview feature:
 
     - *Guided experience for submitting training jobs with serverless compute*
-      ![Picture1](media/AI-9000module01-01.jpg)
+       ![](media/lab01-enable.jpg)
 
 ### Task 2: Use automated machine learning to train a model
 
@@ -84,7 +86,8 @@ Automated machine learning enables you to try multiple algorithms and parameters
 > **Citation**: *The data used in this exercise is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement)*.
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Automated ML** page (under **Authoring**).
- ![Picture1](media/AI-900-Module01-02.jpg)   
+
+  ![](media/lab01-mljob.jpg)  
 
 1. Create a new Automated ML job with the following settings, using **Next** as required to progress through the user interface:
 
@@ -161,7 +164,8 @@ Automated machine learning enables you to try multiple algorithms and parameters
 When the automated machine learning job has completed, you can review the best model it trained.
 
 1. On the **Overview** tab of the automated machine learning job, note the best model summary.
-    ![Screenshot of the best model summary of the automated machine learning job with a box around the algorithm name.](./media/use-automated-machine-learning/complete-run.png)
+
+    ![](media/lab01-automl.jpg)
 
     > **Note**
     > You may see a message under the status "Warning: User specified exit score reached...". This is an expected message. Please continue to the next step.
@@ -187,7 +191,7 @@ When the automated machine learning job has completed, you can review the best m
     - **Compute type**: Azure Container Instance
     - **Enable authentication**: *Selected*
 
-    ![Picture1](media/AI-900-modulet3-01.jpg)
+     ![](media/lab01-deploy.jpg)
 
 1. Wait for the deployment to start - this may take a few seconds. The **Deploy status** for the **predict-rentals** endpoint will be indicated in the main part of the page as *Running*.
 1. Wait for the **Deploy status** to change to *Succeeded*. This may take 5-10 minutes.
