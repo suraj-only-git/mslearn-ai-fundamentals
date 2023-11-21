@@ -12,7 +12,6 @@ In this lab, you will perform:
 - Connect Azure AI Service Resource to Vision Studio
 - Detect faces in the Vision Studio
 
-  
 ## Estimated timing: 30 minutes
 
 ## Architecture Diagram
@@ -67,8 +66,8 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
     > **Note** : If your resource is not listed, you may need to **Refresh** the page.
 
-    ![The Select a resource to work with dialog is displayed with the cog-ms-learn-vision-SUFFIX Cognitive Services resource highlighted and checked. The Select as default resource button is highlighted.](./media/analyze-images-vision/default-resource.png)
-
+    ![The image and its captions are displayed.](./media/lab4-3.png)
+   
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
 ### Task 3:   Detect faces in the Vision Studio 
@@ -77,7 +76,11 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. On the **Getting started with Vision** landing page, select the **Face** tab and then select the **Detect Faces in an image** tile.
 
-1. Under the **Try It Out** subheading, acknowledge the resource usage policy by reading and checking the box.  
+   ![The image and its captions are displayed.](./media/lab4-1.png)
+
+1. Under the **Try It Out** subheading, acknowledge the resource usage policy by reading and checking the box.
+
+   ![The image and its captions are displayed.](./media/lab4-4.png)
 
 1. Select each of the sample images and observe the face detection data that is returned.
 
@@ -88,6 +91,8 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
     ![An image of people in a store.](./media/create-face-solutions/store-camera-1.jpg)
 
 1. Upload **store-camera-1.jpg** and review the face detection details that are returned.
+
+   ![The image and its captions are displayed.](./media/lab4-2.png)
 
 1. Locate the file named **store-camera-2.jpg**; which contains the following image:
 

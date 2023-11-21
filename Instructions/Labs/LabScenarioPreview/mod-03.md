@@ -17,3 +17,7 @@ In this lab, you will perform:
 
 ## Solution Architecture
 
+![](../media/lab-03.PNG)
+
+Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/375c6a6f-7f97-4f82-8bba-99c74dfa1ac8)
+if you want to go through detailed guide prior to launching lab environment.  
