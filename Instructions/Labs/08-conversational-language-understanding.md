@@ -205,6 +205,8 @@ To use your trained model in a client application, you must deploy it as an endp
     > **Tip**: Note your *deployment name*, you will use it later. 
 
    ![Select add under Intents on the Build Schema pane.](media/lab8(14).png)
+
+   ![Select add under Intents on the Build Schema pane.](media/lab8(15).png)
    
 1. When the model is deployed, select **Testing deployments** on the left-hand side of the page, and then select your deployed model under **Deployment name**.
 
@@ -212,8 +214,6 @@ To use your trained model in a client application, you must deploy it as an endp
 
     `switch the light on`
 
-   ![Select add under Intents on the Build Schema pane.](media/lab8(15).png)
-   
     Review the result that is returned, noting that it includes the predicted intent (which should be **switch_on**) and the predicted entity (**device**) with confidence scores that indicates the probability the model calculated for the predicted intent and entity. The JSON tab shows the comparative confidence for each potential intent (the one with the highest confidence score is the predicted intent)
 
 1. Clear the text box and test the model with the following utterances under *Enter your own text, or upload a text document*:
