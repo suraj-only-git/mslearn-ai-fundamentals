@@ -11,6 +11,8 @@ In this lab, you will perform:
   - Create an *Azure AI services* resource
   - Connect Azure AI Service Resource to Vision Studio
   - Image Analysis with Azure AI Vision Services
+  - Tagging images
+  - Object detection
 
 ## Estimated timing: 60 minutes
 
@@ -18,7 +20,7 @@ In this lab, you will perform:
 
 ## Exercise 1: Analyze images in Vision Studio
 
-### Task 1:Create an *Azure AI services* resource
+### Task 1: Create an *Azure AI services* resource
 
 You can use Azure AI Vision's image analysis capabilities with an **Azure AI services** multi-service resource. If you haven't already done so, create an **Azure AI services** resource in your Azure subscription.
 
@@ -107,7 +109,7 @@ Let's look at the image captioning functionality of Azure AI Vision. Image capti
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## Task: 4 Tagging images
+## Task 4: Tagging images
 
 The next feature you will try is the **Extract Tags** functionality. Extract tags is based on thousands of recognizable objects, including living beings, scenery, and actions.
 
@@ -151,6 +153,6 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 To learn more about what you can do with this service, see the [Azure AI Vision page](https://learn.microsoft.com/azure/ai-services/computer-vision/overview).
 
 ### Review
-In this lab, you have created an Azure AI Service resource, connected it to the vision studio and Image Analysis in the studio.
-  
+In this lab, you have created an Azure AI Service resource, connected it to the vision studio, performed image analysis, tagging images and detected objects in the studio
+
 ## You have successfully completed this lab.
