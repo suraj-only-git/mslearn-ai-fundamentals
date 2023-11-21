@@ -18,6 +18,8 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
+![An image](media/lab-03.PNG)
+
 ## Exercise 1: Analyze images in Vision Studio
 
 ### Task 1: Create an *Azure AI services* resource
