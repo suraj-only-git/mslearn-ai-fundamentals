@@ -21,9 +21,11 @@ In this lab, you will perform:
 ## Estimated timing: 45 minutes
 
 # Architecture Diagram
+
 ![Creating a Language Service resource with custom question answering enabled.](media/arch7.PNG)
 
 # Exercise 1: Use Question Answering model with Language Studio
+
 ## Task 1: Create a *Language* resource
 
 To use question answering, you need a **Language** resource.
@@ -83,9 +85,13 @@ To use question answering, you need a **Language** resource.
     - **Resource name**: *select the Language service resource you just created*
 
     If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
-    1. On the bar at the top if the page, select **Settings (&#9881;)**.      
+   
+    1. On the bar at the top if the page, select **Settings (&#9881;)**.
+           
     1. On the **Settings** page, view the **Resources** tab.
+       
     1. Select the language resource you just created, and select **Switch resource**.
+       
     1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
 1. At the top of the Language Studio portal, in the **Create new** menu, select **Custom question answering**.
@@ -103,6 +109,7 @@ To use question answering, you need a **Language** resource.
     - **Description**: `A simple knowledge base`
     - **Source language**: English
     - **Default answer when no answer is returned**: `No answer found`
+      
 1. Click **Next** page, select **Create project**.
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(5).png)

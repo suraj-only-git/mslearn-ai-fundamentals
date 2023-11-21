@@ -15,6 +15,10 @@ In this lab, you will perform:
 
 ## Estimated timing: 30 minutes
 
+## Architecture Diagram
+
+ ![](media/lab14-arch.jpg)
+ 
 ## Exercise 1: Explore content filters in Azure OpenAI
 
 ### Task 1: Provision an Azure OpenAI resource
@@ -38,6 +42,13 @@ In this lab, you will perform:
 2. Click **Next** twice and click on **Review and Create**. Click on **Create**.
 
 3. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
+   
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 2: Deploy a model
 
@@ -45,7 +56,7 @@ Now you're ready to deploy a model to use through the **Azure OpenAI Studio**. O
 
 1. On the **Overview** page for your Azure OpenAI resource, use the **Explore** button to open Azure OpenAI Studio in a new browser tab. Alternatively, navigate to [Azure OpenAI Studio](https://oai.azure.com/) directly.
 
-   ![](./media/generative-ai/ai-studio.png)
+   ![](./media/lab14-aistudio.png)
 
 3. In Azure OpenAI Studio, create a new deployment with the following settings:
     - **Model**: gpt-35-turbo
@@ -54,6 +65,12 @@ Now you're ready to deploy a model to use through the **Azure OpenAI Studio**. O
 
 > **Note**: Each Azure OpenAI model is optimized for a different balance of capabilities and performance. We'll use the **GPT 3.5 Turbo** model in this exercise, which is highly capable for natural language generation and chat scenarios.
 
+ > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 ### Task 3: Generate natural language output
 
 Let's see how the model behaves in a conversational interaction.

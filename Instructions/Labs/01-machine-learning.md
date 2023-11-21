@@ -26,15 +26,15 @@ In this lab, you will perform:
 
     ![Picture1](media/ai900mod1img1.png)
 
-1. In the Marketplace page search for **Azure Machine Learning** and Select **Azure Machine Learning**.
+2. In the Marketplace page search for **Azure Machine Learning** and Select **Azure Machine Learning**.
  
    ![Picture1](media/ai900mod1cimg1.png)
 
-1. On **Azure Machine Learning** Page Click on **Create**.
+3. On **Azure Machine Learning** Page Click on **Create**.
 
    ![Picture1](media/ai900mod1cimg2.png)
   
-1. Create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
+4. Create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
 
     - **Subscription**: Use existing Azure subscription. **(1)**
     - **Resource group**: Select **ODL-AI-900-01-<inject key="DeploymentID" enableCopy="false" />-02 (2)**
@@ -45,25 +45,24 @@ In this lab, you will perform:
     - **Application insights**: Note the default new application insights resource that will be created for your workspace. **(7)**
     - **Container registry**: None (one will be created automatically the first time you deploy a model to a container) **(8)**
 
-1. Select **Review + create (9)**.
+5. Select **Review + create (9)**.
 
       ![](media/lab01-ML.jpg)
 
-1. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
+6. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
    
-1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your workspace resource.
-
+7. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your workspace resource.
      
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-1. Select **Launch studio** (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign into Azure Machine Learning studio using your Microsoft account). Close any messages that are displayed.
+8. Select **Launch studio** (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign into Azure Machine Learning studio using your Microsoft account). Close any messages that are displayed.
 
-1. In Azure Machine Learning studio, you should see your newly created workspace. If not, select **All workspaces** in the left-hand menu and then select the workspace you just created.
+9. In Azure Machine Learning studio, you should see your newly created workspace. If not, select **All workspaces** in the left-hand menu and then select the workspace you just created.
     ![Picture1](media/ai900mod1cimg4.png)
 
 ## Enable preview features
@@ -76,8 +75,7 @@ Some features of Azure Machine Learning are in preview, and need to be explicitl
 
 1. Enable the following preview feature:
 
-    - *Guided experience for submitting training jobs with serverless compute*
-       ![](media/lab01-enable.jpg)
+     ![](media/lab01-enable.jpg)
 
 ### Task 2: Use automated machine learning to train a model
 
@@ -87,7 +85,7 @@ Automated machine learning enables you to try multiple algorithms and parameters
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Automated ML** page (under **Authoring**).
 
-  ![](media/lab01-mljob.jpg)  
+   ![](media/lab01-mljob.jpg)  
 
 1. Create a new Automated ML job with the following settings, using **Next** as required to progress through the user interface:
 
@@ -148,7 +146,6 @@ Automated machine learning enables you to try multiple algorithms and parameters
         - **Test dataset**: None
 
     **Compute**:
-
     - **Select compute type**: Serverless
     - **Virtual machine type**: CPU
     - **Virtual machine tier**: Dedicated
