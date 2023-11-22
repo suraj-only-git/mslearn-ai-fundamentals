@@ -20,13 +20,13 @@ In this lab, you will perform:
 
 ## Estimated timing: 45 minutes
 
-# Architecture Diagram
+## Architecture Diagram
 
 ![Creating a Language Service resource with custom question answering enabled.](media/arch7.PNG)
 
-# Exercise 1: Use Question Answering model with Language Studio
+## Exercise 1: Use Question Answering model with Language Studio
 
-## Task 1: Create a *Language* resource
+### Task 1: Create a *Language* resource
 
 To use question answering, you need a **Language** resource.
 
@@ -64,7 +64,7 @@ To use question answering, you need a **Language** resource.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## Task 2: Create a new project
+### Task 2: Create a new project
 
 1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com?azure-portal=true) and sign in using the Microsoft account associated with your Azure subscription.
 
@@ -126,7 +126,7 @@ To use question answering, you need a **Language** resource.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## Task 3: Edit the knowledge base
+### Task 3: Edit the knowledge base
 
 Your knowledge base is based on the details in the FAQ document and some pre-defined responses. You can add custom question-and-answer pairs to supplement these.
 
@@ -143,7 +143,7 @@ Your knowledge base is based on the details in the FAQ document and some pre-def
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(9).png)
 
-## Task 4: Train and test the knowledge base
+### Task 4: Train and test the knowledge base
 
 Now that you have a knowledge base, you can test it.
 
@@ -163,7 +163,7 @@ Now that you have a knowledge base, you can test it.
 1. Try another question, such as `How can I cancel a reservation?`
 1. When you're done testing the knowledge base, select **Test** to close the test pane.
 
-## Task 5: Create a bot for the knowledge base
+### Task 5: Create a bot for the knowledge base
 
 The knowledge base provides a back-end service that client applications can use to answer questions through some sort of user interface. Commonly, these client applications are bots. To make the knowledge base available to a bot, you must publish it as a service that can be accessed over HTTP. You can then use the Azure Bot Service to create and host a bot that uses the knowledge base to answer user questions.
 
