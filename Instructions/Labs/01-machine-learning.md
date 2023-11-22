@@ -173,7 +173,7 @@ When the automated machine learning job has completed, you can review the best m
     - **Description**: Predict cycle rentals **(2)**
     - **Compute type**: Azure Container Instance **(3)**
     - **Enable authentication**: *Selected* **(4)**
-    - Select **Deploy (5)**
+    - Select **Deploy**
 
      ![](media/lab1-4.png)
 
