@@ -42,7 +42,7 @@ You can use Azure AI Document Intelligence by creating either a *Document Intell
 1. On the Create resource dialog box, enter the following:
     - **Subscription (1)**: Select your **existing azure subscription**.
     - **Resource group (2)**: Select **AI-900-Module-10-<inject key="DeploymentID" enableCopy="false" />**
-    - **New resource namem(3)**:  Enter **intelligence<inject key="DeploymentID" enableCopy="false" />**
+    - **New resource name(3)**:  Enter **intelligence<inject key="DeploymentID" enableCopy="false" />**
     - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
     - **Pricing tier(5)**: *Free FO (if available, otherwise select Standard SO)*.
    - Select **Continue (6)** 
@@ -104,3 +104,4 @@ This exercise demonstrated only some of the capabilities of the AI Document Inte
 
 In this exercise you have used the Document Intelligence Studio to create a Document Intelligence resource. You then used the service to analyze a receipt. From the results that were returned, you saw how Document Intelligence was able to identify specific fields, enabling data from everyday documents to be more easily processed. Before you close Document Intelligence Studio, why not try some of the sample receipts, including those in different languages?
 
+## You have successfully completed this lab.
