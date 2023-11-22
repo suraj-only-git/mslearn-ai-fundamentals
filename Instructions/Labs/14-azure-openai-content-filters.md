@@ -17,7 +17,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
- ![](media/LAB14.PNG)
+ ![](media/fourteen.png)
  
 ## Exercise 1: Explore content filters in Azure OpenAI
 
