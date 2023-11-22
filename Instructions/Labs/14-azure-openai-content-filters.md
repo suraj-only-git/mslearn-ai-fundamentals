@@ -23,15 +23,7 @@ In this lab, you will perform:
 
 ### Task 1: Provision an Azure OpenAI resource
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true)
-
-    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-    
-    - **Password:** <inject key="AzureAdUserPassword"></inject>
-    
-1. Select **Yes** when asked for **Stay signed in**
-
-1. Search for **Azure OpenAI** and click on **Create** resource with the following settings:
+1. In azure portal, search for **Azure OpenAI** and click on **Create** resource with the following settings:
 
     - **Subscription**: Select your **existing azure subscription**.
     - **Resource group**: Select **ODL-AI-900-14-<inject key="Deployment-id" enableCopy="false" />-02**
