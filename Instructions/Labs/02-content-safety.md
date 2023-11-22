@@ -63,7 +63,7 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 1. On the Create Content Safety page in the [Azure Portal](https://portal.azure.com?auzre-portal=true), you need to configure several details to create your resource. Configure it with the following settings:
     - **Subscription (1)**: Use the existing Azure subscription.
-    - **Resource group (2)**: Select **ODL-AI-900-02-<inject key="DeploymentID" enableCopy="false" />-02 (2)**
+    - **Resource group (2)**: Select **AI-900-Module-02-<inject key="DeploymentID" enableCopy="false" />**
     - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
     - **Name (4)**: Enter **contentsafety<inject key="DeploymentID" enableCopy="false"/>**
     - **Pricing tier (5)**: Select **Free F0** from the drop-down.
@@ -75,11 +75,12 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
    *Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned in particular is a single-service Content Safety service resource.*
 
-   > - **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 1. When the deployment is complete, open up a new tab and return to the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). 
 
