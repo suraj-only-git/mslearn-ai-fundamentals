@@ -75,7 +75,7 @@ Then select **Done**.
 
 1. On the **Welcome to Language Studio** landing page, select the **Classify text** tab, then select the **Analyze sentiment and mine opinions** tile.
 
-   ![An image of the text in the image outlined](media/lab-6(6).png)
+   ![An image of the text in the image outlined](media/lab-6new.png)
 
 1. Under *Select text language*, select **English**.
 
