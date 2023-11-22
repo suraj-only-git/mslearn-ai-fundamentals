@@ -88,9 +88,9 @@ In this exercise, you will create an AI Speech resource, unless you already have
   
 ## Learn more
 
-This exercise demonstrated only some of the capabilities of the Speech service. To learn more about what you can do with this service, see the [Speech page](https://azure.microsoft.com/services/cognitive-services/speech-services).
+This exercise demonstrated only some of the capabilities of the speech service. To learn more about what you can do with this service, see the [Speech page](https://azure.microsoft.com/services/cognitive-services/speech-services).
 
 ### Review
-In this exercise you created an AI Speech resource in Speech Studio. You then used the Real-time speech to text service to transcribe an audio recording. You were able to see the text transcription being generated as the audio file was played.
+In this exercise you created an AI Speech resource in Speech Studio. You then use the Real-time speech to text service to transcribe an audio recording. You were able to see the text transcription being generated as the audio file was played.
   
 ## You have successfully completed this lab.
