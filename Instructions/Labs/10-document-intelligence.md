@@ -10,7 +10,7 @@ How does Document Intelligence build upon optical character recognition (OCR)? W
 > **NOTE**
 > Azure AI Document Intelligence is the new name for Azure Form Recognizer. You may still see Azure Form Recognizer in the Azure portal or Document Intelligence Studio.
 
-# Lab objectives
+## Lab objectives
 
 In this lab, you will perform:
 
