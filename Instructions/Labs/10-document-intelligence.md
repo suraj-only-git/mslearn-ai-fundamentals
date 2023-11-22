@@ -7,10 +7,10 @@ In this exercise, you'll take a look at a prebuilt model in Document Intelligenc
 
 How does Document Intelligence build upon optical character recognition (OCR)? While OCR can read printed or handwritten documents, OCR extracts text in an unstructured format which is difficult to store in a database or analyze. Document intelligence makes sense of the unstructured data by capturing the structure of the text, such as key/value pairs and information in tables. 
 
-> **NOTE**
+> **Note:**
 > Azure AI Document Intelligence is the new name for Azure Form Recognizer. You may still see Azure Form Recognizer in the Azure portal or Document Intelligence Studio.
 
-# Lab objectives
+## Lab objectives
 
 In this lab, you will perform:
 
@@ -42,7 +42,7 @@ You can use Azure AI Document Intelligence by creating either a *Document Intell
 1. On the Create resource dialog box, enter the following:
     - **Subscription (1)**: Select your **existing azure subscription**.
     - **Resource group (2)**: Select **AI-900-Module-10-<inject key="DeploymentID" enableCopy="false" />**
-    - **New resource namem(3)**:  Enter **intelligence<inject key="DeploymentID" enableCopy="false" />**
+    - **New resource name(3)**:  Enter **intelligence<inject key="DeploymentID" enableCopy="false" />**
     - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
     - **Pricing tier(5)**: *Free FO (if available, otherwise select Standard SO)*.
    - Select **Continue (6)** 
@@ -53,8 +53,7 @@ You can use Azure AI Document Intelligence by creating either a *Document Intell
 
    ![](media/lab10-06.png).
 
-    >**Note**
-    > If your resource is not yet displayed, you may need to **Refresh** the page.
+    >**Note:** If your resource is not yet displayed, you may need to **Refresh** the page.
 
 Keep Document Intelligence Studio open.
 
@@ -103,5 +102,6 @@ This exercise demonstrated only some of the capabilities of the AI Document Inte
 
 ## Review
 
- In this exercise you have used the Document Intelligence Studio to create a Document Intelligence resource. You then used the service to analyze a receipt. From the results that were returned, you saw how Document Intelligence was able to identify specific fields, enabling data from everyday documents to be more easily processed. Before you close Document Intelligence Studio, why not try some of the sample receipts, including those in different languages?
+In this exercise you have used the Document Intelligence Studio to create a Document Intelligence resource. You then used the service to analyze a receipt. From the results that were returned, you saw how Document Intelligence was able to identify specific fields, enabling data from everyday documents to be more easily processed. Before you close Document Intelligence Studio, why not try some of the sample receipts, including those in different languages?
 
+## You have successfully completed this lab.

@@ -16,12 +16,12 @@ In this lab, you will perform:
 
 ## Estimated timing: 30 minutes
 
-# Architecture Diagram
+## Architecture Diagram
 
 ![An image](media/arch5.PNG)
 
-# Exercise 1: Read text in Vision Studio
-## Task 1: Create an *Azure AI services* resource
+## Exercise 1: Read text in Vision Studio
+### Task 1: Create an *Azure AI services* resource
 
 You can use Azure AI Vision's OCR capabilities with an **Azure AI services** multi-service resource. If you haven't already done so, create an **Azure AI services** resource in your Azure subscription.
 
@@ -39,7 +39,7 @@ You can use Azure AI Vision's OCR capabilities with an **Azure AI services** mul
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
-## Task 2: Connect your Azure AI service resource to Vision Studio
+### Task 2: Connect your Azure AI service resource to Vision Studio
 
 Next, connect the Azure AI services resource you provisioned above to Vision Studio.
 
@@ -61,7 +61,7 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
-## Task 3: Extract text from images in the Vision Studio
+### Task 3: Extract text from images in the Vision Studio
     
 1. In a web browser, navigate to [Vision Studio](https://portal.vision.cognitive.azure.com?azure-portal=true).
 

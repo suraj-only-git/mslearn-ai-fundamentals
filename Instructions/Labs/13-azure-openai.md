@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 ## Estimated timing: 45 minutes
 
-# Architecture Diagram
+## Architecture Diagram
 
 ![An image](media/lab13.PNG)
 
@@ -24,15 +24,7 @@ In this lab, you will perform:
 
 ### Task 1: Provision an Azure OpenAI resource
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true)
-
-    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-    
-    - **Password:** <inject key="AzureAdUserPassword"></inject>
-    
-1. Select **Yes** when asked for **Stay signed in**
-
-1. Search for **Azure OpenAI** and click on **Create** resource with the following settings:
+1. In azure portal, search for **Azure OpenAI** and click on **Create** resource with the following settings:
 
     - **Subscription**: Select your **existing azure subscription**.
     - **Resource group**: Select **AI-900-Module-13-<inject key="DeploymentID" enableCopy="false" />**
@@ -52,7 +44,7 @@ You can deploy, manage, and explore models in your Azure OpenAI Service by using
 
     When you first open Azure OpenAI Studio, it should look similar to this:
 
-    ![Screenshot of Azure OpenAI Studio.](./media/generative-ai/ai-studio.png)
+    ![An image](media/lab13-1.png)
 
 1. View the pages available in the pane on the left. You can always return to the home page at the top. Additionally, OpenAI Studio provides multiple pages where you can:
     - Experiment with models in a *playground*.
@@ -114,7 +106,7 @@ In addition to language generation models, Azure OpenAI Service supports the DAL
 
 1. Select **Generate** and view the results, which should consist of an image based on the description you provided in the prompt, similar to this:
 
-    ![Screenshot of the DALL-E playgrund in Azure OpenAI Studio.](./media/generative-ai/dall-e-playground.png)
+    ![Screenshot of the DALL-E playground in Azure OpenAI Studio.](./media/generative-ai/dall-e-playground.png)
 
 1. Generate a second image by modifying the prompt to:
 

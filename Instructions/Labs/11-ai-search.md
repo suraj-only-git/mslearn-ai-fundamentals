@@ -19,7 +19,7 @@ In this lab you will:
 
   ![](media/Module0005.png)
 
- ## Pre-requisites Required
+## Pre-requisites Required
 
 The solution you'll create for Fourth Coffee requires the following resources in your Azure subscription:
 
@@ -197,11 +197,11 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
 
    ![Screenshot that shows the import data wizard.](media/lab11-19.png)
 
-1. On the **Overview** page, select **Import data**.
+2. On the **Overview** page, select **Import data**.
 
     ![Screenshot that shows the import data wizard.](media/lab11-20.png)
 
-1. On the **Connect to your data** page, in the **Data Source** list, select **Azure Blob Storage (1)**. Complete the data store details with the following values:
+3. On the **Connect to your data** page, in the **Data Source** list, select **Azure Blob Storage (1)**. Complete the data store details with the following values:
     - **Data Source (2)**: Azure Blob Storage
     - **Data source name (3)**: coffee-customer-data
     - **Data to extract (4)**: Content and metadata
@@ -219,15 +219,15 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
     - **Blob folder (9)**: *Leave this blank*.
     - **Description (10)**: Reviews for Fourth Coffee shops.
 
-1. Select **Next: Add cognitive skills (Optional) (11)**.
+4. Select **Next: Add cognitive skills (Optional) (11)**.
 
    ![Picture1](media/lab11-23.png)
 
-1. In the **Attach Cognitive Services (1)** section, select your **aiservice<inject key="DeploymentID" enableCopy="false" /> (2)** Azure AI services resource.  
+5. In the **Attach Cognitive Services (1)** section, select your **aiservice<inject key="DeploymentID" enableCopy="false" /> (2)** Azure AI services resource.  
 
    ![Picture1](media/lab11-24.png)
 
-1. In the **Add enrichments (1)** section:
+6. In the **Add enrichments (1)** section:
     - Change the **Skillset name** to **coffee-skillset (2)**.
     - Select the checkbox **Enable OCR and merge all text into merged_content field (3)**.
         > **Note**
@@ -250,19 +250,19 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
 
         ![Picture1](media/lab11-26.png)
 
-1. Under **Save enrichments to a knowledge store (1)**, If a warning asking for a **Storage Account Connection String (2)** appears.
+7. Under **Save enrichments to a knowledge store (1)**, If a warning asking for a **Storage Account Connection String (2)** appears.
     
-    > ![Screenshot that shows the Storage account connection screen warning with 'Choose an existing connection' selected.](media/lab11-27.png)
+   ![Screenshot that shows the Storage account connection screen warning with 'Choose an existing connection' selected.](media/lab11-27.png)
     
-1. Select **Choose an existing connection**. Choose the storage account **cognitivestorage<inject key="DeploymentID" enableCopy="false" /> (1)** you created earlier. Click on **+ Container (2)** to create a new container called **knowledge-store (3)** with the privacy level set to **Private (4)**, and select **Create (5)**.
+8. Select **Choose an existing connection**. Choose the storage account **cognitivestorage<inject key="DeploymentID" enableCopy="false" /> (1)** you created earlier. Click on **+ Container (2)** to create a new container called **knowledge-store (3)** with the privacy level set to **Private (4)**, and select **Create (5)**.
 
    ![Picture1](media/lab11-28.png)
 
-1. Select the **knowledge-store (1)** container, and then click **Select (2)** at the bottom of the screen.
+9. Select the **knowledge-store (1)** container, and then click **Select (2)** at the bottom of the screen.
 
     ![Picture1](media/lab11-29.png)
 
-1. Under **Save enrichments to a knowledge store**, Select:
+10. Under **Save enrichments to a knowledge store**, Select:
     - Image projections
     - Documents
     - Pages
@@ -273,13 +273,13 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
 
     ![Picture1](media/lab11-30.png)
 
-1. Select **Azure blob projections: Document**. A setting for *Container name* with the *knowledge-store* container auto-populated displays. Don't change the container name.
+11. Select **Azure blob projections: Document**. A setting for *Container name* with the *knowledge-store* container auto-populated displays. Don't change the container name.
 
     ![Picture1](media/lab11-31.png)
 
-1. Select **Next: Customize target index**.
+12. Select **Next: Customize target index**.
 
-1. On the **Customize target index** page, follow the following steps:
+13. On the **Customize target index** page, follow the following steps:
 
     -  Change the **Index name** to **coffee-index (1)**.
     - Ensure that the **Key** is set to **metadata_storage_path (2)**.
@@ -290,7 +290,7 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
 
     ![](media/lab11-32.png)
 
-1. On the **Create an index** page, follow the following steps:
+14. On the **Create an index** page, follow the following steps:
 
 - Change the **Indexer name** to **coffee-indexer (1)**.
 - Leave the **Schedule** set to **Once (2)**.
@@ -302,11 +302,11 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
 
       ![Picture1](media/lab11-33.png)
 
-1. In the bottom half of the **Overview** page for your Azure Cognitive Search resource, select the **Indexers (1)** tab. This tab shows the newly created **coffee-indexer (2)**. Wait a minute, and select **&orarr; Refresh** until the **Status** indicates **success**.
+15. In the bottom half of the **Overview** page for your Azure Cognitive Search resource, select the **Indexers (1)** tab. This tab shows the newly created **coffee-indexer (2)**. Wait a minute, and select **&orarr; Refresh** until the **Status** indicates **success**.
 
      ![Picture1](media/lab11-34.png)
 
-1. Select the indexer name to see more details.
+16. Select the indexer name to see more details.
 
     ![Screenshot that shows the coffee-indexer Indexer successfully created.](media/lab11-35.png)
 
