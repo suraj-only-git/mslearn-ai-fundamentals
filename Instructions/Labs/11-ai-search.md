@@ -138,7 +138,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
     - **Subscription (1)**: Select your **existing azure subscription**.
     - **Resource group (2)**: Select **AI-900-Module-11-<inject key="DeploymentID" enableCopy="false" />**
-    - **Storage account name (3)**: Enter **cognitivestorage<inject key="DeploymentID" enableCopy="false" />**.
+    - **Storage account name (3)**: Enter **cognitivestorage<inject key="DeploymentID" enableCopy="false" />**
     - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
     - **Performance (5)**: Standard
     - **Redundancy (6)**: Locally redundant storage (LRS)
