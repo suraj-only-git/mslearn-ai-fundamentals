@@ -114,7 +114,7 @@ In addition to language generation models, Azure OpenAI Service supports the DAL
 
 1. Select **Generate** and view the results, which should consist of an image based on the description you provided in the prompt, similar to this:
 
-    ![Screenshot of the DALL-E playgrund in Azure OpenAI Studio.](./media/generative-ai/dall-e-playground.png)
+    ![Screenshot of the DALL-E playground in Azure OpenAI Studio.](./media/generative-ai/dall-e-playground.png)
 
 1. Generate a second image by modifying the prompt to:
 
