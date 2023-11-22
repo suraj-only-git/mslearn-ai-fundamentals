@@ -48,7 +48,7 @@ Now you're ready to deploy a model to use through the **Azure OpenAI Studio**. O
 
 1. On the **Overview** page for your Azure OpenAI resource, use the **Explore** button to open Azure OpenAI Studio in a new browser tab. Alternatively, navigate to [Azure OpenAI Studio](https://oai.azure.com/) directly.
 
-   ![](./media/lab14-aistudio.png)
+   ![](./media/lab13-1.png)
 
 3. In Azure OpenAI Studio, create a new deployment with the following settings:
     - **Model**: gpt-35-turbo
