@@ -20,7 +20,7 @@ In this lab, you will perform:
 
 ## Estimated timing: 30 minutes
 
-# Architecture Diagram
+## Architecture Diagram
 ![An image of the text in the image outlined](media/arch6.PNG)
 
 # Exercise 1: Analyze text with Language Studio
