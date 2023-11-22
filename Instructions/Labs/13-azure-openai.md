@@ -57,12 +57,14 @@ To experiment with natural language generation, you must first deploy a model.
 1. On the **Models** page view the available models in your Azure OpenAI service instance.
 1. Select any of the **gpt-35-turbo** models for which the **Deployable** status is **Yes**, and then select **Deploy**:
 
-    ![Screenshot of the Models page in Azure AI Studio.](./media/generative-ai/deploy-model.png)
+    ![An image](media/LABB13.png)
 
 1. Create a new deployment with the following settings:
-    - **Model**: gpt-35-turbo
-    - **Model version**: Auto-update to default
-    - **Deployment name**: **model<inject key="DeploymentID" enableCopy="false" />**
+    - **Model**: gpt-35-turbo(1)
+    - **Model version**: Auto-update to default(2)
+    - **Deployment name**: **model<inject key="DeploymentID" enableCopy="false" />**(3)
+
+      ![An image](media/lab13-3.png)
 
 ### Task 4: Use the *Chat* playground to work with the model
 
