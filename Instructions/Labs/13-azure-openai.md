@@ -72,7 +72,7 @@ Now that you have deployed a model, you can use it in the *Chat* playground to g
 
     The *Chat* playground provides a chatbot interface with which you can interact with your deployed model, as shown here:
 
-    ![Screenshot of the Chat playground in Azure OpenAI Studio.](./media/generative-ai/chat-playground.png)
+    ![Screenshot of the Chat playground in Azure OpenAI Studio.](./media/chat-playground(1).png)
 
 1. In the **Configuration** pane, ensure that your model deployment is selected.
 1. In the **Assistant setup** pane, select the **Default** system message template, and view the system message this template creates. The system message defines how the model will behave in your chat session. Click on **Save changes** on the top.
@@ -115,7 +115,7 @@ In addition to language generation models, Azure OpenAI Service supports the DAL
     ```
 1. Verify that the new image matches the requirements of the prompt, similar to this:
 
-    ![Screenshot of DALL-E generated images in Azure OpenAI Studio.](./media/generative-ai/dall-e-results.png)
+    ![Screenshot of DALL-E generated images in Azure OpenAI Studio.](./media/dall-e-results(1).png)
 
 ### Review
 
