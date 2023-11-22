@@ -17,11 +17,12 @@ In this lab, you will perform:
 
 ## Estimated timing: 45 minutes
 
-# Architecture Diagram
+## Architecture Diagram
 ![Select add under Intents on the Build Schema pane.](media/arch8.PNG)
 
-# Exercise 1: Use Conversational Language Understanding with Language Studio
-## Task 1: Create a *Language* resource
+## Exercise 1: Use Conversational Language Understanding with Language Studio
+
+### Task 1: Create a *Language* resource
 
 You can use many Azure AI Language features with either a **Language** or **Azure AI services** resource. There are some instances where only a Language resource can be used. For the exercise below, we will use a **Language** resource. If you haven't already done so, create a **Language** resource in your Azure subscription.
 
