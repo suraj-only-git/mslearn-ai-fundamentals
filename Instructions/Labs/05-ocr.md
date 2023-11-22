@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 ## Estimated timing: 30 minutes
 
-# Architecture Diagram
+## Architecture Diagram
 
 ![An image](media/arch5.PNG)
 
