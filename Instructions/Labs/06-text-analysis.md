@@ -23,8 +23,8 @@ In this lab, you will perform:
 ## Architecture Diagram
 ![An image of the text in the image outlined](media/arch6.PNG)
 
-# Exercise 1: Analyze text with Language Studio
-## Task 1: Create a *Language* resource
+## Exercise 1: Analyze text with Language Studio
+### Task 1: Create a *Language* resource
 
 You can use many Azure AI Language features with either a **Language** or **Azure AI services** resource. There are some instances where only a Language resource can be used. For the exercise below, we will use a **Language** resource. If you haven't already done so, create a **Language** resource in your Azure subscription.
 
@@ -42,7 +42,7 @@ You can use many Azure AI Language features with either a **Language** or **Azur
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
-## Task 2: Configure your resource in Azure AI Language Studio
+### Task 2: Configure your resource in Azure AI Language Studio
 
 1. In another browser tab, open [Language Studio](https://language.cognitive.azure.com?azure-portal=true) and sign in.
 
@@ -69,7 +69,7 @@ Then select **Done**.
    
 1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
-## Task 3: Analyze reviews in Language Studio
+### Task 3: Analyze reviews in Language Studio
 
 1. In a web browser, navigate to [Language Studio](https://language.cognitive.azure.com?azure-portal=true).
 
