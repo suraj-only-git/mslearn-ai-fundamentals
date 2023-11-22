@@ -169,7 +169,6 @@ When the automated machine learning job has completed, you can review the best m
 ### Task 3: Deploy and test the model
 
 1. On the **Model** tab for the best model trained by your automated machine learning job, select **Deploy** and use the **Web service** option to deploy the model with the following settings:
-    ![](media/lab1-3.png)
     - **Name**: predict-rentals  **(1)**
     - **Description**: Predict cycle rentals **(2)**
     - **Compute type**: Azure Container Instance **(3)**
