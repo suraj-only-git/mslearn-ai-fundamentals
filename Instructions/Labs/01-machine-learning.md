@@ -180,13 +180,6 @@ When the automated machine learning job has completed, you can review the best m
 1. Wait for the deployment to start - this may take a few seconds. The **Deploy status** for the **predict-rentals** endpoint will be indicated in the main part of the page as *Running*.
 1. Wait for the **Deploy status** to change to *Succeeded*. This may take 5-10 minutes.
    
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ## Task 4: Test the deployed service
 
 Now you can test your deployed service.
