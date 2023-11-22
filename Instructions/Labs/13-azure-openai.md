@@ -24,15 +24,7 @@ In this lab, you will perform:
 
 ### Task 1: Provision an Azure OpenAI resource
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true)
-
-    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-    
-    - **Password:** <inject key="AzureAdUserPassword"></inject>
-    
-1. Select **Yes** when asked for **Stay signed in**
-
-1. Search for **Azure OpenAI** and click on **Create** resource with the following settings:
+1. In azure portal, search for **Azure OpenAI** and click on **Create** resource with the following settings:
 
     - **Subscription**: Select your **existing azure subscription**.
     - **Resource group**: Select **ODL-AI-900-13-<inject key="DeploymentID" enableCopy="false" />-02**
@@ -52,7 +44,7 @@ You can deploy, manage, and explore models in your Azure OpenAI Service by using
 
     When you first open Azure OpenAI Studio, it should look similar to this:
 
-    ![Screenshot of Azure OpenAI Studio.](./media/generative-ai/ai-studio.png)
+    ![An image](media/lab13-1.png)
 
 1. View the pages available in the pane on the left. You can always return to the home page at the top. Additionally, OpenAI Studio provides multiple pages where you can:
     - Experiment with models in a *playground*.
