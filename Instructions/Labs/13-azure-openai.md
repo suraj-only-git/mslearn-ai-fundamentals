@@ -78,6 +78,9 @@ Now that you have deployed a model, you can use it in the *Chat* playground to g
 
 1. In the **Configuration** pane, ensure that your model deployment is selected.
 1. In the **Assistant setup** pane, select the **Default** system message template, and view the system message this template creates. The system message defines how the model will behave in your chat session. Click on **Save changes** on the top.
+
+   ![An image](media/lab13-6.png)
+   
 1. In the **Chat session** section, enter the following user message.
 
     ```
@@ -85,6 +88,9 @@ Now that you have deployed a model, you can use it in the *Chat* playground to g
     ```
 
 1. Observe the output returned by the model, which should provide a definition of generative AI.
+
+   ![An image](media/lab13-7.png)
+   
 1. Enter the following user message as a follow-up question:
 
     ```
@@ -108,7 +114,7 @@ In addition to language generation models, Azure OpenAI Service supports the DAL
 
 1. Select **Generate** and view the results, which should consist of an image based on the description you provided in the prompt, similar to this:
 
-    ![Screenshot of the DALL-E playground in Azure OpenAI Studio.](./media/generative-ai/dall-e-playground.png)
+    ![An image](media/lab13-4.png)
 
 1. Generate a second image by modifying the prompt to:
 
