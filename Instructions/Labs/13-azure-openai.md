@@ -35,7 +35,7 @@ In this lab, you will perform:
 1. Search for **Azure OpenAI** and click on **Create** resource with the following settings:
 
     - **Subscription**: Select your **existing azure subscription**.
-    - **Resource group**: Select **ODL-AI-900-13-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Resource group**: Select **AI-900-Module-13-<inject key="DeploymentID" enableCopy="false" />**
     - **Region**: Select **<inject key="location" enableCopy="false"/>**
     - **Name**: Enter **openai<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: Standard S0
