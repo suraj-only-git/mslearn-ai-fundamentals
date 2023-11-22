@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 ## Estimated timing: 45 minutes
 
-# Architecture Diagram
+## Architecture Diagram
 
 ![An image](media/lab13.PNG)
 
