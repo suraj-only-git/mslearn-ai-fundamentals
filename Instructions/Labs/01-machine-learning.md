@@ -47,7 +47,7 @@ In this lab, you will perform:
 
 5. Select **Review + create (9)**.
 
-      ![](media/lab1-8.png)
+      ![](media/LABB1.png)
 
 6. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
    
