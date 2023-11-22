@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![An image](media/LAB133.PNG)
+![An image](media/Thirteen.PNG)
 
 ## Exercise 1: Explore Azure OpenAI Service
 
