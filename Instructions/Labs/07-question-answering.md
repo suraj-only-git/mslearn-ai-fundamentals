@@ -30,15 +30,7 @@ In this lab, you will perform:
 
 To use question answering, you need a **Language** resource.
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true)
-
-    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-    
-    - **Password:** <inject key="AzureAdUserPassword"></inject>
-    
-1. Select **Yes** when asked for **Stay signed in**
-
-1. Click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Use the following settings:
+1. In azure portal, click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Use the following settings:
     - **Select Additional Features**:
         - **Default features**: *Keep the default features*.
         - **Custom features**: *Select custom question answering*.

@@ -39,13 +39,6 @@ You can use Azure AI Vision's image analysis capabilities with an **Azure AI ser
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ### Task 2: Connect your Azure AI service resource to Vision Studio
 
 Next, connect the Azure AI service resource you provisioned above to Vision Studio.
@@ -145,6 +138,13 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 1. Move the **Threshold value** slider until a value of 74 is displayed to the right of the slider. Observe what happens to the objects in the list. The threshold slider specifies that only objects identified with a confidence score or probability greater than the threshold should be displayed.
 
      ![An image of person with a shopping basket in a supermarket](./media/lab3-6.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Learn more
 

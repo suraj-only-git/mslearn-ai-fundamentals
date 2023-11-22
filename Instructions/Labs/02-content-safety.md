@@ -75,13 +75,6 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
    *Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned in particular is a single-service Content Safety service resource.*
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 1. When the deployment is complete, open up a new tab and return to the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). 
 
 2. Select the **Settings** icon on the top right of the screen again. This time you should see that your newly created resource has been added to the list.  
@@ -134,6 +127,13 @@ These capabilities you tested can be programmed into all sorts of applications. 
 
 This simple search index only some of the capabilities of the Content Safety Studio. To learn more about what you can do with this service, see the [ Explore the Content Safety Studio ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview).
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ### Review
 In this lab, you have completed:
 - Explored Content Safety Studio
@@ -142,5 +142,3 @@ In this lab, you have completed:
 - Checked out the keys and endpoint
 
 ## You have successfully completed this lab.
-
-
