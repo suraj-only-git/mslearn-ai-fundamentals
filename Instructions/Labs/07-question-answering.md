@@ -41,7 +41,7 @@ To use question answering, you need a **Language** resource.
 1. On the **Create Language** page, specify the following settings:
     - **Project Details**
         - **Subscription**: *Your Azure subscription*.
-        - **Resource group**: Select **ODL-AI-900-lab07-<inject key="DeploymentID" enableCopy="false" />-02**
+        - **Resource group**: Select **AI-900-Module-07-<inject key="DeploymentID" enableCopy="false" />**
     - **Instance Details**
         - **Region**: Select **<inject key="location" enableCopy="false"/>**      
         - **Name**: Enter **language<inject key="DeploymentID" enableCopy="false" />**
@@ -56,13 +56,6 @@ To use question answering, you need a **Language** resource.
 
     > **Note**
     > If you have already provisioned a free-tier **Azure Cognitive Search** resource, your quota may not allow you to create another one. In which case, select a tier other than **Free F**.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 2: Create a new project
 
@@ -119,13 +112,6 @@ To use question answering, you need a **Language** resource.
     - **Classify file structure**: *Auto-detect*
 1. Select **Add all.**  
 
- > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ### Task 3: Edit the knowledge base
 
 Your knowledge base is based on the details in the FAQ document and some pre-defined responses. You can add custom question-and-answer pairs to supplement these.
@@ -178,7 +164,7 @@ The knowledge base provides a back-end service that client applications can use 
 
     - **Project Details**
         - **Subscription**: *Your Azure subscription*
-        - **Resource group**: Select **ODL-AI-900-07-<inject key="DeploymentID" enableCopy="false" />-02**
+        - **Resource group**: Select **AI-900-Module-07-<inject key="DeploymentID" enableCopy="false" />**
     - **Instance details**
         - **Resource group Location**: *The same location as your Language service*.
     - **Azure Bot**
@@ -212,7 +198,9 @@ The knowledge base provides a back-end service that client applications can use 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(14).png)
 
 1. Select **Create**. Then  wait for your bot to be created (the notification icon at the top right, which looks like a bell, will be animated while you wait). Then in the notification that deployment has completed, select **Go to resource** (or alternatively, on the home page, click **Resource groups**, open the resource group where you created the bot, and select the **Azure bot** resource.)
+
 1. In the left-hand pane of your bot look for **Settings**, select on **Test in Web Chat**, and wait until the bot displays the message **Hello and Welcome** (it may take a few seconds to initialize).
+
 1. Use the test chat interface to ensure your bot answers questions from your knowledge base as expected. For example, try submitting `I need to cancel my hotel`.
 
 Experiment with the bot. You'll probably find that it can answer questions from the FAQ quite accurately, but it will have limited ability to interpret questions that it has not been trained with. You can always use the Language Studio to edit the knowledge base to improve it, and republish it.
