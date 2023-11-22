@@ -47,7 +47,7 @@ In this lab, you will perform:
 
 5. Select **Review + create (9)**.
 
-      ![](media/lab01-ML.jpg)
+      ![](media/lab1-8.png)
 
 6. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
    
@@ -56,7 +56,7 @@ In this lab, you will perform:
 8. Select **Launch studio** (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign into Azure Machine Learning studio using your Microsoft account). Close any messages that are displayed.
 
 9. In Azure Machine Learning studio, you should see your newly created workspace. If not, select **All workspaces** in the left-hand menu and then select the workspace you just created.
-    ![Picture1](media/ai900mod1cimg4.png)
+    ![Picture1](media/lab1-6.png)
 
 ## Enable preview features
 
@@ -64,11 +64,11 @@ Some features of Azure Machine Learning are in preview, and need to be explicitl
 
 1. In Azure Machine Learning Studio, click on **manage preview features** (the loud speaker icon - &#128363;).
 
-     ![](media/lab01-features.jpg)
+     ![](media/lab1-5.png)
 
 1. Enable the following preview feature:
 
-     ![](media/lab01-enable.jpg)
+     ![](media/lab1-7.png)
 
 ### Task 2: Use automated machine learning to train a model
 
@@ -78,7 +78,7 @@ Automated machine learning enables you to try multiple algorithms and parameters
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Automated ML** page (under **Authoring**).
 
-   ![](media/lab01-mljob.jpg)  
+   ![](media/lab1-1.png)  
 
 1. Create a new Automated ML job with the following settings, using **Next** as required to progress through the user interface:
 
@@ -155,7 +155,7 @@ When the automated machine learning job has completed, you can review the best m
 
 1. On the **Overview** tab of the automated machine learning job, note the best model summary.
 
-    ![](media/lab01-automl.jpg)
+    ![](media/lab1-2.png)
 
     > **Note**
     > You may see a message under the status "Warning: User specified exit score reached...". This is an expected message. Please continue to the next step.
@@ -169,13 +169,14 @@ When the automated machine learning job has completed, you can review the best m
 ### Task 3: Deploy and test the model
 
 1. On the **Model** tab for the best model trained by your automated machine learning job, select **Deploy** and use the **Web service** option to deploy the model with the following settings:
+         ![](media/lab1-3.png)
     - **Name**: predict-rentals  **(1)**
     - **Description**: Predict cycle rentals **(2)**
     - **Compute type**: Azure Container Instance **(3)**
     - **Enable authentication**: *Selected* **(4)**
     - Select **Deploy (5)**
 
-     ![](media/lab01-deploy.jpg)
+     ![](media/lab1-4.png)
 
 1. Wait for the deployment to start - this may take a few seconds. The **Deploy status** for the **predict-rentals** endpoint will be indicated in the main part of the page as *Running*.
 1. Wait for the **Deploy status** to change to *Succeeded*. This may take 5-10 minutes.
