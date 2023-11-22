@@ -49,7 +49,7 @@ The solution you'll create for Fourth Coffee requires the following resources in
 1. Create a new **Cognitive Search** resource with an Cognitive Search plan. Use the following settings:
 
     - **Subscription (1)**: Select your **existing azure subscription**.
-    - **Resource group (2)**: Select **ODL-AI-900-11-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Resource group (2)**: Select **AI-900-Module-11-<inject key="DeploymentID" enableCopy="false" />**
     - **Service name (3)**: **aisearch<inject key="DeploymentID" enableCopy="false" />**
     - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
     - **Pricing tier (5)**: Basic
@@ -95,7 +95,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 1. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
 
     - **Subscription (1)**: Select your **existing azure subscription**.
-    - **Resource group (2)**: Select **ODL-AI-900-11-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Resource group (2)**: Select **AI-900-Module-11-<inject key="DeploymentID" enableCopy="false" />**
     - **Region (3)**: Select **<inject key="location" enableCopy="false"/>** 
     - **Name (4)**: Enter **aiservice<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier (5)**: Standard S0
@@ -137,7 +137,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 1. Create a **Storage account** resource with the following settings:
 
     - **Subscription (1)**: Select your **existing azure subscription**.
-    - **Resource group (2)**: Select **ODL-AI-900-11-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Resource group (2)**: Select **AI-900-Module-11-<inject key="DeploymentID" enableCopy="false" />**
     - **Storage account name (3)**: Enter **cognitivestorage<inject key="DeploymentID" enableCopy="false" />**.
     - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
     - **Performance (5)**: Standard

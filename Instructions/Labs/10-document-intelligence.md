@@ -41,7 +41,7 @@ You can use Azure AI Document Intelligence by creating either a *Document Intell
 
 1. On the Create resource dialog box, enter the following:
     - **Subscription (1)**: Select your **existing azure subscription**.
-    - **Resource group (2)**: Select **ODL-AI-900-10-<inject key="DeploymentID" enableCopy="false" />-02**
+    - **Resource group (2)**: Select **AI-900-Module-10-<inject key="DeploymentID" enableCopy="false" />**
     - **New resource namem(3)**:  Enter **intelligence<inject key="DeploymentID" enableCopy="false" />**
     - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
     - **Pricing tier(5)**: *Free FO (if available, otherwise select Standard SO)*.
