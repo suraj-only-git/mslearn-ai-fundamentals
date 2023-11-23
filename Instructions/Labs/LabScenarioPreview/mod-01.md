@@ -15,3 +15,5 @@ In this lab, you will perform:
 ## Estimated timing: 60 minutes
 
 ## Solution Architecture
+
+![](media/lab01-arch.JPG)
