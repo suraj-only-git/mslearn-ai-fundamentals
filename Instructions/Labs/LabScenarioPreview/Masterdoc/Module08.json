@@ -1,10 +1,10 @@
 [
     {
-      "Name": "AI 900 AI Fundamentals-Module-08-Use Conversational Language Understanding with Language Studio,
+      "Name": "AI 900 AI Fundamentals-Module-08-Use Conversational Language Understanding with Language Studio",
       "Language": "English",
       "Files": [
           {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/stage/Instructions/Labs/LabScenarioPreview/mod-08.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/prod/Instructions/Labs/LabScenarioPreview/mod-08.md",
           "Order": 1
         }
       ]
