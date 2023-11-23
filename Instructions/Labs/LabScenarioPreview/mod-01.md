@@ -16,4 +16,4 @@ In this lab, you will perform:
 
 ## Solution Architecture
 
-![](media/lab01-arch.JPG)
+ ![](media/lab01-arch.JPG)
