@@ -1,65 +1,72 @@
----
-lab:
-    title: 'Explore Azure OpenAI Service'
----
+# Module 13: Explore Azure OpenAI Service
 
-# Explore Azure OpenAI
-
-Azure OpenAI Service brings the generative AI models developed by OpenAI to the Azure platform, enabling you to develop powerful AI solutions that benefit from the security, scalability, and integration of services provided by the Azure cloud platform.
+## Lab overview
 
 In this exercise, you'll explore Azure OpenAI Service and use it to deploy and experiment with generative AI models.
+Azure OpenAI Service brings the generative AI models developed by OpenAI to the Azure platform, enabling you to develop powerful AI solutions that benefit from the security, scalability, and integration of services provided by the Azure cloud platform.
 
-This exercise will take approximately **25** minutes.
+## Lab objectives
 
-## Before you start
+In this lab, you will perform:
+- Provision an Azure OpenAI resource
+- Explore Azure OpenAI Studio
+- Deploy a model for language generation
+- Use the *Chat* playground to work with the model
+- Use the *DALL-E* playground to generate images
 
-You will need an Azure subscription that has been approved for access to the Azure OpenAI service for both text and code models, and DALL-E image generation models.
+## Estimated timing: 45 minutes
 
-- To sign up for a free Azure subscription, visit [https://azure.microsoft.com/free](https://azure.microsoft.com/free).
-- To request access to the Azure OpenAI service, visit [https://aka.ms/oaiapply](https://aka.ms/oaiapply).
+## Architecture Diagram
 
-## Provision an Azure OpenAI resource
+![An image](media/Thirteen.PNG)
 
-Before you can use Azure OpenAI models, you must provision an Azure OpenAI resource in your Azure subscription.
+## Exercise 1: Explore Azure OpenAI Service
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Create an **Azure OpenAI** resource with the following settings:
-    - **Subscription**: *An Azure subscription that has been approved for access to the Azure OpenAI service.*
-    - **Resource group**: *Choose an existing resource group or create a new one with a name of your choice.*
-    - **Region**: *Choose any available region.*
-    - **Name**: *A unique name of your choice.*
+### Task 1: Provision an Azure OpenAI resource
+
+1. In azure portal, search for **Azure OpenAI** and click on **Create** resource with the following settings:
+
+    - **Subscription**: Select your **existing azure subscription**.
+    - **Resource group**: Select **AI-900-Module-13-<inject key="DeploymentID" enableCopy="false" />**
+    - **Region**: Select **<inject key="location" enableCopy="false"/>**
+    - **Name**: Enter **openai<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: Standard S0
+
+2. Click **Next** twice and click on **Review and Create**. Click on **Create**.
+
 3. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
 
-## Explore Azure OpenAI Studio
+### Task 2: Explore Azure OpenAI Studio
 
 You can deploy, manage, and explore models in your Azure OpenAI Service by using Azure OpenAI Studio.
 
-1. On the **Overview** page for your Azure OpenAI resource, use the **Explore** button to open Azure OpenAI Studio in a new browser tab. Alternatively, navigate to [Azure OpenAI Studio](https://oai.azure.com/) directly.
+1. On the **Overview** page for your Azure OpenAI resource, click on the **Go to Azure OpenAI Studio** button to open Azure OpenAI Studio in a new browser tab. Alternatively, navigate to [Azure OpenAI Studio](https://oai.azure.com/) directly.
 
     When you first open Azure OpenAI Studio, it should look similar to this:
 
-    ![Screenshot of Azure OpenAI Studio.](./media/generative-ai/ai-studio.png)
+    ![An image](media/lab13-1.png)
 
 1. View the pages available in the pane on the left. You can always return to the home page at the top. Additionally, OpenAI Studio provides multiple pages where you can:
     - Experiment with models in a *playground*.
     - Manage model deployments and data.
 
-## Deploy a model for language generation
+### Task 3: Deploy a model for language generation
 
 To experiment with natural language generation, you must first deploy a model.
 
 1. On the **Models** page view the available models in your Azure OpenAI service instance.
 1. Select any of the **gpt-35-turbo** models for which the **Deployable** status is **Yes**, and then select **Deploy**:
 
-    ![Screenshot of the Models page in Azure AI Studio.](./media/generative-ai/deploy-model.png)
+    ![An image](media/LABB13.png)
 
 1. Create a new deployment with the following settings:
-    - **Model**: gpt-35-turbo
-    - **Model version**: Auto-update to default
-    - **Deployment name**: *A unique name for your model deployment*
+    - **Model**: gpt-35-turbo(1)
+    - **Model version**: Auto-update to default(2)
+    - **Deployment name**: **model<inject key="DeploymentID" enableCopy="false" />**(3)
 
-## Use the *Chat* playground to work with the model
+      ![An image](media/lab13-3.png)
+
+### Task 4: Use the *Chat* playground to work with the model
 
 Now that you have deployed a model, you can use it in the *Chat* playground to generate natural language output from prompts that you submit in a chat interface.
 
@@ -67,10 +74,13 @@ Now that you have deployed a model, you can use it in the *Chat* playground to g
 
     The *Chat* playground provides a chatbot interface with which you can interact with your deployed model, as shown here:
 
-    ![Screenshot of the Chat playground in Azure OpenAI Studio.](./media/generative-ai/chat-playground.png)
+    ![Screenshot of the Chat playground in Azure OpenAI Studio.](./media/chat-playground(1).png)
 
 1. In the **Configuration** pane, ensure that your model deployment is selected.
-1. In the **Assistant setup** pane, select the **Default** system message template, and view the system message this template creates. The system message defines how the model will behave in your chat session.
+1. In the **Assistant setup** pane, select the **Default** system message template, and view the system message this template creates. The system message defines how the model will behave in your chat session. Click on **Save changes** on the top.
+
+   ![An image](media/lab13-6.png)
+   
 1. In the **Chat session** section, enter the following user message.
 
     ```
@@ -78,6 +88,9 @@ Now that you have deployed a model, you can use it in the *Chat* playground to g
     ```
 
 1. Observe the output returned by the model, which should provide a definition of generative AI.
+
+   ![An image](media/lab13-7.png)
+   
 1. Enter the following user message as a follow-up question:
 
     ```
@@ -86,7 +99,7 @@ Now that you have deployed a model, you can use it in the *Chat* playground to g
 
 1. Review the output, noting that the chat session has kept track of the previous input and response to provide context (so it correctly interprets "it" as referring to "generative AI") and that it provides a suitable response based on what was requested (it should return three benefits of generative AI).
 
-## Use the *DALL-E* playground to generate images
+### Task 5: Use the *DALL-E* playground to generate images
 
 In addition to language generation models, Azure OpenAI Service supports the DALL-E 2 model for image generation.
 
@@ -101,7 +114,7 @@ In addition to language generation models, Azure OpenAI Service supports the DAL
 
 1. Select **Generate** and view the results, which should consist of an image based on the description you provided in the prompt, similar to this:
 
-    ![Screenshot of the DALL-E playgrund in Azure OpenAI Studio.](./media/generative-ai/dall-e-playground.png)
+    ![An image](media/lab13-4.png)
 
 1. Generate a second image by modifying the prompt to:
 
@@ -110,8 +123,10 @@ In addition to language generation models, Azure OpenAI Service supports the DAL
     ```
 1. Verify that the new image matches the requirements of the prompt, similar to this:
 
-    ![Screenshot of DALL-E generated images in Azure OpenAI Studio.](./media/generative-ai/dall-e-results.png)
+    ![Screenshot of DALL-E generated images in Azure OpenAI Studio.](./media/dall-e-results(1).png)
 
-## Clean up
+### Review
 
-When you're done with your Azure OpenAI resource, remember to delete the deployment or the entire resource in the [Azure portal](https://portal.azure.com/?azure-portal=true).
+In this lab, you have provisioned and explored the azure openAI resource, deployed a model for language generation, used the *Chat* playground and the *DALL-E* playground to work with the model and generate images respectively.
+
+## You have successfully completed this lab.

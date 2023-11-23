@@ -1,9 +1,6 @@
----
-lab:
-    title: 'Analyze text with Language Studio'
----
+# Module 06: Analyze text with Language Studio
 
-# Analyze text with Language Studio
+## Lab overview
 
 In this exercise you will explore the capabilities of Azure AI Language by analyzing some example hotel reviews. You'll use Language Studio to understand whether the reviews are mostly positive or negative.
 
@@ -13,25 +10,39 @@ For example, suppose the fictitious travel agent Margie's Travel encourages cust
 
 Azure AI Language Service includes text analysis and NLP capabilities. These include the identification of key phrases in text, and the classification of text based on sentiment.
 
-## Create a *Language* resource
+## Lab objectives
+
+In this lab, you will perform:
+
+- Create a *Language* resource
+- Configure your resource in Azure AI Language Studio
+- Analyze reviews in Language Studio
+
+## Estimated timing: 30 minutes
+
+## Architecture Diagram
+![An image of the text in the image outlined](media/arch6.PNG)
+
+## Exercise 1: Analyze text with Language Studio
+### Task 1: Create a *Language* resource
 
 You can use many Azure AI Language features with either a **Language** or **Azure AI services** resource. There are some instances where only a Language resource can be used. For the exercise below, we will use a **Language** resource. If you haven't already done so, create a **Language** resource in your Azure subscription.
 
-1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with the Microsoft account associated with your Azure subscription.
+1. In the azure portal, click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Keep the default selection and click **Continue to create your resource**.
 
-1. Click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Keep the default selection and click **Continue to create your resource**. 
+   ![An image of the text in the image outlined](media/lab-6(1).png)
 
 1. On the page **Create Language**, configure it with the following settings:
     - **Subscription**: *Your Azure subscription*.
-    - **Resource group**: *Select or create a resource group with a unique name*.
-    - **Region**: East US.
-    - **Name**: *Enter a unique name*.
+    - **Resource group**: **AI-900-Module-06-<inject key="DeploymentID" enableCopy="false" />**
+    - **Region**: Select **<inject key="location" enableCopy="false"/>**
+    - **Name**: Enter **studio<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: *Free F0 or S if Free F0 is not available*
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
-## Configure your resource in Azure AI Language Studio
+### Task 2: Configure your resource in Azure AI Language Studio
 
 1. In another browser tab, open [Language Studio](https://language.cognitive.azure.com?azure-portal=true) and sign in.
 
@@ -46,17 +57,25 @@ Then select **Done**.
 > **Important**: As of July 2023, Azure AI services encompass all of what were previously known as Cognitive Services and Azure Applied AI Services. Some user interfaces are still updating their reference from `Cognitive Services` to `Azure AI services`. The two names refer to the same type of resource.
 
 > **Note**: If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
-> 1. On the bar at the top if the page, select **Settings (&#9881;)**. 
-> 1. On the **Settings** page, view the **Resources** tab.
-> 1. Select the resource you just created, and select **Switch resource**. Ensure Managed identity is **Enabled**.
-> ![Enable language resource.](media/analyze-text-language-service/language-resource-enabled.png)
-> 1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
+1. On the bar at the top if the page, select **Settings (&#9881;)**.
+   
+1. On the **Settings** page, view the **Resources** tab.
+   
+    ![An image of the text in the image outlined](media/lab-6(4).png)
+   
+1. Select the resource you just created, and select **Switch resource**. Ensure Managed identity is **Enabled**.
+   
+    ![An image of the text in the image outlined](media/lab-6(3).png)
+   
+1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
-## Analyze reviews in Language Studio
+### Task 3: Analyze reviews in Language Studio
 
 1. In a web browser, navigate to [Language Studio](https://language.cognitive.azure.com?azure-portal=true).
 
 1. On the **Welcome to Language Studio** landing page, select the **Classify text** tab, then select the **Analyze sentiment and mine opinions** tile.
+
+   ![An image of the text in the image outlined](media/lab-6new.png)
 
 1. Under *Select text language*, select **English**.
 
@@ -73,6 +92,8 @@ Then select **Done**.
 
 1. Check the box to acknowledge that the demo will incur usage and may incur costs, and then select **Run**.
 
+   ![An image of the text in the image outlined](media/lab-6(7).png)
+   
 1. Review the output. Notice that the *document* is analyzed for sentiment, as well as each *sentence*. Select **Sentence 1** to show the sentiment analysis for that sentence. 
 
 Notice that there is an overall sentiment followed by scores next to three categories, *positive score*, *neutral score*, *negative score*. In each of the categories, a score between 0 and 1 is provided. These confidence scores indicate how likely the provided text is a particular sentiment. 
@@ -102,13 +123,18 @@ Select **Sentence 1** again to close.
 
 In this exercise you used Language Studio to either create a new Language resource or use an existing Language resource. You enabled the resource in Settings before trying out the Sentiment and opinion mining service. You then tested the service with three pieces of text.
 
-## Clean up
-
-If you don’t intend to do more exercises, delete any resources that you no longer need. This avoids accruing any unnecessary costs.
-
-1. Open the [Azure portal]( https://portal.azure.com) and select the resource group that contains the resource you created.
-1. Select the resource and select **Delete** and then **Yes** to confirm. The resource is then deleted.
-
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  
 ## Learn more
 
 To learn more about what you can do with this service, see the [Language service page](https://learn.microsoft.com/azure/ai-services/language-service/overview).
+
+### Review
+In this exercise, you created a language resource, configured it in Azure AI Language Studio and analyzed the reviews in Language Studio.
+
+## You have successfully completed this lab.
