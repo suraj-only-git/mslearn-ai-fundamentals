@@ -98,9 +98,11 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
         ![Select add under Intents on the Build Schema pane.](media/lab8(5).png)
 
-1. On the **Labeling entities for training** pane on the right-hand side of the screen, select **Labels**, then select **Add entity**. Type `device` (in lower-case), select **List** and select **Add entity**.
+1. On the **Labeling entities for training** pane on the right-hand side of the screen, select **Labels**, then select **Add entity**.
 
     ![Select add under Intents on the Build Schema pane.](media/lab8(6).png)
+
+1.  Type `device` (in lower-case), select **List** and select **Add entity**.
 
     ![Select add under Intents on the Build Schema pane.](media/lab88.png)
 
@@ -151,13 +153,15 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
 Now you're ready to use the intents and entities you have defined to train the conversational language model for your app.
 
-1. On the left hand side of Language Studio, select **Training jobs**, then select **Start a training job**. Use the following settings:
+1. On the left hand side of Language Studio, select **Training jobs**, then select **Start a training job**.
+   
+   ![Select add under Intents on the Build Schema pane.](media/lab8(12).png)
+   
+1. Use the following settings:
     - **Train a new model**: **Train<inject key="DeploymentID" enableCopy="false" />**
     - **Training mode**: Standard training (free)
     - **Data Splitting**: *select Automatically split the testing set from the training data, keep default percentages*
     - Select **Train** at the bottom of the page.
-
-    ![Select add under Intents on the Build Schema pane.](media/lab8(12).png)
 
     ![Select add under Intents on the Build Schema pane.](media/lab8(13).png)
    
@@ -169,14 +173,16 @@ To use your trained model in a client application, you must deploy it as an endp
 
 1. On the left-hand side of Language Studio, select **Deploying a model**.
 
-1. Select your model name and then **Add deployment**. Use these settings:
+1. Select your model name and then **Add deployment**.
+
+    ![Select add under Intents on the Build Schema pane.](media/lab8(14).png)
+
+1. Use these settings:
     - **Create or select an existing deployment name**: **Deploy<inject key="DeploymentID" enableCopy="false" />**
     - **Assign trained model to your deployment name**: *Select the name of the trained model*.
     - Select **Deploy**
 
-    > **Tip**: Note your *deployment name*, you will use it later. 
-
-   ![Select add under Intents on the Build Schema pane.](media/lab8(14).png)
+    > **Tip**: Note your *deployment name*, you will use it later.    
 
    ![Select add under Intents on the Build Schema pane.](media/lab8(15).png)
    
