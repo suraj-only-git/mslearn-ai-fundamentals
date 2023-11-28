@@ -18,6 +18,6 @@ In this lab, you will perform:
 
 ![](../media/Module1.1.png)
 
-Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/odl/3cba21af-4280-4ded-885f-cb9c5d11b664)
+Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/3cba21af-4280-4ded-885f-cb9c5d11b664)
 if you want to go through detailed guide prior to launching lab environment.  
 
