@@ -2,7 +2,7 @@
 
 ## Lab overview
 
-In this exercise you will explore generative AI with Bing Copilot. 
+In this exercise, you will explore generative AI with Bing Copilot. 
 
 ## Lab objectives
 In this lab, you will perform:
@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 ## Exercise 1: Explore generative AI with Bing
 
-1. Open [Bing.com](https://www.bing.com?azure-portal=true) and sign in Microsoft account.
+1. Open [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true)
 
    - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
