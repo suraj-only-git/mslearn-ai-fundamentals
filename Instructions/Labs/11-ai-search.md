@@ -1,10 +1,10 @@
-# Module 11: Explore an Azure Cognitive Search index (UI)
+# Module 11: Explore an Azure AI Search index (UI)
 
 ## Lab overview
 
-Let's imagine you work for Fourth Coffee, a national coffee chain. You're asked to help build a knowledge mining solution that makes it easy to search for insights about customer experiences. You decide to build an Azure Cognitive Search index using data extracted from customer reviews.  
+Let's imagine you work for Fourth Coffee, a national coffee chain. You're asked to help build a knowledge-mining solution that makes it easy to search for insights about customer experiences. You decide to build an Azure AI Search index using data extracted from customer reviews.  
 
-In this lab you will:
+In this lab, you will:
 
 - Create Azure resources
 - Extract data from a data source
@@ -23,16 +23,16 @@ In this lab you will:
 
 The solution you'll create for Fourth Coffee requires the following resources in your Azure subscription:
 
-- An **Azure Cognitive Search** resource, which will manage indexing and querying.
+- An **Azure AI Search** resource, which will manage indexing and querying.
 
 - An **Azure AI services** resource, which provides AI services for skills that your search solution can use to enrich the data in the data source with AI-generated insights.
 
     > **Note**
-    > Your Azure Cognitive Search and Azure AI services resources must be in the same location!
+    > Your Azure AI Search and Azure AI services resources must be in the same location!
 
 - A **Storage account** with blob containers, which will store raw documents and other collections of tables, objects, or files.
 
-### Task 1: Create an Azure Cognitive Search resource
+### Task 1: Create an Azure AI Search resource
 
 1. Select **+ Create a resource**, search for Machine Learning.
 
@@ -46,7 +46,7 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
     ![Picture1](media/lab11-03.png)
 
-1. Create a new **Cognitive Search** resource with an Cognitive Search plan. Use the following settings:
+1. Create a new **AI Search** resource with an AI Search plan. Use the following settings:
 
     - **Subscription (1)**: Select your **existing azure subscription**.
     - **Resource group (2)**: Select **AI-900-Module-11-<inject key="DeploymentID" enableCopy="false" />**
@@ -65,11 +65,11 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
    ![Picture1](media/lab11-06.png)
 
-1. On the Azure Cognitive Search overview page, you can add indexes, import data, and search created indexes.
+1. On the Azure AI Search overview page, you can add indexes, import data, and search created indexes.
 
-### Task 2: Create a Cognitive Services resource
+### Task 2: Create a AI Services resource
 
-You'll need to provision an **Azure AI services** resource that's in the same location as your Azure Cognitive Search resource. Your search solution will use this resource to enrich the data in the datastore with AI-generated insights.
+You'll need to provision an **Azure AI services** resource that's in the same location as your Azure AI Search resource. Your search solution will use this resource to enrich the data in the datastore with AI-generated insights.
 
 1. Return to the home page of the Azure portal. 
 
@@ -123,7 +123,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
     - **Subscription (1)**: Select your **existing azure subscription**.
     - **Resource group (2)**: Select **AI-900-Module-11-<inject key="DeploymentID" enableCopy="false" />**
-    - **Storage account name (3)**: Enter **cognitivestorage<inject key="DeploymentID" enableCopy="false" />**
+    - **Storage account name (3)**: Enter **AIstorage<inject key="DeploymentID" enableCopy="false" />**
     - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
     - **Performance (5)**: Standard
     - **Redundancy (6)**: Locally redundant storage (LRS)
@@ -168,7 +168,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
 ## Exercise 2: Index the documents
 
-After you have the documents in storage, you can use Azure Cognitive Search to extract insights from the documents. The Azure portal provides an *Import data wizard*. With this wizard, you can automatically create an index and indexer for supported data sources. You'll use the wizard to create an index, and import your search documents from storage into the Azure Cognitive Search index.
+After you have the documents in storage, you can use Azure AI Search to extract insights from the documents. The Azure portal provides an *Import data wizard*. With this wizard, you can automatically create an index and indexer for supported data sources. You'll use the wizard to create an index, and import your search documents from storage into the Azure AI Search index.
 
 1. In the Azure portal, browse to your Azure AI Search resource. 
 
@@ -187,7 +187,7 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
     
        ![Picture1](media/lab11-21.png)
     
-    - Select your the **cognitivestorage<inject key="DeploymentID" enableCopy="false" /> (1)** storage account, select the **coffee-reviews (2)** container, and then click **Select (3)**.
+    - Select your the **AIstorage<inject key="DeploymentID" enableCopy="false" /> (1)** storage account, select the **coffee-reviews (2)** container, and then click **Select (3)**.
 
       ![Picture1](media/lab11-22.png)
 
@@ -196,11 +196,11 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
     - **Blob folder (9)**: *Leave this blank*.
     - **Description (10)**: Reviews for Fourth Coffee shops.
 
-4. Select **Next: Add cognitive skills (Optional) (11)**.
+4. Select **Next: Add AI skills (Optional) (11)**.
 
    ![Picture1](media/lab11-23.png)
 
-5. In the **Attach Cognitive Services (1)** section, select your **aiservice<inject key="DeploymentID" enableCopy="false" /> (2)** Azure AI services resource.  
+5. In the **Attach AI Services (1)** section, select your **aiservice<inject key="DeploymentID" enableCopy="false" /> (2)** Azure AI services resource.  
 
    ![Picture1](media/lab11-24.png)
 
@@ -217,7 +217,7 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
     
     - Select the following enriched fields:
 
-        | Cognitive Skill | Parameter | Field name |
+        | AI Skill | Parameter | Field name |
         | --------------- | ---------- | ---------- |
         | Extract location names | | locations |
         | Extract key phrases | | keyphrases |
@@ -231,7 +231,7 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
     
    ![Screenshot that shows the Storage account connection screen warning with 'Choose an existing connection' selected.](media/lab11-27.png)
     
-8. Select **Choose an existing connection**. Choose the storage account **cognitivestorage<inject key="DeploymentID" enableCopy="false" /> (1)** you created earlier. Click on **+ Container (2)** to create a new container called **knowledge-store (3)** with the privacy level set to **Private (4)**, and select **Create (5)**.
+8. Select **Choose an existing connection**. Choose the storage account **AIstorage<inject key="DeploymentID" enableCopy="false" /> (1)** you created earlier. Click on **+ Container (2)** to create a new container called **knowledge-store (3)** with the privacy level set to **Private (4)**, and select **Create (5)**.
 
    ![Picture1](media/lab11-28.png)
 
@@ -274,12 +274,12 @@ After you have the documents in storage, you can use Azure Cognitive Search to e
 - Expand the **Advanced options**. Ensure that the **Base-64 Encode Keys (3)** option is selected, as encoding keys can make the index more efficient.
 - Select **Submit (4)** to create the data source, skillset, index, and indexer. The indexer is run automatically and runs the indexing pipeline, which:
     - Extracts the document metadata fields and content from the data source.
-    - Runs the skillset of cognitive skills to generate more enriched fields.
+    - Runs the skillset of AI skills to generate more enriched fields.
     - Maps the extracted fields to the index.
 
       ![Picture1](media/lab11-33.png)
 
-15. In the bottom half of the **Overview** page for your Azure Cognitive Search resource, select the **Indexers (1)** tab. This tab shows the newly created **coffee-indexer (2)**. Wait a minute, and select **&orarr; Refresh** until the **Status** indicates **success**.
+15. In the bottom half of the **Overview** page for your Azure AI Search resource, select the **Indexers (1)** tab. This tab shows the newly created **coffee-indexer (2)**. Wait a minute, and select **&orarr; Refresh** until the **Status** indicates **success**.
 
      ![Picture1](media/lab11-34.png)
 
@@ -378,7 +378,7 @@ Let's see the power of the knowledge store in action. When you ran the *Import d
 
 ## Learn more
 
-This simple search index only some of the capabilities of the Azure Cognitive Search service. To learn more about what you can do with this service, see the [Azure Cognitive Search service page](/azure/search/search-what-is-azure-search).
+This simple search index only some of the capabilities of the Azure AI Search service. To learn more about what you can do with this service, see the [Azure AI Search service page](/azure/search/search-what-is-azure-search).
 
 ## Review
 
