@@ -41,7 +41,7 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. In another browser tab, navigate to [Vision Studio](https://portal.vision.cognitive.azure.com?azure-portal=true).
 
-1. Sign in with your account and making sure you are using the same directory as the one where you have created your Azure AI services resource.
+1. Sign in with your account and make sure you are using the same directory as the one where you have created your Azure AI services resource.
 
 1. On the Vision Studio home page, select **View all resources** under the **Getting started with Vision** heading.
 
@@ -49,7 +49,7 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. On the **Select a resource to work with** page, hover your mouse cursor over the resource you created above in the list and then check the box to the left of the resource name, then select **Select as default resource**.
 
-    > **Note** : If your resource is not listed, you may need to **Refresh** the page.
+    > **Note**: If your resource is not listed, you may need to **Refresh** the page.
 
     ![The image and its captions are displayed.](./media/lab4-3.png)
    
@@ -57,8 +57,7 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 ### Task 3:   Detect faces in the Vision Studio 
 
-1. In a web browser, navigate to [Vision Studio](https://portal.vision.cognitive.azure.com?azure-portal=true).
-
+1. In a web browser, navigate to **Vision Studio** at [https://portal.vision.cognitive.azure.com](https://portal.vision.cognitive.azure.com?azure-portal=true).
 1. On the **Getting started with Vision** landing page, select the **Face** tab and then select the **Detect Faces in an image** tile.
 
    ![The image and its captions are displayed.](./media/lab4-1.png)
