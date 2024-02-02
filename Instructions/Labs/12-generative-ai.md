@@ -1,4 +1,4 @@
-# Module 12: Explore generative AI with Bing
+# Module 12: Explore generative AI with Copilot
 
 ## Lab overview
 
@@ -16,7 +16,7 @@ In this lab, you will perform:
 
   ![](media/module05new.png)
 
-## Exercise 1: Explore generative AI with Bing
+## Exercise 1: Explore generative AI with Copilot
 
 1. Open [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true)
 
