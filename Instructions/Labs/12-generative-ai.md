@@ -26,7 +26,7 @@ In this lab, you will perform:
 
    >**Note**: While you can sign in with your work or school account, you will see a slightly different user experience compared to signing in with your personal account. Using your work or school account, you will see Bing Enterprise chat. 
 
-1. Select **Chat** from the menu at the top of the screen. Chat brings you to Bing Copilot, which uses generative AI to power search results. What this means is that unlike search alone, which returns existing content, Bing Copilot can put together new responses based on natural language modeling and the web's information.  
+1. Select **Chat** . Chat brings you to Bing Copilot, which uses generative AI to power search results. What this means is that unlike search alone, which returns existing content, Bing Copilot can put together new responses based on natural language modeling and the web's information.  
 
       ![](media/lab12-01.png)
 
@@ -79,7 +79,7 @@ In this lab, you will perform:
 
 1. Type in the prompt: `Translate that into C#`. Notice how you did not need to specify what "that" is as Bing Copilot knows to refer to the conversation history. 
 
-   ![](media/lab12-08.png)
+   ![](media/lab12-09.png)
 
     > Importantly, notice that the response may look similar but not the same. This is because responses are varied.  
 
@@ -87,13 +87,13 @@ In this lab, you will perform:
 
 1. Type in a prompt: `What are 3 examples of generative AI helping people?`. You can use this as a way to brainstorm your own copilot ideas!  
 
-   ![](media/lab12-09.png)
+   ![](media/lab12-08.png)
 
     > Importantly, notice that the response may look similar but not the same. This is because responses are varied.  
    
 ## Learn more
 
-This simple search index only some of the capabilities of the AI with Bing. To learn more about what you can do with this service, see the [Explore generative AI with Bing](https://www.microsoft.com/en-us/bing?form=MW00X7&ef_id=_k_EAIaIQobChMI3t6F3NqxggMVSKRmAh2VAAF2EAAYAiAAEgL22vD_BwE_k_&OCID=AIDcmmn005jwr7_SEM__k_EAIaIQobChMI3t6F3NqxggMVSKRmAh2VAAF2EAAYAiAAEgL22vD_BwE_k_&gad_source=1&gclid=EAIaIQobChMI3t6F3NqxggMVSKRmAh2VAAF2EAAYAiAAEgL22vD_BwE).
+This simple search index only some of the capabilities of the AI with Bing. To learn more about what you can do with this service, see the [Explore generative AI with Copilot](https://learn.microsoft.com/en-us/training/modules/explore-generative-ai-copilot-bing/).
 
 ### Review
 In this lab, you have completed:
