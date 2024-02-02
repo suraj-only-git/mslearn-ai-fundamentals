@@ -71,7 +71,7 @@ To use question answering, you need a **Language** resource.
 
     If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
    
-    1. On the bar at the top if the page, select **Settings (&#9881;)**.
+    1. On the bar at the top of the page, select **Settings (&#9881;)**.
            
     1. On the **Settings** page, view the **Resources** tab.
        
@@ -83,7 +83,7 @@ To use question answering, you need a **Language** resource.
 
     ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(3).png)
 
-1. On the **Choose language setting for resource *your resource*** page, select **I want to select the language when I create a project in this resource** (1) and click **Next** (2).
+1. On the **Choose language setting for the resource *your resource*** page, select **I want to select the language when I create a project in this resource** (1) and click **Next** (2).
 
     ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(4).png)
 
