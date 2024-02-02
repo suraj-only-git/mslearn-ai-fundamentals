@@ -29,7 +29,7 @@ You can use Azure AI Vision's OCR capabilities with an **Azure AI services** mul
 
     ![An image of the text in the image outlined](media/lab-5(1).png)
 
-   and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure      AI services resource. Configure it with the following settings:
+1. Search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure      AI services resource. Configure it with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: **AI-900-Module-05-<inject key="DeploymentID" enableCopy="false" />**
     - **Region**: Select **<inject key="location" enableCopy="false"/>**
