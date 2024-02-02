@@ -29,6 +29,11 @@ In this lab, you will perform:
 1. Select **Chat** from the menu at the top of the screen. Chat brings you to Bing Copilot, which uses generative AI to power search results. What this means is that unlike search alone, which returns existing content, Bing Copilot can put together new responses based on natural language modeling and the web's information.  
 
       ![](media/lab12-01.png)
+
+1. If asking for accepting **Terms of Use** then click on **Continue**.
+
+
+    ![](media/co.png)
     
 1. Towards the bottom of the screen, you will see a window **Ask me anything...**. As you enter prompts into the window, Bing Copilot uses the entire conversation thread to return responses. For example, let's try asking a series of questions about traveling. 
 
@@ -41,10 +46,6 @@ In this lab, you will perform:
    ![A screenshot of Bing copilot's response to a traveling prompt with three bullets for pros and three bullets for cons.](./media/lab12-03.png) 
 
    > **Note**: If you do not see a **Generating...** message or a bullet list response, you have not gotten to see Bing Copilot in action yet. You need to return to the sign-in menu and connect the current account you are using with a personal account. 
-
-   > **Note**: If asking for accepting **Terms of Use** then click on **Continue**.
-
-   ![](media/lab12-04.png)
 
 1. Type in a prompt: `Find me 3 more pros`. What you mean with this prompt is that you would like to see 3 more positive reasons for traveling in the winter that have not already been listed. Notice that with this prompt, you are asking Bing Copilot to do two things that search alone does not do: use the previous chat response to exclude what's returned in the new response, and use the previous chat's topic without explicitly stating it. 
 
