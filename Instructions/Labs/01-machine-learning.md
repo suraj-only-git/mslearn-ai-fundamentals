@@ -92,7 +92,7 @@ Automated machine learning enables you to try multiple algorithms and parameters
    **Task type & data**:
 
     - **Select task type**: Regression
-    - **Select dataset**: Create a new dataset with the following settings:
+    - **Select data**: Create a new data with the following settings:
         - **Data type**:
             - **Name**: bike-rentals
             - **Description**: Historic bike rental data
