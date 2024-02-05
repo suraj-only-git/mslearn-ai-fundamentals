@@ -192,7 +192,7 @@ After you have the documents in storage, you can use Azure AI Search to extract 
     - **Blob folder (9)**: *Leave this blank*.
     - **Description (10)**: Reviews for Fourth Coffee shops.
 
-4. Select **Next: Add AI skills (Optional) (11)**.
+4. Select **Next: Add Cognitive skills (Optional) (11)**.
 
    ![Picture1](media/lab11-23.png)
 
