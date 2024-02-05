@@ -44,7 +44,7 @@ You can use many Azure AI Language features with either a **Language** or **Azur
 
 ### Task 2: Configure your resource in Azure AI Language Studio
 
-1. In another browser tab, open [Language Studio](https://language.cognitive.azure.com?azure-portal=true) and sign in.
+1. In another browser tab, open [Language Studio](https://language.cognitive.azure.com?azure-portal=true) and click on **Sign in** from the top right corner.
 
 1. When prompted with **Select an Azure resource**, make the following configurations:
     - **Azure directory**: *Default Directory, the directory you are using*
@@ -52,22 +52,22 @@ You can use many Azure AI Language features with either a **Language** or **Azur
     - **Resource type**: Language
     - **Resource name**: *select the Language service resource you just created*
 
-Then select **Done**.
+1. Then select **Done**.
 
 > **Important**: As of July 2023, Azure AI services encompass all of what were previously known as Cognitive Services and Azure Applied AI Services. Some user interfaces are still updating their reference from `Cognitive Services` to `Azure AI services`. The two names refer to the same type of resource.
 
 > **Note**: If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
-1. On the bar at the top if the page, select **Settings (&#9881;)**.
-   
-1. On the **Settings** page, view the **Resources** tab.
-   
-    ![An image of the text in the image outlined](media/lab-6(4).png)
-   
-1. Select the resource you just created, and select **Switch resource**. Ensure Managed identity is **Enabled**.
-   
-    ![An image of the text in the image outlined](media/lab-6(3).png)
-   
-1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
+   1. On the bar at the top if the page, select **Settings (&#9881;)**.
+      
+   1. On the **Settings** page, view the **Resources** tab.
+      
+       ![An image of the text in the image outlined](media/lab-6(4).png)
+      
+   1. Select the resource you just created, and select **Switch resource**. Ensure Managed identity is **Enabled**.
+      
+       ![An image of the text in the image outlined](media/lab-6(3).png)
+      
+   1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
 ### Task 3: Analyze reviews in Language Studio
 
@@ -114,21 +114,22 @@ Select **Sentence 1** again to close.
 
 1. Select **Clear text** box again, and copy and paste the following review:
 
-    >Very noisy and rooms are tiny
+   ```
+    Very noisy and rooms are tiny
     The Lombard Hotel, San Francisco, USA
     9/5/2018
     Hotel is located on Lombard street which is a very busy SIX lane street directly off the Golden Gate Bridge. Traffic from early morning until late at night especially on weekends. Noise would not be so bad if rooms were better insulated but they are not. Had to put cotton balls in my ears to be able to sleep--was too tired to enjoy the city the next day. Rooms are TINY. I picked the room because it had two queen size beds--but the room barely had space to fit them. With family of four in the room it was tight. With all that said, rooms are clean and they've made an effort to update them. The hotel is in Marina district with lots of good places to eat, within walking distance to Presidio. May be good hotel for young stay-up-late adults on a budget
+   ```
 
 1. Select **Run** and review the sentiment together with the confidence level. Have a look at the text and compare the text to the sentiment analysis that the service returned.
 
 In this exercise you used Language Studio to either create a new Language resource or use an existing Language resource. You enabled the resource in Settings before trying out the Sentiment and opinion mining service. You then tested the service with three pieces of text.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
   
 ## Learn more
 
