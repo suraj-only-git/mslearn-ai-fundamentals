@@ -28,11 +28,11 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
 1. In another browser tab, open [Azure AI Speech Studio](https://speech.microsoft.com/), signing in with your following credentials:
 
-  - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-  - **Password:** <inject key="AzureAdUserPassword"></inject>
-
-1. Select **Settings** then **Create a resource.** Configure it with the following settings:
+ 1. Select **Settings** then **Create a resource.** Configure it with the following settings:
     - **Name of new resource (1)**: Enter **speech<inject key="DeploymentID" enableCopy="false" />**
     - **Subscription (2)**: Select your **existing azure subscription**.
     - **Region (3)**:  Select **<inject key="location" enableCopy="false"/>**
@@ -42,7 +42,7 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
       ![](media/07.png)
 
-1.  Wait until the resource has been created.
+1. Wait until the resource has been created.
 
 1. Select **Use resource**. The Get started with Speech page is displayed.
 
