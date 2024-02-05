@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 ## Exercise 1: Explore generative AI with Copilot
 
-1. Open [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true)
+1. In  another browser tab,open [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true)
 
    - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
@@ -32,12 +32,11 @@ In this lab, you will perform:
 
 1. If asking for accepting **Terms of Use** then click on **Continue**.
 
-
-    ![](media/co.png)
+      ![](media/co.png)
     
 1. Towards the bottom of the screen, you will see a window **Ask me anything...**. As you enter prompts into the window, Bing Copilot uses the entire conversation thread to return responses. For example, let's try asking a series of questions about traveling. 
 
-    ![](media/lab12-02.png)
+     ![](media/lab12-02.png)
 
 ### Task 1: Use prompts to generate responses
 
@@ -55,13 +54,13 @@ In this lab, you will perform:
 
 1. The **New Topic** button next to the chat window is useful Bing Copilot to clear the previous conversation thread so your new topic responses are not based on the previous topic. Use the **New Topic** icon next to the chat window to clear your message history. 
 
-     ![](media/lab12-05.png)
+     ![](media/ai900img12.1.png)
 
 ### Task 2: Try image generation
 
 1. Now let's see an example of image generation. Type in a prompt: `Create an image of an elephant eating a hamburger`. Notice that a message **I'll try to create that...** appears before Bing Copilot returns a response. 
 
-   ![A screenshot of elephants eating hamgburgers.](./media/lab12-06.png)
+    ![](media/lab12-05.png)
 
    > Importantly, notice that the response may look similar but not the same. This is because responses are varied.  
 
@@ -73,7 +72,7 @@ In this lab, you will perform:
 
 1. Now's let's see an example of code generation and translation. Type in a prompt: `Use Python to create a list`. 
 
-   ![](media/lab12-07.png)
+    ![A screenshot of elephants eating hamgburgers.](./media/lab12-06.png)
 
     > Importantly, notice that the response may look similar but not the same. This is because responses are varied.  
 

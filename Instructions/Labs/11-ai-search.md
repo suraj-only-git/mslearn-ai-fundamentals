@@ -34,15 +34,15 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 ### Task 1: Create an Azure AI Search resource
 
-1. Select **+ Create a resource**, search for Machine Learning.
+1. On the **Azure Portal** homepage, select **+ Create a resource**.
 
      ![Picture1](media/lab11-01.png)
 
-1. In the Marketplace page search for **Azure AI Search** and Select **Azure AI Search**.
+1. In the Marketplace page search for **Azure AI Search** and select **Azure AI Search**.
  
     ![Picture1](media/lab11-02.png)
 
-1. On  the **Azure AI Search** page, Click on **Create**.
+1. On  the **Azure AI Search** page, click on **Create**.
 
     ![Picture1](media/lab11-03.png)
 
@@ -71,17 +71,15 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 You'll need to provision an **Azure AI services** resource that's in the same location as your Azure AI Search resource. Your search solution will use this resource to enrich the data in the datastore with AI-generated insights.
 
-1. Return to the home page of the Azure portal. 
-
-1. Select **+ Create a resource**, search for Machine Learning.
+1. Return to the home page of the Azure portal. Select **+ Create a resource**.
 
      ![Picture1](media/lab11-01.png)
 
-1. In the Marketplace page search for **Azure AI services** and Select **Azure AI services**.
+1. In the Marketplace page search for **Azure AI services** and select **Azure AI services**.
  
     ![Picture1](media/lab11-07.png)
 
-1. On the **Azure AI services** Page, Click on **Create**.
+1. On the **Azure AI services** Page, click on **Create**.
 
     ![Picture1](media/lab11-08.png)
     
@@ -105,13 +103,11 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
 ### Task 3: Create a storage account
 
-1. Return to the home page of the Azure portal. 
-
-1. Select **+ Create a resource**, search for Machine Learning.
+1. Return to the home page of the Azure portal. Select **+ Create a resource**.
 
      ![Picture1](media/lab11-01.png)
 
-1. In the Marketplace page search for **Storage account** and Select **Storage account**.
+1. In the Marketplace page search for **Storage account** and select **Storage account**.
  
     ![Picture1](media/lab11-11.png)
 
@@ -123,25 +119,25 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
     - **Subscription (1)**: Select your **existing azure subscription**.
     - **Resource group (2)**: Select **AI-900-Module-11-<inject key="DeploymentID" enableCopy="false" />**
-    - **Storage account name (3)**: Enter **AIstorage<inject key="DeploymentID" enableCopy="false" />**
+    - **Storage account name (3)**: Enter **aistorage<inject key="DeploymentID" enableCopy="false" />**
     - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
     - **Performance (5)**: Standard
     - **Redundancy (6)**: Locally redundant storage (LRS)
    - Click **Review (7)**.
 
-      ![Picture1](media/lab11-13.png)
+      ![Picture1](media/storageaccount.png)
    
 1. On the **Review** page, Click **Create**. 
 
-    ![Picture1](media/lab11-14.png)
+    ![Picture1](media/saccount.png)
 
 1. Wait for deployment to complete, and then go to the deployed resource.
 
-    ![Picture1](media/lab11-15.png)
+    ![Picture1](media/deployment.png)
 
 1. In the Azure Storage account you created, in the left-hand menu pane, select **Configuration (1)** (under **Settings**), Change the setting for **Allow Blob anonymous access** to **Enabled (2)** and then select **Save (3)**.
 
-    ![Picture1](media/lab11-16.png)
+    ![Picture1](media/storageaccount(1).png)
 
 ## Exercise 1: Upload Documents to Azure Storage
 
@@ -156,7 +152,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
     - **Advanced (5)**: *no changes*.
     - click **Create (6)**
 
-      ![Picture1](media/lab11-17.png)
+      ![Picture1](media/storage.png)
 
 1. In a new browser tab, download the [zipped coffee reviews](https://aka.ms/mslearn-coffee-reviews) from `https://aka.ms/mslearn-coffee-reviews`, and  extract the files to the *reviews* folder.
 
@@ -189,7 +185,7 @@ After you have the documents in storage, you can use Azure AI Search to extract 
     
     - Select your the **AIstorage<inject key="DeploymentID" enableCopy="false" /> (1)** storage account, select the **coffee-reviews (2)** container, and then click **Select (3)**.
 
-      ![Picture1](media/lab11-22.png)
+      ![Picture1](media/containers.png)
 
     - **Managed identity authentication (7)**: None
     - **Container name (8)**: *this setting is auto-populated after you choose an existing connection*.
@@ -231,9 +227,7 @@ After you have the documents in storage, you can use Azure AI Search to extract 
     
    ![Screenshot that shows the Storage account connection screen warning with 'Choose an existing connection' selected.](media/lab11-27.png)
     
-8. Select **Choose an existing connection**. Choose the storage account **AIstorage<inject key="DeploymentID" enableCopy="false" /> (1)** you created earlier. Click on **+ Container (2)** to create a new container called **knowledge-store (3)** with the privacy level set to **Private (4)**, and select **Create (5)**.
-
-   ![Picture1](media/lab11-28.png)
+8. Select **Choose an existing connection**. Choose the storage account **aistorage<inject key="DeploymentID" enableCopy="false" /> (1)** you created earlier. Click on **+ Container (2)** to create a new container called **knowledge-store (3)** with the privacy level set to **Private (4)**, and select **Create (5)**.
 
 9. Select the **knowledge-store (1)** container, and then click **Select (2)** at the bottom of the screen.
 
@@ -262,7 +256,7 @@ After you have the documents in storage, you can use Azure AI Search to extract 
     - Ensure that the **Key** is set to **metadata_storage_path (2)**.
     - Leave **Suggester name** blank.
     - **Search mode (3)** autopopulated.
-    - Review the index fields' default settings. Select **filterable (4)** for all the fields that are already selected by default.
+    - Review the index fields default settings. Select **filterable (4)** for all the fields that are already selected by default.
     - Select **Next: Create an indexer (5)**.
 
     ![](media/lab11-32.png)
@@ -297,7 +291,7 @@ Use the Search explorer to write and test queries. Search explorer is a tool bui
 
 1. Notice how the index selected is the *coffee-index* you created.
 
-     ![](media/search-explorer-query.png)
+     ![](media/coffee-index.png)
 
 1.  In the **Query string** field, enter `search=*&$count=true`, and then select **Search**.
 
@@ -331,7 +325,7 @@ Let's see the power of the knowledge store in action. When you ran the *Import d
 
 1. In the left-hand menu pane, select **Containers (1)**. Select the **knowledge-store (2)** container.
 
-    ![Screenshot of the knowledge-store container.](media/lab11-41.png)
+    ![Screenshot of the knowledge-store container.](media/containe(1).png)
 
 1. Select any of the items.
 
@@ -347,11 +341,11 @@ Let's see the power of the knowledge store in action. When you ran the *Import d
 
 1. Select the storage blob breadcrumb at the top left of the screen to return to the Storage account *Containers*.
 
-    ![Screenshot of the storage blob breadcrumb.](media/lab11-46.png)
+    ![Screenshot of the storage blob breadcrumb.](media/knowledgestore.png)
 
-1. In the *Containers*, select the container *coffee-skillset-image-projection*.
+1. In the **Containers (1)**, select the container **coffee-skillset-image-projection (2)**.
 
-    ![Screenshot of the skillset container.](media/lab11-47.png)
+    ![Screenshot of the skillset container.](media/containe(2).png)
 
 1.  Select any of the items.
 

@@ -28,11 +28,11 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
 1. In another browser tab, open [Azure AI Speech Studio](https://speech.microsoft.com/), signing in with your following credentials:
 
-  - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-  - **Password:** <inject key="AzureAdUserPassword"></inject>
-
-1. Select **Settings** then **Create a resource.** Configure it with the following settings:
+ 1. Select **Settings** then click on  **+ Create a new resource** Configure it with the following settings:
     - **Name of new resource (1)**: Enter **speech<inject key="DeploymentID" enableCopy="false" />**
     - **Subscription (2)**: Select your **existing azure subscription**.
     - **Region (3)**:  Select **<inject key="location" enableCopy="false"/>**
@@ -40,18 +40,18 @@ In this exercise, you will create an AI Speech resource, unless you already have
     - **Resource group (5)**: Select **AI-900-Module-09-<inject key="DeploymentID" enableCopy="false" />**
     - Select **Create resource. (6)**
 
-      ![](media/07.png)
+      ![](media/ai9.png)
 
-1.  Wait until the resource has been created.
+1. Wait until the resource has been created.
 
-1. Select **Use resource**. The Get started with Speech page is displayed.
+1. Select the newly created resource and click on  **Use resource**. The Get started with Speech page is displayed.
 
     ![](media/06.png)
 
 
 ### Task 2: Explore speech to text in Speech Studio
 
-1. Select [**https://aka.ms/mslearn-speech-files**](https://aka.ms/mslearn-speech-files) to download **speech.zip**. 
+1. Copy the following link in the browser window of the VM  [**https://aka.ms/mslearn-speech-files**](https://aka.ms/mslearn-speech-files) to download **speech.zip**. 
 
 1. Open the zip file in labvm and **Extract** the zip file.
 
@@ -69,9 +69,11 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
     ![Browse files](media/01.png)
 
-1. The Speech service transcribes and displays the text in real time. If you have audio on your computer, you can listen to the recording as the text is being transcribed.
+1. The Speech service transcribes and displays the text in real time. 
 
-     ![](media/09.png)
+    ![](media/09.png)
+
+    >**Note:** The Lab VM is not configured with audio so you can download the zip file in your local computer and hear the audio and verify the output.
 
 1. Review the output, which should have successfully recognized and transcribed the audio into text.
 
@@ -79,12 +81,11 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
     > **Note**: If you get an error message, wait a few minutes before trying again. It takes a little time for the Speech resource to be available for first use.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
   
 ## Learn more
 
