@@ -20,7 +20,7 @@ In this lab, you will perform:
 
 1. In  another browser tab,open [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true)
 
-   - **Username:** odl_user_<inject key="DeploymentID" enableCopy="true" />@outlook.com
+   - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
    - **Password**: <inject key="AzureAdUserPassword"></inject>
 
