@@ -111,6 +111,8 @@ The next feature you will try is the **Extract Tags** functionality. Extract tag
 
    ![The image and its captions are displayed.](./media/ai-900img1.png)
 
+   >**Note:** You can ignore the warning.
+
 6. Review the list of tags extracted from the image and the confidence score for each in the detected attributes panel. Here the confidence score is the likelihood that the text for the detected attribute describes what is actually in the image. Notice in the list of tags that it includes not only objects, but actions, such as *shopping*, *selling*, and *standing*.
 
     ![A screenshot of the detect attributes panel in the Vision Studio with text and confidence scores displayed next to the original image.](./media/detect-attributes(1).png)
@@ -122,8 +124,6 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 1. Return to the home page of Vision Studio, then select the **Detect common objects in images** tile under the **Image analysis** tab.
 
    ![The image and its captions are displayed.](./media/update4.png)
-
-1. In the **Choose the model you want to try out**, leave **Prebuilt product vs. gap model** selected.
 
 1. Open the folder containing the images you downloaded and locate the file named **store-camera-3.jpg**, which looks like this:
 
