@@ -75,7 +75,7 @@ Let's look at the image captioning functionality of Azure AI Vision. Image capti
 
 1. Under the **Try It Out** subheading, acknowledge the resource usage policy by reading and checking the box.  
 
-1. Select [**https://aka.ms/mslearn-images-for-analysis**](https://aka.ms/mslearn-images-for-analysis) to download **image-analysis.zip**. Open the folder on your computer and locate the file named **store-camera-1.jpg**; which contains the following image:
+1. Copy this link and paste it into the browser [**https://aka.ms/mslearn-images-for-analysis**](https://aka.ms/mslearn-images-for-analysis) to download **image-analysis.zip**. Open the folder on your computer and locate the file named **store-camera-1.jpg**; which contains the following image:
 
     ![An image of a parent using a cellphone camera to take a picture of a child in in a store](./media/analyze-images-vision/store-camera-1.jpg)
 
@@ -93,7 +93,7 @@ Let's look at the image captioning functionality of Azure AI Vision. Image capti
 
     The **Dense Captions** feature differs from the **Caption** capability in that it provides multiple human-readable captions for an image, one describing the image's content and others, each covering the essential objects detected in the picture. Each detected object includes a bounding box, which defines the pixel coordinates within the image associated with the object.
 
-1. Hover over one of the captions in the **Detected** attributes list and observe what happens within the image.
+1. upload the **store-camera-1.jpg** image by dragging it to the **Drag and drop files here** box, or by browsing to it on your file system . Hover over one of the captions in the **Detected** attributes list and observe what happens within the image.
 
     ![The image and its captions are displayed.](./media/lab3-3.png)
 
@@ -107,9 +107,9 @@ The next feature you will try is the **Extract Tags** functionality. Extract tag
 
    ![The image and its captions are displayed.](./media/update3.png)
 
-3. In the **Choose the model you want to try out**, leave **Prebuilt product vs. gap model** selected. In the **Choose your language**, select **English** or a language of your preference. Upload the **store-camera-2.jpg** image by dragging it to the **Drag and drop files here** box, or by browsing to it on your file system.
+3. In the **Choose your language**, select **English** or a language of your preference. Upload the **store-camera-2.jpg** image by dragging it to the **Drag and drop files here** box, or by browsing it on your file system.
 
-   ![The image and its captions are displayed.](./media/lab3-5.png)
+   ![The image and its captions are displayed.](./media/ai-900img1.png)
 
 6. Review the list of tags extracted from the image and the confidence score for each in the detected attributes panel. Here the confidence score is the likelihood that the text for the detected attribute describes what is actually in the image. Notice in the list of tags that it includes not only objects, but actions, such as *shopping*, *selling*, and *standing*.
 
