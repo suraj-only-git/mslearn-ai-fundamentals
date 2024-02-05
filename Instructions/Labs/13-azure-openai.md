@@ -66,6 +66,11 @@ To experiment with natural language generation, you must first deploy a model.
 
       ![An image](media/lab13-3.png)
 
+
+ >**Note**: Ignore any you received any error as shown below:
+  
+ ![An image](media/error.png)
+
 ### Task 4: Use the *Chat* playground to work with the model
 
 Now that you have deployed a model, you can use it in the *Chat* playground to generate natural language output from prompts that you submit in a chat interface.
