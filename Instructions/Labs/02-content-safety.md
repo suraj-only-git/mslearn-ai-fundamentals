@@ -55,7 +55,7 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
    ![](media/26.png)
 
-2. On the **Settings** page, you will see a *Directory* tab and *Resource* tab. On the *Resource* tab, select **Create a new resource**. This takes you to page to create a resource in the Azure Portal.
+2. On the **Settings** page, you will see a *Directory* tab and *Resource* tab. On the *Resource* tab, select **+ Create a new resource**. This takes you to page to create a resource in the Azure Portal.
 
     ![](media/27.png)
 
@@ -79,9 +79,11 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 2. Select the **Settings** icon on the top right of the screen again. This time you should see that your newly created resource has been added to the list.  
 
-3. On the Content Safety Studio's Settings page, select the **Azure AI service (1)** resource you just created and click **Use resource (2)** on the bottom of the screen. You will be taken back to the studio home page. Now you can begin using the studio with your newly created resource.
+3. On the Content Safety Studio's Settings page, select the checkbox of the **Azure AI service (1)** resource you just created and click **Use resource (2)** on the bottom of the screen. You will be taken back to the studio home page. Now you can begin using the studio with your newly created resource.
 
    ![](media/30.png)
+
+   >**Note:** If you receive an error stating that the access token is missing, ignore that error and move on to the next task.
 
 ### Task 3: Try out text moderation in the Content Safety Studio
 
@@ -89,25 +91,29 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 1. On the Content Safety Studio home page, under *Run moderation tests*
 
-1. Navigate to the **Moderate text content** box.
+1. Select the **Moderate text content** box.
 
    ![](media/37.png)
  
 1. Under run a simple test, click **Safe Content (1)**. Notice that text is displayed in the box below and click on **Run test (2)**. Running a test calls the Content Safety Service's deep learning model. The deep learning model has already been trained to recognize un-safe content.
 
-   ![](media/36.png)
+   ![](media/azureai.png)
+
+   ![](media/chopping.png)
 
 1. In the Results panel, inspect the results. There are four severity levels from safe to high, and four types of harmful content. Does the Content Safety AI service consider this sample to be acceptable or not? What's important to note is that the results are within a confidence interval. A well-trained model, like one of Azure AI's out-of-the-box models, can return results that have a high probability of matching what a human would label the result. Each time you run a test, you call the model again.
 
-   ![](media/35.png)
+   ![](media/results.png)
 
 1. Now try another sample. Select the text under **Violent content with misspelling (1)**. Check that the content is displayed in the box below and click on**Run test (2)**.
 
-    ![](media/34.png)
+    ![](media/voilent.png)
+
+    ![](media/run-test.png)
 
 1. Inspect the results in the Results panel again. 
 
-   ![](media/33.png)
+   ![](media/runtest(2).png)
 
 You can run tests on all the samples provided, then inspect the results.
 
@@ -119,7 +125,7 @@ These capabilities you tested can be programmed into all sorts of applications. 
 
    ![](media/32.png)
 
-1. In the Azure Portal, you will see that these are the **same** endpoint and **different** keys for your resource. To check it out, head to the [Azure Portal](https://portal.azure.com?auzre-portal=true). Search for Content Safety on the top search bar. Find your resource and click on it. On the left-hand menu, look under Resource Management for **Keys and Endpoints**. Select **Keys and Endpoints** to view the endpoint and keys for your resource. 
+1. In the Azure Portal, you will see that these are the **same** endpoint and **different** keys for your resource. To check it out, head to the [Azure Portal](https://portal.azure.com?auzre-portal=true). Search for Content Safety on the top search bar. Find your resource and click on it. On the left-hand menu, look under *Resource Management* for **Keys and Endpoints**. Select **Keys and Endpoints** to view the endpoint and keys for your resource. 
 
      ![](media/31.png)
 
