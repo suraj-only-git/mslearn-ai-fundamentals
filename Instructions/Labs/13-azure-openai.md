@@ -66,7 +66,7 @@ To experiment with natural language generation, you must first deploy a model.
 
       ![An image](media/lab13-3.png)
 
-     >**Note**: Please avoid any failure error messages you may encounter as indicated below:
+     >**Note**: Please avoid any failure error messages you may encounter as indicated below and try to deploy model again:
 
       ![An image](media/error.png)
 
