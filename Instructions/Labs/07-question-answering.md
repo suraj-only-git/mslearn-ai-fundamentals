@@ -59,31 +59,40 @@ To use question answering, you need a **Language** resource.
 
 ### Task 2: Create a new project
 
-1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com?azure-portal=true) and sign in using the Microsoft account associated with your Azure subscription.
+1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com?azure-portal=true)
+
+1. Sign in using the following username and password.
+    
+    * Email/Username: <inject key="AzureAdUserEmail"></inject>
+    
+    * Password: <inject key="AzureAdUserPassword"></inject>
+    
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(2).png)
+
+
    
-1. If prompted to choose a Language resource, select the following settings:
+1. If prompted to select an Azure resource, ensure the following settings and click on **Done (5)**:
     - **Azure directory**: *The Azure directory containing your subscription*.
     - **Azure subscription**: *Your Azure subscription*.
     - **Resource type**: *Language*.
     - **Resource name**: *select the Language service resource you just created*
 
-    If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
+1. If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
    
-    1. On the bar at the top of the page, select **Settings (&#9881;)**.
+    - On the bar at the top of the page, select **Settings (&#9881;)**.
            
-    1. On the **Settings** page, view the **Resources** tab.
+    - On the **Settings** page, view the **Resources** tab.
        
-    1. Select the language resource you just created, and select **Switch resource**.
+    - Select the language resource you just created, and select **Switch resource**.
        
-    1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
+    - At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
 1. At the top of the Language Studio portal, in the **Create new** menu, select **Custom question answering**.
 
     ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(3).png)
 
-1. On the **Choose language setting for the resource *your resource*** page, select **I want to select the language when I create a project in this resource** (1) and click **Next** (2).
+1. On the **Choose language setting for the resource language-<inject key="DeploymentID" enableCopy="false" />** page, select **I want to select the language when I create a project in this resource** (1) and click **Next** (2).
 
     ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(4).png)
 
@@ -95,9 +104,12 @@ To use question answering, you need a **Language** resource.
     - **Source language**: English
     - **Default answer when no answer is returned**: `No answer found`
       
-1. Click **Next** page, select **Create project**.
+      ![](media/ai900mod4dimg9.png)
 
-   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(5).png)
+
+1. On the **Review and finish** page, click **Create project**.
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/ai900mod4dimg10.png)
    
 1. You will be taken to the **Manage sources** page. Select **&#65291;Add source** and select **URLs**.
 
@@ -107,7 +119,7 @@ To use question answering, you need a **Language** resource.
     - **URL name**: `MargiesKB`
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/main/data/natural-language/margies_faq.docx`
 
-      ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(8).png)
+     ![Creating a Language Service resource with custom question answering enabled.](media/ai900mod4dimg12-1.png)
       
     - **Classify file structure**: *Auto-detect*
 1. Select **Add all.**  
