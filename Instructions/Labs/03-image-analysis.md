@@ -99,6 +99,8 @@ Let's look at the image captioning functionality of Azure AI Vision. Image capti
 
     Move your mouse cursor over the other captions in the list, and notice how the bounding box shifts in the image to highlight the portion of the image used to generate the caption.
 
+> **Note**: If you encounter any intermittent issues with Vision Studio during Task 3, proceed with the next task. You can revisit and reattempt Task 3 if necessary.
+
 ## Task 4: Tagging images
 
 The next feature you will try is the **Extract Tags** functionality. Extract tags is based on thousands of recognizable objects, including living beings, scenery, and actions.
