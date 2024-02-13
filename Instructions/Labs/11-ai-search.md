@@ -67,7 +67,7 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 1. On the Azure AI Search overview page, you can add indexes, import data, and search created indexes.
 
-### Task 2: Create a AI Services resource
+### Task 2: Create an AI Services resource
 
 You'll need to provision an **Azure AI services** resource that's in the same location as your Azure AI Search resource. Your search solution will use this resource to enrich the data in the datastore with AI-generated insights.
 
@@ -154,9 +154,9 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
       ![Picture1](media/storage.png)
 
-1. In a new browser tab, download the [zipped coffee reviews](https://aka.ms/mslearn-coffee-reviews) from `https://aka.ms/mslearn-coffee-reviews`, and  extract the files to the *reviews* folder.
+1. In the lab-VM,  open a  new browser tab, download the [zipped coffee reviews](https://aka.ms/mslearn-coffee-reviews) from `https://aka.ms/mslearn-coffee-reviews`, and extract the files to the *reviews* folder. 
 
-1. In the Azure portal, select your *coffee-reviews* container. In the container, select **Upload (1)**. In the **Upload blob** pane, select **Select a file (2)** and In the Explorer window, select **all** the files in the *reviews* folder, select **Open**, and then select **Upload (3)**.
+1. In the Azure portal, select your *coffee-reviews* container. In the container, select **Upload (1)**. In the **Upload blob** pane, select **Select a file (2)**, and In the Explorer window, select **all** the files in the *reviews* folder, select **Open**, and then select **Upload (3)**.
 
     ![Screenshot that shows the files uploaded to the Azure container.](media/lab11-18.png)
 
@@ -164,7 +164,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
 ## Exercise 2: Index the documents
 
-After you have the documents in storage, you can use Azure AI Search to extract insights from the documents. The Azure portal provides an *Import data wizard*. With this wizard, you can automatically create an index and indexer for supported data sources. You'll use the wizard to create an index, and import your search documents from storage into the Azure AI Search index.
+After you have the documents in storage, you can use Azure AI Search to extract insights from the documents. The Azure portal provides an *Import data wizard*. With this wizard, you can automatically create an index and indexer for supported data sources. You'll use the wizard to create an index and import your search documents from storage into the Azure AI Search index.
 
 1. In the Azure portal, browse to your Azure AI Search resource. 
 
@@ -192,7 +192,7 @@ After you have the documents in storage, you can use Azure AI Search to extract 
     - **Blob folder (9)**: *Leave this blank*.
     - **Description (10)**: Reviews for Fourth Coffee shops.
 
-4. Select **Next: Add Cognitive skills (Optional) (11)**.
+4. Select **Next: Add Cognitive Skills (Optional) (11)**.
 
    ![Picture1](media/lab11-23.png)
 
@@ -255,8 +255,8 @@ After you have the documents in storage, you can use Azure AI Search to extract 
     -  Change the **Index name** to **coffee-index (1)**.
     - Ensure that the **Key** is set to **metadata_storage_path (2)**.
     - Leave **Suggester name** blank.
-    - **Search mode (3)** autopopulated.
-    - Review the index fields default settings. Select **filterable (4)** for all the fields that are already selected by default.
+    - **Search mode (3)** auto populated.
+    - Review the index fields' default settings. Select **filterable (4)** for all the fields that are already selected by default.
     - Select **Next: Create an indexer (5)**.
 
     ![](media/lab11-32.png)
@@ -283,7 +283,7 @@ After you have the documents in storage, you can use Azure AI Search to extract 
 
 ## Exercise 3: Query the index
 
-Use the Search explorer to write and test queries. Search explorer is a tool built into the Azure portal that gives you an easy way to validate the quality of your search index. You can use Search explorer to write queries and review results in JSON.
+Use the Search Explorer to write and test queries. Search Explorer is a tool built into the Azure portal that gives you an easy way to validate the quality of your search index. You can use Search Explorer to write queries and review results in JSON.
 
 1. In your Search service's *Overview* page, select **Search explorer** at the top of the screen.
 
@@ -351,7 +351,7 @@ Let's see the power of the knowledge store in action. When you ran the *Import d
 
      ![Screenshot of the skillset container.](media/lab11-48.png)
 
-1. Select any of the *.jpg* files. Select **Edit** to see the image stored from the document. Notice how all the images from the documents are stored in this manner.
+1. Select any of the *.jpg* files. Select **Edit** to see the image stored in the document. Notice how all the images from the documents are stored in this manner.
 
     ![Screenshot of the saved image.](media/lab11-43.png)
 
