@@ -94,13 +94,13 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    ![](./media/14.png)
 
-1. On the create account page enter details as shown in the below picture:
+1. On the Create Account page enter details as shown in the picture below:
 
     - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
         ![](./media/13.png)
 
-1. On the create a password page enter details as shown in the below picture:
+1. On the create a password page enter details as shown in the picture below:
 
     - **Password**: <inject key="AzureAdUserPassword"></inject>
 
