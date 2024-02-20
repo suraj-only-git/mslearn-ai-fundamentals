@@ -273,7 +273,7 @@ After you have the documents in storage, you can use Azure AI Search to extract 
 
       ![Picture1](media/lab11-33.png)
 
-15. In the bottom half of the **Overview** page for your Azure AI Search resource, select the **Indexers (1)** tab. This tab shows the newly created **coffee-indexer (2)**. Wait a minute, and select **&orarr; Refresh** until the **Status** indicates **success**.
+15.  Return to your Azure AI Search resource page. On the left pane, under **Search Management**, select  **Indexers**. Select the newly created **coffee-indexer**. Wait a minute, and select **&orarr; Refresh** until the **Status** indicates success.
 
      ![Picture1](media/lab11-34.png)
 
