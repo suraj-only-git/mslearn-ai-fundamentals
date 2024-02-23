@@ -34,7 +34,7 @@ You can use Azure AI Vision's image analysis capabilities with an **Azure AI ser
     - **Resource group (2)**: **AI-900-Module-03-<inject key="DeploymentID" enableCopy="false" />**
     - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
     - **Name (4)**: Enter **visionimageai<inject key="DeploymentID" enableCopy="false"/>**
-    - **Pricing tier (5)**:Select **Standard S0**.
+    - **Pricing tier (5)** :Select **Standard S0**.
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
