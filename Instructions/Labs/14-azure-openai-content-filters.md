@@ -2,8 +2,8 @@
 
 ## Lab overview
 
-In this exercise you'll explore the effect of the default content filters in Azure OpenAI.
-Azure OpenAI includes default content filters to help ensure that potentially harmful prompts and completions are identified and removed from interactions with the service. Additionally, you can apply for permission to define custom content filters for your specific needs to ensure your model deployments enforce the appropriate responsible AI principals for your generative AI scenario. Content filtering is one element of an effective approach to responsible AI when working with generative AI models.
+In this exercise, you'll explore the effect of the default content filters in Azure OpenAI.
+Azure OpenAI includes default content filters to help ensure that potentially harmful prompts and completions are identified and removed from interactions with the service. Additionally, you can apply for permission to define custom content filters for your specific needs to ensure your model deployments enforce the appropriate responsible AI principles for your generative AI scenario. Content filtering is one element of an effective approach to responsible AI when working with generative AI models.
 
 ## Lab objectives
 
@@ -56,14 +56,15 @@ Now you're ready to deploy a model to use through the **Azure OpenAI Studio**. O
     - **Advanced options**
         - **Content filter**: Default
         - **Deployment type**: Standard
-        - **Tokens per minute rate limit**: 5K\*
+        - **Tokens per minute rate limit**: 5K
         - **Enable dynamic quota**: Enabled
 
-         > A rate limit of 5,000 tokens per minute is more than adequate to complete. this exercise while leaving capacity for other people using the same subscription.
-    
-      ![](./media/lab14-3.png)
+            ![](./media/1112.png)
   
-        > **Note**: Each Azure OpenAI model is optimized for a different balance of capabilities and performance. We'll use the **GPT 3.5 Turbo** model in this exercise, which is highly capable for natural language generation and chat scenarios.
+          >**Note**: Each Azure OpenAI model is optimized for a different balance of capabilities and performance. We'll use the **GPT 3.5 Turbo** model in this exercise, which is highly capable for natural language generation and chat scenarios.
+          > A rate limit of 5,000 tokens per minute is more than adequate to complete. this exercise while leaving capacity for other people using the same subscription.
+    
+          
   
 ### Task 3: Generate natural language output
 
