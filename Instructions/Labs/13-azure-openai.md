@@ -28,7 +28,7 @@ In this lab, you will perform:
 
     - **Subscription**: Select your **existing azure subscription**.
     - **Resource group**: Select **AI-900-Module-13-<inject key="DeploymentID" enableCopy="false" />**
-    - **Region**: Select **East US**
+    - **Region**: Select **east US**
     - **Name**: Enter **openai<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: Standard S0
 
