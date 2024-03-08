@@ -58,8 +58,8 @@ Now you're ready to deploy a model to use through the **Azure OpenAI Studio**. O
         - **Deployment type**: Standard (5)
         - **Tokens per minute rate limit**: 5K (6)
         - **Enable dynamic quota**: Enabled (7)
-        -  Click on **Create** (8)
-        - 
+        - Click on **Create** (8)
+          
             ![](./media/1112.png)
   
           >**Note**: Each Azure OpenAI model is optimized for a different balance of capabilities and performance. We'll use the **GPT 3.5 Turbo** model in this exercise, which is highly capable of natural language generation and chat scenarios.
