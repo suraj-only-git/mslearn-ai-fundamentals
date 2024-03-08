@@ -44,7 +44,7 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
 1. Wait until the resource has been created.
 
-1. Select the newly created resource and click on  **Use resource**. The Get started with Speech page is displayed.
+1. Select the newly created resource and click on  **Use resource**. The Get Started with Speech page is displayed.
 
     ![](media/06.png)
 
@@ -57,7 +57,7 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
    ![Browse files](media/03.png)
 
-1. On the Get started with Speech page, under *Speech* find *Real-time speech to text*. Select **Try out Real-time speech to text**.
+1. On the Get Started with Speech page, under *Speech  to text* find *Real-time speech to text*. Select **Try out Real-time speech to text**.
 
     ![Getting started with Speech](media/02.png)
 
@@ -69,11 +69,11 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
     ![Browse files](media/01.png)
 
-1. The Speech service transcribes and displays the text in real time. 
+1. The Speech service transcribes and displays the text in real-time. 
 
     ![](media/09.png)
 
-    >**Note:** The Lab VM is not configured with audio so you can download the zip file in your local computer and hear the audio and verify the output.
+    >**Note:** The Lab VM is not configured with audio so you can download the zip file to your local computer and hear the audio and verify the output.
 
 1. Review the output, which should have successfully recognized and transcribed the audio into text.
 
