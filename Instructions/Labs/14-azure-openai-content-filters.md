@@ -33,6 +33,8 @@ In this lab, you will perform:
 
 2. Click **Next** twice and on the **Review + submit**, click on **Create**.
 
+   >Azure OpenAI resources are constrained by regional quotas. The listed regions include default quota for the model type(s) used in this exercise. Randomly choosing a region reduces the risk of a single region reaching its quota limit in scenarios where you are sharing a subscription with other users. In the event of a quota limit being reached later in the exercise, there's a possibility you may need to create another resource in a different region.
+
 3. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
    
 ### Task 2: Deploy a model
@@ -51,8 +53,15 @@ Now you're ready to deploy a model to use through the **Azure OpenAI Studio**. O
     - **Model**: gpt-35-turbo
     - **Model version**: Auto-update to default
     - **Deployment name**: 35turbo
+    - **Advanced options**
+        - **Content filter**: Default
+        - **Deployment type**: Standard
+        - **Tokens per minute rate limit**: 5K\*
+        - **Enable dynamic quota**: Enabled
 
-        ![](./media/lab14-3.png)
+         > A rate limit of 5,000 tokens per minute is more than adequate to complete. this exercise while leaving capacity for other people using the same subscription.
+    
+      ![](./media/lab14-3.png)
   
         > **Note**: Each Azure OpenAI model is optimized for a different balance of capabilities and performance. We'll use the **GPT 3.5 Turbo** model in this exercise, which is highly capable for natural language generation and chat scenarios.
   
