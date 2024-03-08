@@ -75,15 +75,15 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. Open a new tab, copy and paste this link in the browser [**https://aka.ms/mslearn-ocr-images**](https://aka.ms/mslearn-ocr-images) to download **ocr-images.zip**. Then open the folder.
 
-1. Navigate back to the **Visual Studio** portal, select **Browse for a file** and navigate to the folder on your computer where you downloaded **ocr-images.zip**. Select **advert.jpg** and select **Open**.
+1. Navigate back to the **Visual Studio** portal, select **Browse for a file**, and navigate to the folder on your computer where you downloaded **ocr-images.zip**. Select **advert.jpg** and select **Open**.
 
    ![An image of the text in the image outlined](media/lab-5(7).png)
 
 1. Now review what is returned:
     - In **Detected attributes**, any text found in the image is organized into a hierarchical structure of regions, lines, and words.
-    - On the image, the location of text is indicated by a bounding box, as shown here:
+    - On the image, the location of the text is indicated by a bounding box, as shown here:
 
-       ![An image of the text in the image outlined](media/read-text-computer-vision/text-bounding-boxes(1).png)
+       ![An image of the text in the image outlined](media/advert-bounding-boxes.jpg)
 
 1. You can now try another image. Select **Browse for a file** and navigate to the folder where you saved the files from GitHub. Select **letter.jpg**.
 
