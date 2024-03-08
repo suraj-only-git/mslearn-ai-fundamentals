@@ -34,6 +34,9 @@ In this lab, you will perform:
 
 2. Click **Next** twice and click on **Review and Create**. Click on **Create**.
 
+   >**Note:** Different regions have different availability and quota for models. In this exercise, you'll be using a GPT-35-Turbo model for text generation and a DALL-E 
+model for image generation, both of which are suppoprted in East US.
+
 3. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
 
 ### Task 2: Explore Azure OpenAI Studio
@@ -63,7 +66,14 @@ To experiment with natural language generation, you must first deploy a model.
     - **Model**: gpt-35-turbo(1)
     - **Model version**: Auto-update to default(2)
     - **Deployment name**: **model<inject key="DeploymentID" enableCopy="false" />**(3)
+    - **Advanced options**
+        - **Content filter**: Default
+        - **Deployment type**: Standard
+        - **Tokens per minute rate limit**: 5K\*
+        - **Enable dynamic quota**: Enabled
 
+    >  A rate limit of 5,000 tokens per minute is more than adequate to complete this exercise while leaving capacity for other people using the same subscription.
+    
       ![An image](media/lab13-3.png)
 
      >**Note**: Please avoid any failure error messages you may encounter as indicated below and try to deploy model again:
