@@ -28,16 +28,15 @@ In this lab, you will perform:
 
     - **Subscription**: Select your **existing azure subscription**.
     - **Resource group**: Select **AI-900-Module-13-<inject key="DeploymentID" enableCopy="false" />**
-    - **Region**: Select **east US**
+    - **Region**: Select **east us**
     - **Name**: Enter **openai<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: Standard S0
 
 2. Click **Next** twice and click on **Review and Create**. Click on **Create**.
 
-   >**Note:** Different regions have different availability and quota for models. In this exercise, you'll be using a GPT-35-Turbo model for text generation and a DALL-E 
-model for image generation, both of which are suppoprted in East US.
+   >**Note:** Different regions have different availability and quota for models. In this exercise, you'll be using a GPT-35-Turbo model for text generation and a DALL-E model for image generation, both of which are supported in the East US.
 
-3. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
+3. Wait for deployment to complete. Then you can go to the deployed Azure OpenAI resource in the Azure portal.
 
 ### Task 2: Explore Azure OpenAI Studio
 
