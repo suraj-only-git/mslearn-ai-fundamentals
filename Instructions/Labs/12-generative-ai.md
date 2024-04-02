@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 ## Exercise 1: Explore generative AI with Copilot
 
-1. In  another browser tab,open [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true)
+1. In another browser tab, Open [Microsoft Copilot](https://copilot.microsoft.com) at `https://copilot.microsoft.com` and sign in with your following Username and Password.
 
    - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
@@ -62,7 +62,7 @@ In this lab, you will perform:
 
     ![](media/lab12-05.png)
 
-   > Importantly, notice that the response may look similar but not the same. This is because responses are varied.  
+   > **Note**: Your images may not be identical to the ones shown here.  
 
 1. In the response, there is text at the bottom that reads **Powered by DALL-E**. Consider how DALL-E is based on large language models as your natural language input generates images. 
 
