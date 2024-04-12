@@ -89,12 +89,13 @@ Now that you have deployed a model, you can use it in the *Chat* playground to g
 
     ![Screenshot of the Chat playground in Azure OpenAI Studio.](./media/chat-playground(1).png)
 
-1. In the **Configuration** pane, ensure that your model deployment is selected.
-1. In the **Assistant setup** pane, select the **Default** system message template, and view the system message this template creates. The system message defines how the model will behave in your chat session. Click on **Save changes** on the top.
+1. Ensure that your model deployment is selected from the right navigation in the **Configuration** pane.
 
-   ![An image](media/lab13-6.png)
+1. In the **Setup** pane, select the **Default** system message template, and view the system message this template creates. The system message defines how the model will behave in your chat session. Click on **Save changes** on the top.
+
+   ![An image](media/chat.png)
    
-1. In the **Chat session** section, enter the following user message.
+1. In the **Chat session** section (you may need to scroll down), enter the following user message.
 
     ```
    What is generative AI?
