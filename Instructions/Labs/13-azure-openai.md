@@ -89,7 +89,8 @@ Now that you have deployed a model, you can use it in the *Chat* playground to g
 
     ![Screenshot of the Chat playground in Azure OpenAI Studio.](./media/chat-playground(1).png)
 
-1. In the **Configuration** pane, ensure that your model deployment is selected.
+1. Ensure that your model deployment is selected from the right navigation in the **Configuration** pane.
+
 1. In the **Setup** pane, select the **Default** system message template, and view the system message this template creates. The system message defines how the model will behave in your chat session. Click on **Save changes** on the top.
 
    ![An image](media/chat.png)
