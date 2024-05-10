@@ -140,6 +140,7 @@ This simple search index only some of the capabilities of the Content Safety Stu
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+<validation step ="5371378e-8511-44ed-9037-3a000338132f" />
 ### Review
 In this lab, you have completed:
 - Explored Content Safety Studio
