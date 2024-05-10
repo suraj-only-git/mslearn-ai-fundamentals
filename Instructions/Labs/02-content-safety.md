@@ -133,7 +133,7 @@ These capabilities you tested can be programmed into all sorts of applications. 
 
 This simple search index only some of the capabilities of the Content Safety Studio. To learn more about what you can do with this service, see the [ Explore the Content Safety Studio ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview).
 
-<validation step ="5371378e-8511-44ed-9037-3a000338132f" />
+<validation step="5371378e-8511-44ed-9037-3a000338132f" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
