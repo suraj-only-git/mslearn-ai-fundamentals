@@ -24,7 +24,7 @@ In this lab, you will perform:
 
 ### Task 1: Provision an Azure OpenAI resource
 
-1. In azure portal, search for **Azure OpenAI** and click on **Create** resource with the following settings:
+1. In azure portal, search for **Azure OpenAI** and click on **+ Create** resource with the following settings:
 
     - **Subscription**: Select your **existing azure subscription**.
     - **Resource group**: Select **AI-900-Module-13-<inject key="DeploymentID" enableCopy="false" />**
