@@ -123,13 +123,13 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
     - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
     - **Performance (5)**: Standard
     - **Redundancy (6)**: Locally redundant storage (LRS)
-   - Click **Review (7)**.
+   - Click **Review + create (7)**.
 
-      ![Picture1](media/storageaccount.png)
+      ![Picture1](media/lab11-2.png)
    
-1. On the **Review** page, Click **Create**. 
+1. On the **Review + create** page, Click **Create**. 
 
-    ![Picture1](media/saccount.png)
+    ![Picture1](media/lab11-3.png)
 
 1. Wait for deployment to complete, and then go to the deployed resource.
 
@@ -156,7 +156,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
 1. In the lab-VM,  open a  new browser tab, download the [zipped coffee reviews](https://aka.ms/mslearn-coffee-reviews) from `https://aka.ms/mslearn-coffee-reviews`, and extract the files to the *reviews* folder. 
 
-1. In the Azure portal, select your *coffee-reviews* container. In the container, select **Upload (1)**. In the **Upload blob** pane, select **Select a file (2)**, and In the Explorer window, select **all** the files in the *reviews* folder, select **Open**, and then select **Upload (3)**.
+1. In the Azure portal, select your *coffee-reviews* container. In the container, select **Upload (1)**. In the **Upload blob** pane, select **Browse for files (2)**, and In the Explorer window, select **all** the files in the *reviews* folder, select **Open**, and then select **Upload (3)**.
 
     ![Screenshot that shows the files uploaded to the Azure container.](media/lab11-18.png)
 
@@ -166,7 +166,7 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
 After you have the documents in storage, you can use Azure AI Search to extract insights from the documents. The Azure portal provides an *Import data wizard*. With this wizard, you can automatically create an index and indexer for supported data sources. You'll use the wizard to create an index and import your search documents from storage into the Azure AI Search index.
 
-1. In the Azure portal, browse to your Azure AI Search resource. 
+1. In the Azure portal, browse to your Azure AI Search resource and select the **aisearch<inject key="DeploymentID" enableCopy="false"/>**. 
 
    ![Screenshot that shows the import data wizard.](media/lab11-19.png)
 
@@ -183,7 +183,7 @@ After you have the documents in storage, you can use Azure AI Search to extract 
     
        ![Picture1](media/lab11-21.png)
     
-    - Select your the **AIstorage<inject key="DeploymentID" enableCopy="false" /> (1)** storage account, select the **coffee-reviews (2)** container, and then click **Select (3)**.
+    - Select your the **aistorage<inject key="DeploymentID" enableCopy="false" /> (1)** storage account, select the **coffee-reviews (2)** container, and then click **Select (3)**.
 
       ![Picture1](media/containers.png)
 
@@ -227,7 +227,7 @@ After you have the documents in storage, you can use Azure AI Search to extract 
     
    ![Screenshot that shows the Storage account connection screen warning with 'Choose an existing connection' selected.](media/lab11-27.png)
     
-8. Select **Choose an existing connection**. Choose the storage account **aistorage<inject key="DeploymentID" enableCopy="false" /> (1)** you created earlier. Click on **+ Container (2)** to create a new container called **knowledge-store (3)** with the privacy level set to **Private (4)**, and select **Create (5)**.
+8. Select **Choose an existing connection**. Choose the storage account **aistorage<inject key="DeploymentID" enableCopy="false" /> (1)** you created earlier. Click on **+ Container (2)** to create a new container called **knowledge-store (3)** with the Anonymous access level set to **Private (4)**, and select **Create (5)**.
 
 9. Select the **knowledge-store (1)** container, and then click **Select (2)** at the bottom of the screen.
 
