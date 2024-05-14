@@ -36,7 +36,7 @@ You can use many Azure AI Language features with either a **Language** or **Azur
     - **Region**: Select **EastUS**
     - **Name**: Enter **Conversational<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: *Free F0* (if Free F0 is not available, select *S*)
-    - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
+    - **By checking this box I certify that I have reviewed and acknowledge the terms in the Responsible AI Notice.**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
@@ -101,7 +101,7 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
         ![Select add under Intents on the Build Schema pane.](media/lab8(5).png)
 
-1. On the **Labeling entities for training** pane on the right-hand side of the screen, select **Labels**, then select **+ Add entity**.
+1. On the **Activity pane** on the right-hand side of the screen, select **Labels**, then select **+ Add entity**.
 
     ![Select add under Intents on the Build Schema pane.](media/lab8(6).png)
 
@@ -117,12 +117,12 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
     | **intent** | **utterance** | **entity** |
     | --------------- | ------------------ | ------------------ |
-    | switch_on   | Put on the fan      | Device - *select fan* |
-    | switch_on   | Put on the light    | Device - *select light* |
-    | switch_on   | Switch on the light | Device - *select light* |
-    | switch_on   | Turn the fan on     | Device - *select fan* |
-    | switch_on   | Switch on the fan   | Device - *select fan* |
-    | switch_on   | Turn the light on   | Device - *select light* |
+    | switch_on   | put the fan on     | Device - *select fan* |
+    | switch_on   | put the light on    | Device - *select light* |
+    | switch_on   | switch on the light | Device - *select light* |
+    | switch_on   | turn the fan on     | Device - *select fan* |
+    | switch_on   | switch on the fan   | Device - *select fan* |
+    | switch_on   | turn the light on   | Device - *select light* |
 
     ![Select add under Intents on the Build Schema pane.](media/lab8(9).png)
 
@@ -143,12 +143,12 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
     | **intent** | **utterance** | **entity** | 
     | --------------- | ------------------ | ------------------ |
-    | switch_off   | Put the fan off    | Device - *select fan* | 
-    | switch_off   | Put the light off  | Device - *select light* |
-    | switch_off   | Turn off the light | Device - *select light* |
-    | switch_off   | Switch the fan off | Device - *select fan* |
-    | switch_off   | Switch off the fan | Device - *select fan* |
-    | switch_off   | Turn the light off | Device - *select light* |
+    | switch_off   | put the fan off    | Device - *select fan* | 
+    | switch_off   | put the light off  | Device - *select light* |
+    | switch_off   | turn off the light | Device - *select light* |
+    | switch_off   | switch the fan off | Device - *select fan* |
+    | switch_off   | switch off the fan | Device - *select fan* |
+    | switch_off   | turn the light off | Device - *select light* |
 
    ![Select add under Intents on the Build Schema pane.](media/lab8(11).png)
    
