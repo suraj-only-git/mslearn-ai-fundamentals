@@ -51,7 +51,7 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
 ### Task 2: Explore speech to text in Speech Studio
 
-1. Copy the following link in the browser window of the VM  [**https://aka.ms/mslearn-speech-files**](https://aka.ms/mslearn-speech-files) to download **speech.zip**. 
+1. Copy the following link in the browser window of the VM  [**https://aka.ms/mslearn-speech-files**](https://aka.ms/mslearn-speech-files) to download **Speech.zip**. 
 
 1. Open the zip file in labvm and **Extract** the zip file.
 
