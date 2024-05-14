@@ -32,7 +32,7 @@ In this lab, you will perform:
     - **Name**: Enter **openai<inject key="DeploymentID" enableCopy="false" />**
     - **Pricing tier**: Standard S0
 
-2. Click **Next** twice and click on **Review and Create**. Click on **Create**.
+2. Click **Next** thrice and Click on **Create**.
 
    >**Note:** Different regions have different availability and quota for models. In this exercise, you'll be using a GPT-35-Turbo model for text generation and a DALL-E model for image generation, both of which are supported in the East US.
 
