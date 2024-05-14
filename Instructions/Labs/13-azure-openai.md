@@ -139,6 +139,9 @@ In addition to language generation models, Azure OpenAI Service supports the DAL
 
     ![Screenshot of DALL-E generated images in Azure OpenAI Studio.](./media/dall-e-results(1).png)
 
+## Validation
+
+<validation step="7a610c9e-f8af-43f8-92f1-357e933d8a8d" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
