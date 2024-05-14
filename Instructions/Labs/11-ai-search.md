@@ -55,7 +55,7 @@ The solution you'll create for Fourth Coffee requires the following resources in
     - **Pricing tier (5)**: Basic
     - Select **Review + create (6)**
 
-      ![Picture1](media/lab11-04.png)
+      ![Picture1](media/lab11-1.png)
     
 1. You see the response **Validation Success**, select **Create**.
 
