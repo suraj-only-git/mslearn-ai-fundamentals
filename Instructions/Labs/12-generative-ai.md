@@ -13,6 +13,10 @@ In this lab, you will perform:
   
 ## Estimated timing: 40 minutes
 
+## Architecture Diagram
+
+ ![](media/lab12arcdia.png)
+
 ## Before you start
 
 This exercise requires a free Microsoft account (for example an *outlook.com*, *live.com*. or *hotmail.com* account), and the Microsoft Edge web browser.
