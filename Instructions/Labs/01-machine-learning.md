@@ -80,7 +80,7 @@ Automated machine learning enables you to try multiple algorithms and parameters
 
    ![](media/lab1-1.png)  
 
-1. Create a new Automated ML job with the following settings, using **Next** as required to progress through the user interface:
+1. Create a new Automated ML job by selecting **+ New Automated ML job** with the following settings, using **Next** as required to progress through the user interface:
 
     **Basic settings**:
 
@@ -92,35 +92,35 @@ Automated machine learning enables you to try multiple algorithms and parameters
    **Task type & data**:
 
     - **Select task type**: Regression
-    - **Select data**: Create a new data with the following settings:
+    - **Select data**: Select **+ Create** to create a new data with the following settings:
         - **Data type**:
             - **Name**: bike-rentals
             - **Description**: Historic bike rental data
-            - **Type**: Tabular
+            - **Type**: Tabular and then select **Next**
         - **Data source**:
-            - Select **From web files**
+            - Select **From web files** and then select **Next**
         - **Web URL**:
             - **Web URL**: `https://aka.ms/bike-rentals`
-            - **Skip data validation**: *do not select*
+            - **Skip data validation**: *do not select* and then select **Next**
         - **Settings**:
             - **File format**: Delimited
             - **Delimiter**: Comma
             - **Encoding**: UTF-8
             - **Column headers**: Only first file has headers
             - **Skip rows**: None
-            - **Dataset contains multi-line data**: *do not select*
+            - **Dataset contains multi-line data**: *do not select* and then select **Next**
         - **Schema**:
-            - Include all columns other than **Path**
+            - Include all columns other than **Path** and then select **Next**
             - Review the automatically detected types
 
-        Select **Create**. After the dataset is created, select the **bike-rentals** dataset to continue to submit the Automated ML job.
+        Select **Create**. After the dataset is created, select the **bike-rentals** dataset to continue to submit the Automated ML job. Select **Next**
 
     **Task settings**:
 
     - **Task type**: Regression
-    - **Dataset**: bike-rentals
-    - **Target column**: Rentals (integer)
-    - **Additional configuration settings**:
+    - **Data**: bike-rentals
+    - **Target column**: rentals (integer)
+    - **View additional configuration settings**:
         - **Primary metric**: Normalized root mean squared error
         - **Explain best model**: *Unselected*
         - **Use all supported models**: <u>Un</u>selected. *You'll restrict the job to try only a few specific algorithms.*
@@ -130,22 +130,22 @@ Automated machine learning enables you to try multiple algorithms and parameters
         - **Max concurrent trials**: 3
         - **Max nodes**: 3
         - **Metric score threshold**: 0.085 (*so that if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*)
-        - **Timeout**: 15
+        - **Experiment Timeout**: 15
         - **Iteration timeout**: 15
         - **Enable early termination**: *Selected*
     - **Validation and test**:
         - **Validation type**: Train-validation split
-        - **Percentage of validation data**: 10
-        - **Test dataset**: None
+        - **Percentage validation of data**: 10
+        - **Test dataset**: None and then select **Next**
 
     **Compute**:
     - **Select compute type**: Serverless
     - **Virtual machine type**: CPU
     - **Virtual machine tier**: Dedicated
     - **Virtual machine size**: Standard_DS3_V2
-    - **Number of instances**: 1
+    - **Number of instances**: 1 and then select **Next**
 
-1. Submit the training job. It starts automatically.
+1. Select **Submit training job**. It starts automatically.
 
 1. Wait for the job to finish. It might take a while — now might be a good time for a coffee break!
 
