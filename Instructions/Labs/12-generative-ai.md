@@ -13,21 +13,16 @@ In this lab, you will perform:
   
 ## Estimated timing: 40 minutes
 
-## Architecture Diagram
-
-  ![](media/module05new.png)
-
-## Exercise 1: Explore generative AI with Copilot
-
 ## Before you start
 
 This exercise requires a free Microsoft account (for example an *outlook.com*, *live.com*. or *hotmail.com* account), and the Microsoft Edge web browser.
 
-1. If you don't already have Microsoft Edge installed, download and install it for free from [https://www.microsoft.com/edge/download](https://www.microsoft.com/edge/download).
 1. If you don't already have a Microsoft account, sign up for one at [https://signup.live.com](https://signup.live.com).
+
+    > **Note**: Use you personal Email Id to create microsoft account.
 1. Sign into Microsoft Edge using your Microsoft account.
 
-    > **Tip**: If you did not sign into Edge after creating your account, use the user account icon (&#128100;) on the Edge toolbar to sign in using a *personal* account.
+    > **Note**: If you did not sign into Edge after creating your account, use the user account icon (&#128100;) on the Edge toolbar to sign in using a *personal* account.
 
 ## Exercise 1: Use Copilot to explore a document and research an idea
 
@@ -36,12 +31,12 @@ To start your exploration of generative AI, let's use Microsoft Copilot in Edge 
 1. In Microsoft Edge, browse to [OneDrive](https://onedrive.live.com) at `https://onedrive.live.com` and sign in using your personal Microsoft account - closing any welcome messages or offers that are displayed.
 1. In another browser tab, open the document [Business Idea.docx](https://github.com/MicrosoftLearning/mslearn-ai-fundamentals/raw/main/data/generative-ai/Business%20Idea.docx) from `https://github.com/MicrosoftLearning/mslearn-ai-fundamentals/raw/main/data/generative-ai/Business%20Idea.docx`. Then, when the document opens in Edge, select the option to **Save a copy to OneDrive** and save the document in your **Documents** folder in OneDrive. The document should then open in Microsoft Word online automatically.
 
-    > **Tip**: If you don't see the option to save a copy of the file to OneDrive, download it to your local computer. Then, in OneDrive, open the **Documents** folder and use the **+ Add new** button to upload the **Business Idea.docx** file from your local computer to OneDrive.
+    > **Note**: If you don't see the option to save a copy of the file to OneDrive, download it to your local computer. Then, in OneDrive, open the **Documents** folder and use the **+ Add new** button to upload the **Business Idea.docx** file from your local computer to OneDrive.
 
 1. View the text in **Business Idea.docx**, which describe some high -level ideas for a cleaning business in New York City.
 1. Use the **Copilot** icon on the Edge toolbar to open the Copilot pane, as shown here:
 
-    ![Screenshot of the Copilot pane in Microsoft Edge.](./media/generative-ai/edge-copilot.png)
+    ![Screenshot of the Copilot pane in Microsoft Edge.](media/edge-copilot.png)
 
 1. In the Copilot pane, scroll down to see all of the contents as necessary, and ensure that the **Chat** tab is selected and that the conversational style is set to **More Balanced** - this will ensure that Copilot responds with a balance of creativity and factual precision.
 1. In the chat box at the bottom of the Copilot pane, enter following the prompt:
@@ -54,7 +49,7 @@ To start your exploration of generative AI, let's use Microsoft Copilot in Edge 
 
 1. Review the response from Copilot, which should summarize the main points in the document, as shown here:
 
-    ![Screenshot of the Copilot pane with a response.](./media/generative-ai/copilot-response.png)
+    ![Screenshot of the Copilot pane with a response.](media/copilot-response.png)
 
     > **Note**: The specific response may vary.
 
@@ -94,7 +89,7 @@ Now that you've done some initial research, let's have Copilot help you develop 
 
 1. Review the response, and under the output use the **Copy** (&#128461;) icon to copy it to the clipboard. Then select all of the text in the **Business Ideas.docx** document and paste the copied text into the document to replace it. Finally, tidy up the pasted text by replacing the initial text in the response (in which Copilot acknowledged the instruction) with a heading for your cleaning company name. You should end up with a business plan document, similar to this:
 
-    ![Screenshot of a Word document with a Copilot-generated business plan.](./media/generative-ai/generated-content.png)
+    ![Screenshot of a Word document with a Copilot-generated business plan.](media/generated-content.png)
 
 1. In the Copilot pane, enter the following prompt:
 
@@ -106,7 +101,7 @@ Now that you've done some initial research, let's have Copilot help you develop 
 1. Use more prompts to iterate on the design (for example, `Make it green and blue`) until you have a logo with which you are happy.
 1. Right-click the logo design you prefer and copy it to the clipboard. Then paste it into the top of the business plan document, like this:
 
-    ![Screenshot of a Word document with a Copilot-generated image.](./media/generative-ai/generated-image.png)
+    ![Screenshot of a Word document with a Copilot-generated image.](media/generated-image.png)
 
 1. Close the Microsoft Word tab and return to the **Documents** folder in your OneDrive.
 
@@ -140,7 +135,7 @@ With Copilot's help, you've created a draft of a business plan for the cleaning 
 
 1. Apply any additional reformatting you think is required until you have a slide that looks similar to this:
 
-    ![Screenshot of a PowerPoint presentation with Copilot-generated content.](./media/generative-ai/powerpoint-slide.png)
+    ![Screenshot of a PowerPoint presentation with Copilot-generated content.](media/powerpoint-slide.png)
 
 1. On the PowerPoint title bar, select the default presentation name (**Presentation**) and rename it to `Business Presentation.pptx`.
 1. Close the PowerPoint tab and return to the **Documents** folder in your OneDrive.
@@ -159,7 +154,7 @@ You've created some collateral to help you get your business started. Now it's t
 1. Select **Generate draft**, and review the output that is generated.
 1. Use the generated content to complete your email, as shown here:
 
-    ![Screenshot of an email message generated by Copilot.](./media/generative-ai/generated-email.png)
+    ![Screenshot of an email message generated by Copilot.](media/generated-email.png)
 
     You can send the email to yourself if you wish!
 
