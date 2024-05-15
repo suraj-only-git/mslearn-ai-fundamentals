@@ -149,6 +149,9 @@ With Copilot's help, you've created a draft of a business plan for the cleaning 
 You've created some collateral to help you get your business started. Now it's time to reach out to an investor seeking some startup funding.
 
 1. Use the **App Launcher** at the left end of the OneDrive title bar to open **Outlook**.
+
+   ![Screenshot of a Word document with a Copilot-generated business plan.](media/9.png)
+
 1. Create a new email, and fill in the **To** box with your own email address.
 1. In the Copilot pane, select the **Compose** tab. Then set the following options to compose new content:
     - **Write about**: `Request a meeting with an investment bank to discuss funding for a commercial cleaning business.`
