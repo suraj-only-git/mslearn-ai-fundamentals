@@ -376,6 +376,8 @@ Let's see the power of the knowledge store in action. When you ran the *Import d
 
     Look at the key phrases the knowledge store was able to capture from the content in the reviews. Many of the fields are keys, so you can link the tables like a relational database. The last field shows the key phrases that were extracted by the skillset.
 
+## Validation
+
    <validation step="d3283833-c8a5-49e9-8c3b-7db670de2137" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
