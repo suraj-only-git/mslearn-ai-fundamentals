@@ -81,6 +81,10 @@ In this exercise, you will create an AI Speech resource, unless you already have
 
     > **Note**: If you get an error message, wait a few minutes before trying again. It takes a little time for the Speech resource to be available for first use.
 
+## Validation
+
+<validation step="fba5c663-5b29-43aa-8069-0349acf56ee1" />
+
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
