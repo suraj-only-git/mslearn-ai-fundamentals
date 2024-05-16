@@ -57,19 +57,19 @@ You can use many Azure AI Language features with either a **Language** or **Azur
 > **Important**: As of July 2023, Azure AI services encompass all of what were previously known as Cognitive Services and Azure Applied AI Services. Some user interfaces are still updating their reference from `Cognitive Services` to `Azure AI services`. The two names refer to the same type of resource.
 
 > **Note**: If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
-   1. On the bar at the top if the page, select **Settings (&#9881;)**.
+1. On the bar at the top if the page, select **Settings (&#9881;)**.
       
-   1. On the **Settings** page, view the **Resources** tab.
+1. On the **Settings** page, view the **Resources** tab.
       
-       ![An image of the text in the image outlined](media/lab-6(4).png)
+   ![An image of the text in the image outlined](media/lab-6(4).png)
       
-   1. Select the resource you just created, and select **Switch resource**. Ensure Managed identity is **Enabled**.
+1. Select the resource you just created, and select **Switch resource**. Ensure Managed identity is **Enabled**.
       
-       ![An image of the text in the image outlined](media/clr1.png)
+   ![An image of the text in the image outlined](media/clr1.png)
       
    >**Note**: Ensure that **Current Language resource** is having the **studio<inject key="DeploymentID" enableCopy="false" />** and proceed further.
  
-   1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
+1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
 ### Task 3: Analyze reviews in Language Studio
 
