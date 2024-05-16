@@ -44,7 +44,7 @@ You can use many Azure AI Language features with either a **Language** or **Azur
 
 ### Task 2: Configure your resource in Azure AI Language Studio
 
-1. In another browser tab, open [Language Studio](https://language.cognitive.azure.com?azure-portal=true) and click on **Sign in** from the top right corner.
+1. In a separate browser tab within the LabVM, open [Language Studio](https://language.cognitive.azure.com?azure-portal=true) and click on **Sign in** from the top right corner.
 
 1. When prompted with **Select an Azure resource**, make the following configurations:
     - **Azure directory**: *Default Directory, the directory you are using*
@@ -65,8 +65,10 @@ You can use many Azure AI Language features with either a **Language** or **Azur
       
    1. Select the resource you just created, and select **Switch resource**. Ensure Managed identity is **Enabled**.
       
-       ![An image of the text in the image outlined](media/lab-6(3).png)
+       ![An image of the text in the image outlined](media/clr1.png)
       
+   >**Note**: Ensure that **Current Language resource** is having the **studio<inject key="DeploymentID" enableCopy="false" />** and proceed further.
+ 
    1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
 ### Task 3: Analyze reviews in Language Studio
@@ -124,6 +126,10 @@ Select **Sentence 1** again to close.
 1. Select **Run** and review the sentiment together with the confidence level. Have a look at the text and compare the text to the sentiment analysis that the service returned.
 
 In this exercise you used Language Studio to either create a new Language resource or use an existing Language resource. You enabled the resource in Settings before trying out the Sentiment and opinion mining service. You then tested the service with three pieces of text.
+
+## Validation
+
+<validation step="9e1e91dc-4c1e-4c77-ad10-20f30d84e0a5" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
