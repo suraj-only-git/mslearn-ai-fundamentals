@@ -133,7 +133,7 @@ Your knowledge base is based on the details in the FAQ document and some pre-def
     ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(7).png)
    
 1. In the **Add a new question answer pair** dialog box, in the **Question** type `Hello`, and in the **Answer** type `Hi`, then select **Done**.
-1. Expand **Alternate questions** and select **+ Add alternate question**. Then enter `Hiya`as an alternative phrasing for "Hello".
+1. Expand **Alternate questions** and select **+ Add alternate question**. Then enter `Hiya` as an alternative phrasing for "Hello".
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(10).png)
    
