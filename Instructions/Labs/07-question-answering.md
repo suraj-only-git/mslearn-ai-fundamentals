@@ -216,7 +216,7 @@ The knowledge base provides a back-end service that client applications can use 
 
 Experiment with the bot. You'll probably find that it can answer questions from the FAQ quite accurately, but it will have limited ability to interpret questions that it has not been trained with. You can always use the Language Studio to edit the knowledge base to improve it, and republish it.
 
-## validation
+## Validation
 
    <validation step="11faa70c-17f5-4a89-8275-059ac6273139" />
 
