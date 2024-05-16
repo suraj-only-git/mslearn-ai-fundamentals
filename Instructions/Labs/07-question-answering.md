@@ -214,6 +214,8 @@ The knowledge base provides a back-end service that client applications can use 
 
 1. Use the test chat interface to ensure your bot answers questions from your knowledge base as expected. For example, try submitting `I need to cancel my hotel`.
 
+   ![Azure bot](media/mod7-03.png)
+
 Experiment with the bot. You'll probably find that it can answer questions from the FAQ quite accurately, but it will have limited ability to interpret questions that it has not been trained with. You can always use the Language Studio to edit the knowledge base to improve it, and republish it.
 
 ## Validation
