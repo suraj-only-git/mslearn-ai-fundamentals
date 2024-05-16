@@ -148,11 +148,13 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 1. Enter the following settings:
 
     - **Name (3)**: coffee-reviews  
-    - **Public access level (4)**: Container (anonymous read access for containers and blobs)
+    - **Anonymous access level (4)**: Container (anonymous read access for containers and blobs)
     - **Advanced (5)**: *no changes*.
     - click **Create (6)**
 
       ![Picture1](media/storage.png)
+
+   > **Note** : If you're unable to adjust the Anonymous access level, please refresh the page and attempt the change again.
 
 1. In the lab-VM,  open a  new browser tab, download the [zipped coffee reviews](https://aka.ms/mslearn-coffee-reviews) from `https://aka.ms/mslearn-coffee-reviews`, and extract the files to the *reviews* folder. 
 
@@ -373,6 +375,10 @@ Let's see the power of the knowledge store in action. When you ran the *Import d
      ![Screenshot of the saved image.](media/lab11-49.png)
 
     Look at the key phrases the knowledge store was able to capture from the content in the reviews. Many of the fields are keys, so you can link the tables like a relational database. The last field shows the key phrases that were extracted by the skillset.
+
+## Validation
+
+   <validation step="d3283833-c8a5-49e9-8c3b-7db670de2137" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  

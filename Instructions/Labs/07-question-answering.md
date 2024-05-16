@@ -30,7 +30,7 @@ In this lab, you will perform:
 
 To use question answering, you need a **Language** resource.
 
-1. In azure portal, click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Use the following settings:
+1. In azure portal, click the **&#65291;Create a resource** button, then search and select *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Use the following settings:
     - **Select Additional Features**:
         - **Default features**: *Keep the default features*.
         - **Custom features**: *Select custom question answering*.
@@ -68,7 +68,7 @@ To use question answering, you need a **Language** resource.
     * Password: <inject key="AzureAdUserPassword"></inject>
     
 
-   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(2).png)
+   ![Creating a Language Service resource with custom question answering enabled.](media/mod7-01.png)
 
 
    
@@ -115,14 +115,13 @@ To use question answering, you need a **Language** resource.
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(6).png)
    
-1. In the **Add URLs** box, select **+ Add url**. Type in the following and select **Add all**:
+1. In the **Add URLs** box, select **+ Add url**. Provide the following details and select **Add all**:
     - **URL name**: `MargiesKB`
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/main/data/natural-language/margies_faq.docx`
+    - **Classify file structure**: *Auto-detect*
 
      ![Creating a Language Service resource with custom question answering enabled.](media/ai900mod4dimg12-1.png)
       
-    - **Classify file structure**: *Auto-detect*
-1. Select **Add all.**  
 
 ### Task 3: Edit the knowledge base
 
@@ -149,16 +148,16 @@ Now that you have a knowledge base, you can test it.
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(12).png)
    
-1. In the test pane, at the bottom enter the message `Hi`. The response *Hi* should be returned.
+1. In the test pane, at the bottom enter the message `Hi` and press enter. The response *Hi* should be returned.
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(11).png)
    
-1. In the test pane, at the bottom enter the message `I want to book a flight`. An appropriate response from the FAQ should be returned.
+1. In the test pane, at the bottom enter the message `I want to book a flight` and press enter. An appropriate response from the FAQ should be returned.
 
     > **Note**
     > The response includes a *short answer* as well as a more verbose *answer passage* - the answer passage shows the full text in the FAQ document for the closest matched question, while the short answer is intelligently extracted from the passage. You can control whether the short answer is from the response by using the **Include short answer** checkbox at the top of the test pane.
 
-1. Try another question, such as `How can I cancel a reservation?`
+1. Try another question, such as `How can I cancel a reservation?` and press enter.
 1. When you're done testing the knowledge base, select **Test** to close the test pane.
 
 ### Task 5: Create a bot for the knowledge base
@@ -205,7 +204,7 @@ The knowledge base provides a back-end service that client applications can use 
         - **Resource Group Name**: *Pre-populated with your resource group name*
         - **Account Name**: *Pre-populated with your resource name*
 
-1. Select **Review and Create**.
+1. Select **Review + create**.
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(14).png)
 
@@ -215,7 +214,13 @@ The knowledge base provides a back-end service that client applications can use 
 
 1. Use the test chat interface to ensure your bot answers questions from your knowledge base as expected. For example, try submitting `I need to cancel my hotel`.
 
+   ![Azure bot](media/mod7-03.png)
+
 Experiment with the bot. You'll probably find that it can answer questions from the FAQ quite accurately, but it will have limited ability to interpret questions that it has not been trained with. You can always use the Language Studio to edit the knowledge base to improve it, and republish it.
+
+## Validation
+
+   <validation step="11faa70c-17f5-4a89-8275-059ac6273139" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
