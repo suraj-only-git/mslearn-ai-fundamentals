@@ -100,20 +100,22 @@ Now that you've done some initial research, let's have Copilot help you develop 
     ```
     Create a corporate logo for the cleaning company. The logo should be round and include an iconic New York landmark.
     ```
+    > **Note**: Click on visit image creator to join. to sign naviage to environment details page to use the credentials.
 
 1. Review the response, which should present four options for a logo created by Microsoft Designer.
 1. Use more prompts to iterate on the design (for example, `Make it green and blue`) until you have a logo with which you are happy.
-1. Right-click the logo design you prefer and copy it to the clipboard. Then paste it into the top of the business plan document, like this:
+1. drag and drop the logo into the top of the business plan document, like this:
 
     ![Screenshot of a Word document with a Copilot-generated image.](media/generated-image.png)
 
 1. Close the Microsoft Word tab and return to the **Documents** folder in your OneDrive.
 
+    > **Note**: if you get the popup for a plan to select click on **X** to close. 
 ## Exercise 3: Use Copilot to create content for a presentation
 
 With Copilot's help, you've created a draft of a business plan for the cleaning business idea. Now you'll need an effective presentation to convince an investor to lend you the funding to start the business.
 
-1. In the **Documents** folder in OneDrive, add a new **PowerPoint presentation**.
+1. In the **Documents** folder in OneDrive, click on **+ New and Upload** to add a new **PowerPoint presentation**.
 
     If the **Designer** pane opens automatically, close it.
 
@@ -126,14 +128,14 @@ With Copilot's help, you've created a draft of a business plan for the cleaning 
     Write a summary of the benefits of using a corporate cleaning company for your business. The summary should consist of five short bullet points.
     ```
 
-1. Copy Copilot's response to the clipboard, and paste it into the left content placeholder. Then delete the initial sentence acknowledging the request and reformat the text in the placeholder until you are satisfied.
+1. Copy Copilot's response to the clipboard, and paste it into the left content placeholder.
 1. In the Copilot pane, enter the following prompt:
 
     ```
     Create a photorealistic image of a clean office.
     ```
 
-1. When Copilot has generated an image you like, copy it to the clipboard and paste it into the content placeholder on the right of the slide.
+1. When Copilot has generated an image you like, drag and drop it into the content placeholder on the right of the slide.
 
     If the **Designer** pane opens automatically, select a slide design you like. Then close the **Designer** pane.
 
