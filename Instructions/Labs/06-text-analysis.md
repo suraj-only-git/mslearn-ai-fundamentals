@@ -54,9 +54,10 @@ You can use many Azure AI Language features with either a **Language** or **Azur
 
 1. Then select **Done**.
 
-> **Important**: As of July 2023, Azure AI services encompass all of what were previously known as Cognitive Services and Azure Applied AI Services. Some user interfaces are still updating their reference from `Cognitive Services` to `Azure AI services`. The two names refer to the same type of resource.
+    >**Important**: As of July 2023, Azure AI services encompass all of what were previously known as Cognitive Services and Azure Applied AI Services. Some user interfaces are still updating their reference from `Cognitive Services` to `Azure AI services`. The two names refer to the same type of resource.
 
-> **Note**: If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
+    >**Note**: If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
+
 1. On the bar at the top if the page, select **Settings (&#9881;)**.
       
 1. On the **Settings** page, view the **Resources** tab.
