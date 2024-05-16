@@ -148,11 +148,13 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 1. Enter the following settings:
 
     - **Name (3)**: coffee-reviews  
-    - **Public access level (4)**: Container (anonymous read access for containers and blobs)
+    - **Anonymous access level (4)**: Container (anonymous read access for containers and blobs)
     - **Advanced (5)**: *no changes*.
     - click **Create (6)**
 
       ![Picture1](media/storage.png)
+
+   > **Note** : If you're unable to adjust the Anonymous access level, please refresh the page and attempt the change again.
 
 1. In the lab-VM,  open a  new browser tab, download the [zipped coffee reviews](https://aka.ms/mslearn-coffee-reviews) from `https://aka.ms/mslearn-coffee-reviews`, and extract the files to the *reviews* folder. 
 
