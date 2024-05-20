@@ -8,11 +8,11 @@ Azure OpenAI Service brings the generative AI models developed by OpenAI to the 
 ## Lab objectives
 
 In this lab, you will perform:
-- Provision an Azure OpenAI resource
-- Explore Azure OpenAI Studio
-- Deploy a model for language generation
-- Use the *Chat* playground to work with the model
-- Use the *DALL-E* playground to generate images
+- Task 1: Provision an Azure OpenAI resource
+- Task 2: Explore Azure OpenAI Studio
+- Task 3: Deploy a model for language generation
+- Task 4: Use the *Chat* playground to work with the model
+- Task 5: Use the *DALL-E* playground to generate images
 
 ## Estimated timing: 45 minutes
 
