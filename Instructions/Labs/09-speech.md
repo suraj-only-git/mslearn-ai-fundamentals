@@ -8,8 +8,8 @@ In this exercise, you will try out the capabilities of Azure AI Speech using Azu
 
 In this lab, you will perform:
 
-- Creating an *Azure AI Speech* resource
-- Exploring speech to text in Speech Studio
+- Task 1: Create an **Azure AI Speech** resource
+- Task 2: Explore speech to text in Speech Studio
 
 ## Estimated timing: 30 minutes
 
