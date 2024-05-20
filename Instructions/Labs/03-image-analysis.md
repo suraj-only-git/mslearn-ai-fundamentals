@@ -147,7 +147,10 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  
+## Validation
 
+<validation step="940107bb-0097-41e1-9e10-e3095bed6061" />
 
 ## Learn more
 
