@@ -6,10 +6,10 @@ In this exercise, you will set up a single-service resource in Azure AI Content 
 
 ## Lab objectives
 In this lab, you will perform:
-- Exploring the Content Safety Studio
-- Associating a resource with the studio 
-- Trying out text moderation in the Content Safety Studio
-- Checking out the keys and endpoint
+- Task 1: Explore the Content Safety Studio
+- Task 2: Associate a resource with the studio 
+- Task 3: Try out text moderation in the Content Safety Studio
+- Task 4: Check out the keys and endpoint
 
 ## Estimated timing: 30 minutes
 
@@ -129,13 +129,20 @@ These capabilities you tested can be programmed into all sorts of applications. 
 
      ![](media/31.png)
 
-## Learn more
-
-This simple search index only some of the capabilities of the Content Safety Studio. To learn more about what you can do with this service, see the [ Explore the Content Safety Studio ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview).
-
 ## validation
 
 <validation step="5371378e-8511-44ed-9037-3a000338132f" />
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+## Learn more
+
+This simple search index only some of the capabilities of the Content Safety Studio. To learn more about what you can do with this service, see the [ Explore the Content Safety Studio ](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview).
 
 ### Review
 In this lab, you have completed:
