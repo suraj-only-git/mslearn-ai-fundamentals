@@ -14,9 +14,9 @@ Azure AI Language Service includes text analysis and NLP capabilities. These inc
 
 In this lab, you will perform:
 
-- Create a *Language* resource
-- Configure your resource in Azure AI Language Studio
-- Analyze reviews in Language Studio
+- Task 1: Create a *Language* resource
+- Task 2: Configure your resource in Azure AI Language Studio
+- Task 3: Analyze reviews in Language Studio
 
 ## Estimated timing: 30 minutes
 
@@ -24,8 +24,8 @@ In this lab, you will perform:
 ![An image of the text in the image outlined](media/arch6.PNG)
 
 ## Exercise 1: Analyze text with Language Studio
-### Task 1: Create a *Language* resource
 
+### Task 1: Create a *Language* resource
 You can use many Azure AI Language features with either a **Language** or **Azure AI services** resource. There are some instances where only a Language resource can be used. For the exercise below, we will use a **Language** resource. If you haven't already done so, create a **Language** resource in your Azure subscription.
 
 1. In the azure portal, click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Keep the default selection and click **Continue to create your resource**.
