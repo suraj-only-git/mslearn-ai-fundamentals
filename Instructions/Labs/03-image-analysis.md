@@ -8,11 +8,11 @@ In this exercise, you will use Vision Studio to analyze images using the built-i
 
 ## Lab objectives
 In this lab, you will perform:
-  - Create an Azure AI services resource
-  - Connect Azure AI Service Resource to Vision Studio
-  - Image Analysis with Azure AI Vision Services
-  - Tagging images
-  - Object detection
+- Task 1: Create an Azure AI services resource
+- Task 2: Connect your Azure AI service resource to Vision Studio
+- Task 3: Generate captions for an image
+- Task 4: Tagging images
+- Task 5: Object detection
 
 ## Estimated timing: 60 minutes
 
@@ -141,6 +141,10 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 
      ![An image of person with a shopping basket in a supermarket](./media/lab3-6.png)
 
+## Validation
+
+<validation step="940107bb-0097-41e1-9e10-e3095bed6061" />
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
 - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -148,9 +152,6 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
   
-## Validation
-
-<validation step="940107bb-0097-41e1-9e10-e3095bed6061" />
 
 ## Learn more
 
