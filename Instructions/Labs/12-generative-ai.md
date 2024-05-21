@@ -6,10 +6,11 @@ In this exercise you will explore some of the ways in which Microsoft Copilot ca
 
 ## Lab objectives
 In this lab, you will perform:
-- Use Copilot to explore a document and research an idea
-- Use Copilot to create content for a business plan
-- Use Copilot to create content for a presentation
-- Use Copilot to compose an email
+
++ Task 1: Use Copilot to explore a document and research an idea
++ Task 2: Use Copilot to create content for a business plan
++ Task 3: Use Copilot to create content for a presentation
++ Task 4: Use Copilot to compose an email
   
 ## Estimated timing: 40 minutes
 
@@ -28,7 +29,7 @@ This exercise requires a free Microsoft account (for example an *outlook.com*, *
 
     > **Note**: If you did not sign into Edge after creating your account, use the user account icon (&#128100;) on the Edge toolbar to sign in using a *personal* account.
 
-## Exercise 1: Use Copilot to explore a document and research an idea
+## Task 1: Use Copilot to explore a document and research an idea
 
 To start your exploration of generative AI, let's use Microsoft Copilot in Edge to examine an existing document and extract some insights from it.
 
@@ -74,7 +75,7 @@ To start your exploration of generative AI, let's use Microsoft Copilot in Edge 
 
     > **Important**: The AI-generated response is based on information publicly on the Web. While it may be useful to help you understand the steps required to set up a business, it is not guaranteed to be 100% accurate and does not replace the need for professional advice!
 
-## Exercise 2: Use Copilot to create content for a business plan
+## Task 2: Use Copilot to create content for a business plan
 
 Now that you've done some initial research, let's have Copilot help you develop a business plan for your cleaning company.
 
@@ -109,7 +110,7 @@ Now that you've done some initial research, let's have Copilot help you develop 
 
 1. Close the Microsoft Word tab and return to the **Documents** folder in your OneDrive.
 
-## Exercise 3: Use Copilot to create content for a presentation
+## Task 3: Use Copilot to create content for a presentation
 
 With Copilot's help, you've created a draft of a business plan for the cleaning business idea. Now you'll need an effective presentation to convince an investor to lend you the funding to start the business.
 
@@ -144,7 +145,7 @@ With Copilot's help, you've created a draft of a business plan for the cleaning 
 1. On the PowerPoint title bar, select the default presentation name (**Presentation**) and rename it to `Business Presentation.pptx`.
 1. Close the PowerPoint tab and return to the **Documents** folder in your OneDrive.
 
-## Exercise 4: Use Copilot to compose an email
+## Task 4: Use Copilot to compose an email
 
 You've created some collateral to help you get your business started. Now it's time to reach out to an investor seeking some startup funding.
 
