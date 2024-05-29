@@ -58,13 +58,6 @@ To start your exploration of generative AI, let's use Microsoft Copilot in Edge 
 
     > **Note**: The specific response may vary.
 
-1. Enter the following prompt
-
-    ```
-    What's the market opportunity for this business idea?
-    ```
-
-1. Review the response, which should provide some insights from the Web that may be useful when planning a new cleaning business in New York.
 1. Enter the following prompt:
 
     ```
