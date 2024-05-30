@@ -73,7 +73,7 @@ To experiment with natural language generation, you must first deploy a model.
         - Click **Crete** (8)
     >  A rate limit of 5,000 tokens per minute is more than adequate to complete this exercise while leaving capacity for other people using the same subscription.
     
-      ![An image](media/image.png)
+      ![An image](media/generative-ai/image.png)
 
      >**Note**: Please avoid any failure error messages you may encounter as indicated below and try to deploy the model again:
 
