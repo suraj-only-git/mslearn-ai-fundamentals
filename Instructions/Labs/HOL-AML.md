@@ -232,11 +232,11 @@ Now you can test your deployed service.
 Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
  
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="2e4871a4-3e69-40a1-bbd1-dc026b54d5ac" />
 
 ### Review
 In this lab, you have created an Azure Machine Learning workspace resource, and use automated machine learning to train a model and deploy and test it.
