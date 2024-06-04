@@ -12,7 +12,7 @@ In this lab, you will perform:
 - Creating an *Azure Machine Learning workspace* resource
 - Use automated machine learning to train a model
 
-## Estimated timing: 60 minutes
+## Estimated timing: 120 minutes
 
 ## Architecture Diagram
 
