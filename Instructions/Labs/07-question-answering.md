@@ -47,7 +47,7 @@ To use question answering, you need a **Language** resource.
         - **Name**: Enter **language<inject key="DeploymentID" enableCopy="false" />**
         - **Pricing tier**: S (1K Calls per minute)
     - **Custom question answering**
-        - **Azure search region**: *Any available location*.
+        - **Azure search region**: Select **<inject key="location" enableCopy="false"/>**
         - **Azure search pricing tier**: Free F (3 Indexes) - (*If this tier is not available, select Basic*)
     - **Responsible AI Notice**
         - **By checking this box I certify that I have reviewed and acknowledge the terms in the Responsible AI Notice**: *Selected*.
@@ -69,8 +69,6 @@ To use question answering, you need a **Language** resource.
     
 
    ![Creating a Language Service resource with custom question answering enabled.](media/mod7-01.png)
-
-
    
 1. If prompted to select an Azure resource, ensure the following settings and click on **Done (5)**:
     - **Azure directory**: *The Azure directory containing your subscription*.
