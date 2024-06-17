@@ -73,9 +73,23 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 1. Review the configuration. Then select **Create**. The screen will indicate when the deployment is complete. 
 
-   *Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned in particular is a single-service Content Safety service resource.*
+   *Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned in particular is a single-service Content Safety service resource.
+   *
 
-1. When the deployment is complete, open up a new tab and return to the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). 
+8. In the Azure portal, select the *Content Safety* resource you just created. Then on the left-hand pane, select **Access Control (IAM)**. Then on the open pane, select **Add** next to the plus sign, and select **Add role assignment**. 
+
+9. Search for **Cognitive Services User** in the list of roles, and select it. Then select **Next**. 
+
+10. Use the following settings to assign yourself to the role: 
+    - **Assign access to**: select *user, group, or service principal*
+    - **Members**: click on *select members*
+        - On the open *Select members* pane, find <inject key="AzureAdUserEmail"></inject>
+. Click on the plus icon next to <inject key="AzureAdUserEmail"></inject>. Then click **Select**.
+    - **Description**: *leave blank*
+
+11. Select **Review and Assign**, then select **Review and Assign** again to add the role assignment.  
+
+1. Return to the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). 
 
 2. Select the **Settings** icon on the top right of the screen again. This time you should see that your newly created resource has been added to the list.  
 
