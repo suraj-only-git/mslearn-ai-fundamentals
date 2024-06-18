@@ -225,6 +225,9 @@ After you have the documents in storage, you can use Azure AI Search to extract 
 
         ![Picture1](media/lab11-26.png)
 
+    > **Note**
+    > A warning asking for a **Storage Account Connection String** appears.
+    
 7. Under **Save enrichments to a knowledge store (1)**, If a warning asking for a **Storage Account Connection String (2)** appears.
     
    ![Screenshot that shows the Storage account connection screen warning with 'Choose an existing connection' selected.](media/lab11-27.png)
@@ -263,7 +266,9 @@ After you have the documents in storage, you can use Azure AI Search to extract 
 
     ![](media/lab11-32.png)
 
-14. On the **Create an index** page, follow the following steps:
+14. Review the index fields' default settings. Select **filterable** for all the fields that are already selected by default. The field names that need to be marked *filterable* include: content, locations, keyphrases, sentiment, merged_content, text, layoutText, imageTags, imageCaption.
+  
+15. On the **Create an index** page, follow the following steps:
 
 - Change the **Indexer name** to **coffee-indexer (1)**.
 - Leave the **Schedule** set to **Once (2)**.
@@ -275,11 +280,11 @@ After you have the documents in storage, you can use Azure AI Search to extract 
 
       ![Picture1](media/lab11-33.png)
 
-15.  Return to your Azure AI Search resource page. On the left pane, under **Search Management**, select  **Indexers**. Select the newly created **coffee-indexer**. Wait a minute, and select **&orarr; Refresh** until the **Status** indicates success.
+16.  Return to your Azure AI Search resource page. On the left pane, under **Search Management**, select  **Indexers**. Select the newly created **coffee-indexer**. Wait a minute, and select **&orarr; Refresh** until the **Status** indicates success.
 
      ![Picture1](media/lab11-34.png)
 
-16. Select the indexer name to see more details.
+17. Select the indexer name to see more details.
 
     ![Screenshot that shows the coffee-indexer Indexer successfully created.](media/lab11-35.png)
 
@@ -344,7 +349,7 @@ Let's see the power of the knowledge store in action. When you ran the *Import d
 
     ![](media/lab11-42.png)
 
-1. Click the **objectprojection.json** file.
+1.  You will see a list of folders. There is one folder for all of the metadata for each review document. **Select any of the folders**. Within the folder, click the **objectprojection.json** file.
 
     ![Screenshot of the objectprojection.json.](media/lab11-44.png)
 
