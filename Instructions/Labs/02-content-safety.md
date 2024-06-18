@@ -74,26 +74,13 @@ Before using the studio, you need to associate an Azure AI services resource wit
 1. Review the configuration. Then select **Create**. The screen will indicate when the deployment is complete. 
 
    *Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned in particular is a single-service Content Safety service resource.
-   *
-
-8. In the Azure portal, select the *Content Safety* resource you just created. Then on the left-hand pane, select **Access Control (IAM)**. Then on the open pane, select **Add** next to the plus sign, and select **Add role assignment**. 
-
-9. Search for **Cognitive Services User** in the list of roles, and select it. Then select **Next**. 
-
-10. Use the following settings to assign yourself to the role: 
-    - **Assign access to**: select *user, group, or service principal*
-    - **Members**: click on *select members*
-        - On the open *Select members* pane, find <inject key="AzureAdUserEmail"></inject>
-. Click on the plus icon next to <inject key="AzureAdUserEmail"></inject>. Then click **Select**.
-    - **Description**: *leave blank*
-
-11. Select **Review and Assign**, then select **Review and Assign** again to add the role assignment.  
+   *  
 
 1. Return to the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). 
 
-2. Select the **Settings** icon on the top right of the screen again. This time you should see that your newly created resource has been added to the list.  
+1. Select the **Settings** icon on the top right of the screen again. This time you should see that your newly created resource has been added to the list.  
 
-3. On the Content Safety Studio's Settings page, select the checkbox of the **Azure AI service (1)** resource you just created and click **Use resource (2)** on the bottom of the screen. You will be taken back to the studio home page. Now you can begin using the studio with your newly created resource.
+1. On the Content Safety Studio's Settings page, select the checkbox of the **Azure AI service (1)** resource you just created and click **Use resource (2)** on the bottom of the screen. You will be taken back to the studio home page. Now you can begin using the studio with your newly created resource.
 
    ![](media/30.png)
 
@@ -143,7 +130,7 @@ These capabilities you tested can be programmed into all sorts of applications. 
 
      ![](media/31.png)
 
-## validation
+## Validation
 
 <validation step="5371378e-8511-44ed-9037-3a000338132f" />
 
