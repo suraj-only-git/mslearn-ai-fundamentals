@@ -47,11 +47,11 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
     ![The View all resource link is highlighted under Getting started with Vision in Vision Studio.](./media/analyze-images-vision/vision-resources.png)
 
-1. On the **Select a resource to work with** page, hover your mouse cursor over the resource you created above in the list and then check the box to the left of the resource name, then select **Select as default resource**.
+1. On the **Select a resource to work with** page, make sure the resource you created above in the list.
 
     > **Note**: If your resource is not listed, you may need to **Refresh** the page.
 
-    ![The image and its captions are displayed.](./media/lab4-3.png)
+    ![The image and its captions are displayed.](./media/ai-900-02.png)
    
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
