@@ -265,8 +265,6 @@ After you have the documents in storage, you can use Azure AI Search to extract 
     - Select **Next: Create an indexer (5)**.
 
     ![](media/lab11-32.png)
-
-14. Review the index fields' default settings. Select **filterable** for all the fields that are already selected by default. The field names that need to be marked *filterable* include: content, locations, keyphrases, sentiment, merged_content, text, layoutText, imageTags, imageCaption.
   
 15. On the **Create an index** page, follow the following steps:
 
