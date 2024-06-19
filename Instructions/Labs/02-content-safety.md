@@ -83,7 +83,7 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
    ![](media/30.png)
 
-   >**Note:** If you receive an error stating that the access token is missing, ignore that error and move on to the next task.
+   >**Note:** The provision of content safety resources will take approximately 30-40 minutes. During this time, please proceed with Module 3. After completing Module 3, return to Module 2 and continue the lab from Task 3.
 
 ### Task 3: Try out text moderation in the Content Safety Studio
 
