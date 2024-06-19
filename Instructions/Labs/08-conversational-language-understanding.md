@@ -65,9 +65,9 @@ To implement natural language understanding with Conversational Language Underst
 1. In the **Create a project** dialog box, on the **Enter basic information** page, enter the following details and select **Next**:
     - **Name**: **Project<inject key="DeploymentID" enableCopy="false" />** (1)
     - **Utterances primary language**: *English (US)* (2)
-    - **Enable multiple languages in project**: *Do not select* 
-    - **Description**: `Simple home automation` (3)
-        Click **Next** (4)
+    - **Enable multiple languages in project**: **Do not select** (3)
+    - **Description**: `Simple home automation` (4)
+        Click **Next** (5)
       
          ![Select add under Intents on the Build Schema pane.](media/LAB8.png)
    
