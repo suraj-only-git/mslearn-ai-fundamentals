@@ -73,8 +73,7 @@ Before using the studio, you need to associate an Azure AI services resource wit
 
 1. Review the configuration. Then select **Create**. The screen will indicate when the deployment is complete. 
 
-   *Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned in particular is a single-service Content Safety service resource.
-   *  
+  >**Congrats! You've just created, or provisioned, an Azure AI services resource. The one you provisioned, in particular, is a single-service Content Safety service resource.**
 
 1. Return to the [Content Safety Studio](https://contentsafety.cognitive.azure.com?azure-portal=true). 
 
