@@ -74,6 +74,8 @@ To implement natural language understanding with Conversational Language Underst
     
     > **Tip**: Make a note of your *project name*, you will use it later.
 
+    >**Note:** Please note that it may take approximately 15-20 minutes for the list of **Utterances Primary Language** to become visible.
+
 1. On the **Review and finish** page, select **Create**.
   
 ### Task 3: Create intents, utterances, and entities
