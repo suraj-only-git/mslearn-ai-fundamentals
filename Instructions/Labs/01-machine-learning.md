@@ -4,7 +4,6 @@
 
 In this exercise, you'll use the automated machine learning feature in **Azure Machine Learning** to train and evaluate a machine learning model. You'll then deploy and test the trained model.
 
- 
 ## Lab objectives
 
 In this lab, you will perform:
@@ -180,56 +179,6 @@ When the automated machine learning job has completed, you can review the best m
 1. Wait for the deployment to start - this may take a few seconds. The **Deploy status** for the **predict-rentals** endpoint will be indicated in the main part of the page as *Running*.
 1. Wait for the **Deploy status** to change to *Succeeded*. This may take 5-10 minutes.
    
-## Task 4: Test the deployed service
-
-Now you can test your deployed service.
-
-1. In Azure Machine Learning studio, on the left hand menu, select **Endpoints** and open the **predict-rentals** real-time endpoint.
-
-1. On the **predict-rentals** real-time endpoint page view the **Test** tab.
-
-1. In the **Input data to test endpoint** pane, replace the template JSON with the following input data:
-
-    ```JSON
-    {
-      "Inputs": { 
-        "data": [
-          {
-            "day": 1,
-            "mnth": 1,   
-            "year": 2022,
-            "season": 2,
-            "holiday": 0,
-            "weekday": 1,
-            "workingday": 1,
-            "weathersit": 2, 
-            "temp": 0.3, 
-            "atemp": 0.3,
-            "hum": 0.3,
-            "windspeed": 0.3 
-          }
-        ]    
-      },   
-      "GlobalParameters": 1.0
-    }
-    ```
-
-1. Click the **Test** button.
-
-1. Review the test results, which include a predicted number of rentals based on the input features - similar to this:
-
-    ```JSON
-    {
-      "Results": [
-        444.27799000000000
-      ]
-    }
-    ```
-
-    The test pane took the input data and used the model you trained to return the predicted number of rentals.
-
-Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*.
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
 - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -238,6 +187,6 @@ Let's review what you have done. You used a dataset of historical bicycle rental
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Review
-In this lab, you have created an Azure Machine Learning workspace resource, and use automated machine learning to train a model and deploy and test it.
+In this lab, you have created an Azure Machine Learning workspace resource, and use automated machine learning to train a model and deploy it
   
 ## You have successfully completed this lab.
