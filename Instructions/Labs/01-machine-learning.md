@@ -102,7 +102,7 @@ Automated machine learning enables you to try multiple algorithms and parameters
         - **Data source**:
             - Select **From web files** and then select **Next**
         - **Web URL**:
-            - **Web URL**: `https://aka.ms/bike-rentals`
+            - **Web URL**: `https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/main/data/ml/bike-data/daily-bike-share.csv`
             - **Skip data validation**: *do not select* and then select **Next**
         - **Settings**:
             - **File format**: Delimited
