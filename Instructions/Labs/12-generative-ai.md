@@ -18,17 +18,6 @@ In this lab, you will perform:
 
  ![](media/lab12arcdia.png)
 
-## Before you start
-
-This exercise requires a free Microsoft account (for example an *outlook.com*, *live.com*. or *hotmail.com* account), and the Microsoft Edge web browser.
-
-1. If you don't already have a Microsoft account, sign up for one at [https://signup.live.com](https://signup.live.com).
-
-    > **Note**: Use you personal Email Id to create microsoft account.
-1. Sign into Microsoft Edge using your Microsoft account.
-
-    > **Note**: If you did not sign into Edge after creating your account, use the user account icon (&#128100;) on the Edge toolbar to sign in using a *personal* account.
-
 ## Task 1: Use Copilot to explore a document and research an idea
 
 To start your exploration of generative AI, let's use Microsoft Copilot in Edge to examine an existing document and extract some insights from it.
