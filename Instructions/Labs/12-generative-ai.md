@@ -2,7 +2,7 @@
 
 ## Lab overview
 
-In this exercise you will explore some of the ways in which Microsoft Copilot can use generative AI to help you be more productive when creating new content. In the scenario for this exercise, you will start with some high-level notes for a business idea, and use Copilot in Microsoft Edge to help you develop a business plan and a presentation for potential investors.
+In this exercise, you will explore some of the ways in which Microsoft Copilot can use generative AI to help you be more productive when creating new content. In the scenario for this exercise, you will start with some high-level notes for a business idea, and use Copilot in Microsoft Edge to help you develop a business plan and a presentation for potential investors.
 
 ## Lab objectives
 In this lab, you will perform:
@@ -27,7 +27,7 @@ To start your exploration of generative AI, let's use Microsoft Copilot in Edge 
 
     > **Note**: If you don't see the option to save a copy of the file to OneDrive, download it to your local computer. Then, in OneDrive, open the **Documents** folder and use the **+ Add new** button to upload the **Business Idea.docx** file from your local computer to OneDrive.
 
-1. View the text in **Business Idea.docx**, which describe some high -level ideas for a cleaning business in New York City.
+1. View the text in **Business Idea.docx**, which describes some high-level ideas for a cleaning business in New York City.
 1. Use the **Copilot** icon on the Edge toolbar to open the Copilot pane, as shown here:
 
     ![Screenshot of the Copilot pane in Microsoft Edge.](media/edge-copilot.png)
@@ -100,7 +100,7 @@ With Copilot's help, you've created a draft of a business plan for the cleaning 
 
     If the **Designer** pane opens automatically, close it.
 
-1. On the title slide for the presentation, enter the the name of your cleaning company as the title, and `Investor Opportunity` as the subtitle.
+1. On the title slide for the presentation, enter the name of your cleaning company as the title, and `Investor Opportunity` as the subtitle.
 1. Add a new slide, using the **Two Content** slide layout (which includes a title and two placeholders for content).
 1. Change the slide title to `Benefits of Hiring a Commercial Cleaner`.
 1. In the Copilot pane, enter the following prompt:
@@ -162,9 +162,9 @@ Be as inventive as you like, and explore how Copilot can help you by finding inf
 
 ## Conclusion
 
-In this exercise, you've used Copilot in Microsoft Edge to find information and generate content. Hopefully you've seen how using generative AI in a copilot can help with productivity and creativity.
+In this exercise, you've used Copilot in Microsoft Edge to find information and generate content. Hopefully, you've seen how using generative AI in a copilot can help with productivity and creativity.
 
-While the free services used in this exercises are undoubtedly very powerful, you can achieve even more with services like [Copilot for Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise/copilot-for-microsoft-365), in which Microsoft Copilot is integrated into Windows and Microsoft Office productivity applications, providing highly contextualized help with common tasks. Microsoft 365 enables you to bring the power of generative AI to your business data and processes, while integrating into your existing IT infrastructure to ensure a manageable, secure solution.
+While the free services used in this exercises are undoubtedly very powerful, you can achieve even more with services like [Copilot for Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise/copilot-for-microsoft-365), in which Microsoft Copilot is integrated into Windows and Microsoft Office productivity applications, providing highly contextualized help with common tasks. Microsoft 365 enables you to bring the power of generative AI to your business data and processes while integrating it into your existing IT infrastructure to ensure a manageable, secure solution.
 
 ### Review
 In this lab, you have completed:
