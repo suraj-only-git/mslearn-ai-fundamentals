@@ -83,7 +83,13 @@ Now that you've done some initial research, let's have Copilot help you develop 
     ```
     Create a corporate logo for the cleaning company. The logo should be round and include an iconic New York landmark.
     ```
+     Note: If it gives response to **Please sign in to create images**, click on **Image Creator** link and then     
+     sign with your account by clicking on **Join & Create** on Copilot | Designer page. 
 
+     ![](media/up3.png)
+   
+     ![](media/up2.png)
+     
 1. Review the response, which should present four options for a logo created by Microsoft Designer.
 1. Use more prompts to iterate on the design (for example, `Make it green and blue`) until you have a logo with which you are happy.
 1. Right-click the logo design you prefer and copy it to the clipboard. Then paste it into the top of the business plan document, like this:
