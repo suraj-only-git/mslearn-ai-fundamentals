@@ -128,7 +128,7 @@ Select **Sentence 1** again to close.
 
 In this exercise you used Language Studio to either create a new Language resource or use an existing Language resource. You enabled the resource in Settings before trying out the Sentiment and opinion mining service. You then tested the service with three pieces of text.
 
-## Validation
+## Validationn
 
 <validation step="9e1e91dc-4c1e-4c77-ad10-20f30d84e0a5" />
 
