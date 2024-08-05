@@ -44,9 +44,9 @@ You can use many Azure AI Language features with either a **Language** or **Azur
 
 ### Task 2: Configure your resource in Azure AI Language Studio
 
-1. In a separate browser tab within the LabVM, open [Language Studio](https://language.cognitive.azure.com?azure-portal=true) and click on **Sign in** from the top right corner.
+1. In a separate browser tab within the LabVM, open [Language Studio](https://language.cognitive.azure.com?azure-portal=true) and click on **Sign in** from the top right corner. after sign in you will be prompted with getting started language page go to the last page by click on **>** symbol.
 
-1. When prompted with **Select an Azure resource**, make the following configurations:
+1. When prompted with **choose resource**, make the following configurations:
     - **Azure directory**: *Default Directory, the directory you are using*
     - **Azure subscription**: *Select the subscription you are using*
     - **Resource type**: Language
@@ -64,7 +64,7 @@ You can use many Azure AI Language features with either a **Language** or **Azur
       
    ![An image of the text in the image outlined](media/lab-6(4).png)
       
-1. Select the resource you just created, and select **Switch resource**. Ensure Managed identity is **Enabled**.
+1. Ensure Managed identity is **Enabled**.
       
    ![An image of the text in the image outlined](media/clr1.png)
       
