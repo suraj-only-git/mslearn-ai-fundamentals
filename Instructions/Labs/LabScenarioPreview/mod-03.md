@@ -9,9 +9,11 @@ In this exercise, you will use Vision Studio to analyze images using the built-i
 
 ## Lab objectives
 In this lab, you will perform:
-  - Create an *Azure AI services* resource
+  - Create an Azure AI services resource
   - Connect Azure AI Service Resource to Vision Studio
   - Image Analysis with Azure AI Vision Services
+  - Tagging images
+  - Object detection
 
 ## Estimated timing: 60 minutes
 

@@ -26,15 +26,17 @@ In this lab, you will perform:
 
 You can use many Azure AI Language features with either a **Language** or **Azure AI services** resource. There are some instances where only a Language resource can be used. For the exercise below, we will use a **Language** resource. If you haven't already done so, create a **Language** resource in your Azure subscription.
 
-1. Click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to *Select additional features**. Keep the default selection and click **Continue to create your resource**. 
+1. Click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to *Select additional features*. Keep the default selection and click **Continue to create your resource**. 
+
+    ![An image of the text in the image outlined](media/lab-5(1).png)
 
 1. On the page **Create Language**, configure it with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: **AI-900-Module-08-<inject key="DeploymentID" enableCopy="false" />**
-    - **Region**: Select **<inject key="location" enableCopy="false"/>**
+    - **Region**: Select **East US**
     - **Name**: Enter **Conversational<inject key="DeploymentID" enableCopy="false" />**
-    - **Pricing tier**: *Free F0 or S if Free F0 is not available*
-    - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
+    - **Pricing tier**: *Free F0* (if Free F0 is not available, select *S*)
+    - **By checking this box I certify that I have reviewed and acknowledge the terms in the Responsible AI Notice.**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
@@ -44,7 +46,7 @@ To implement natural language understanding with Conversational Language Underst
 
 1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com?azure-portal=true) and sign in using the Microsoft account associated with your Azure subscription.
 
-1. If prompted to choose a Language resource, select the following settings:
+1. If prompted to choose a Language resource, select the following settings, and select **Done**:
     - **Azure directory**: *The Azure directory containing your subscription*.
     - **Azure subscription**: *Your Azure subscription*.
     - **Resource type**: *Language*.
@@ -56,20 +58,23 @@ To implement natural language understanding with Conversational Language Underst
     3. Select the language resource you just created, and select **Switch resource**.
     4. At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
-1. At the top of the portal, in the **Create new** menu, select **Conversational language understanding**.
+1. At the top of the portal, select **Create new** menu, and select **Conversational language understanding**.
 
     ![Select add under Intents on the Build Schema pane.](media/lab8(1).png)
    
 1. In the **Create a project** dialog box, on the **Enter basic information** page, enter the following details and select **Next**:
     - **Name**: **Project<inject key="DeploymentID" enableCopy="false" />** (1)
-    - **Utterances primary language**: *English* (2)
-    - **Enable multiple languages in project**: *Do not select* 
-    - **Description**: `Simple home automation` (3)
-        Click **Next**(4)
+    - **Utterances primary language**: *English (US)* (2)
+    - **Enable multiple languages in project**: **Do not select** (3)
+    - **Description**: `Simple home automation` (4)
+        Click **Next** (5)
       
          ![Select add under Intents on the Build Schema pane.](media/LAB8.png)
    
+    
     > **Tip**: Make a note of your *project name*, you will use it later.
+
+    >**Note:** Please note that it may take approximately 15-20 minutes for the list of **Utterances Primary Language** to become visible.
 
 1. On the **Review and finish** page, select **Create**.
   
@@ -77,7 +82,7 @@ To implement natural language understanding with Conversational Language Underst
 
 An *intent* is an action you want to perform - for example, you might want to switch on a light, or turn off a fan. In this case, you'll define two intents: one to switch on a device, and another to switch off a device. For each intent, you'll specify sample *utterances* that indicate the kind of language used to indicate the intent.
 
-1. In the **Schema definition** pane, ensure that **Intents** is selected then select **Add**
+1. In the **Schema definition** pane, ensure that **Intents** is selected then select **+ Add**
 
     ![Select add under Intents on the Build Schema pane.](media/lab8(3).png)
 
@@ -98,9 +103,11 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
         ![Select add under Intents on the Build Schema pane.](media/lab8(5).png)
 
-1. On the **Labeling entities for training** pane on the right-hand side of the screen, select **Labels**, then select **Add entity**. Type `device` (in lower-case), select **List** and select **Add entity**.
+1. On the **Activity pane** on the right-hand side of the screen, select **Labels**, then select **+ Add entity**.
 
     ![Select add under Intents on the Build Schema pane.](media/lab8(6).png)
+
+1.  Type `device` (in lower-case), select **List** and select **Add entity**.
 
     ![Select add under Intents on the Build Schema pane.](media/lab88.png)
 
@@ -112,16 +119,16 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
     | **intent** | **utterance** | **entity** |
     | --------------- | ------------------ | ------------------ |
-    | switch_on   | Put on the fan      | Device - *select fan* |
-    | switch_on   | Put on the light    | Device - *select light* |
-    | switch_on   | Switch on the light | Device - *select light* |
-    | switch_on   | Turn the fan on     | Device - *select fan* |
-    | switch_on   | Switch on the fan   | Device - *select fan* |
-    | switch_on   | Turn the light on   | Device - *select light* |
+    | switch_on   | put the fan on     | Device - *select fan* |
+    | switch_on   | put the light on    | Device - *select light* |
+    | switch_on   | switch on the light | Device - *select light* |
+    | switch_on   | turn the fan on     | Device - *select fan* |
+    | switch_on   | switch on the fan   | Device - *select fan* |
+    | switch_on   | turn the light on   | Device - *select light* |
 
     ![Select add under Intents on the Build Schema pane.](media/lab8(9).png)
 
-1. In the pane on the left, select **Schema definition** and verify that your **switch_on** intent is listed. Then select **Add** and add a new intent with the name `switch_off` (in lower-case).
+1. In the pane on the left, select **Schema definition** and verify that your **switch_on** intent is listed. Then select **+ Add** and add a new intent with the name `switch_off` (in lower-case).
 
     ![Select add under Intents on the Build Schema pane.](media/lab8(10).png)
 
@@ -138,12 +145,12 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
     | **intent** | **utterance** | **entity** | 
     | --------------- | ------------------ | ------------------ |
-    | switch_off   | Put the fan off    | Device - *select fan* | 
-    | switch_off   | Put the light off  | Device - *select light* |
-    | switch_off   | Turn off the light | Device - *select light* |
-    | switch_off   | Switch the fan off | Device - *select fan* |
-    | switch_off   | Switch off the fan | Device - *select fan* |
-    | switch_off   | Turn the light off | Device - *select light* |
+    | switch_off   | put the fan off    | Device - *select fan* | 
+    | switch_off   | put the light off  | Device - *select light* |
+    | switch_off   | turn off the light | Device - *select light* |
+    | switch_off   | switch the fan off | Device - *select fan* |
+    | switch_off   | switch off the fan | Device - *select fan* |
+    | switch_off   | turn the light off | Device - *select light* |
 
    ![Select add under Intents on the Build Schema pane.](media/lab8(11).png)
    
@@ -151,15 +158,17 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
 Now you're ready to use the intents and entities you have defined to train the conversational language model for your app.
 
-1. On the left hand side of Language Studio, select **Training jobs**, then select **Start a training job**. Use the following settings:
+1. On the left hand side of Language Studio, select **Training jobs**, then select **+ Start a training job**.
+   
+   ![Select add under Intents on the Build Schema pane.](media/lab8(12).png)
+   
+1. Use the following settings:
     - **Train a new model**: **Train<inject key="DeploymentID" enableCopy="false" />**
     - **Training mode**: Standard training (free)
     - **Data Splitting**: *select Automatically split the testing set from the training data, keep default percentages*
     - Select **Train** at the bottom of the page.
 
-    ![Select add under Intents on the Build Schema pane.](media/lab8(12).png)
-
-    ![Select add under Intents on the Build Schema pane.](media/lab8(13).png)
+        ![Select add under Intents on the Build Schema pane.](media/lab8(13).png)
    
 1. Wait for training to complete.
 
@@ -167,18 +176,18 @@ Now you're ready to use the intents and entities you have defined to train the c
 
 To use your trained model in a client application, you must deploy it as an endpoint to which the client applications can send new utterances; from which intents and entities will be predicted.
 
-1. On the left-hand side of Language Studio, select **Deploying a model**.
+1. On the left-hand side of Language Studio, select **Deploying a model (1)**, and select **Add deployment (2)**.
 
-1. Select your model name and then **Add deployment**. Use these settings:
+    ![Select add under Intents on the Build Schema pane.](media/lab8(14).png)
+
+1. Use these settings:
     - **Create or select an existing deployment name**: **Deploy<inject key="DeploymentID" enableCopy="false" />**
     - **Assign trained model to your deployment name**: *Select the name of the trained model*.
     - Select **Deploy**
 
-    > **Tip**: Note your *deployment name*, you will use it later. 
+        > **Tip**: Note your *deployment name*, you will use it later.    
 
-   ![Select add under Intents on the Build Schema pane.](media/lab8(14).png)
-
-   ![Select add under Intents on the Build Schema pane.](media/lab8(15).png)
+        ![Select add under Intents on the Build Schema pane.](media/lab8(15).png)
    
 1. When the model is deployed, select **Testing deployments** on the left-hand side of the page, and then select your deployed model under **Deployment name**.
 
@@ -188,7 +197,10 @@ To use your trained model in a client application, you must deploy it as an endp
 
     Review the result that is returned, noting that it includes the predicted intent (which should be **switch_on**) and the predicted entity (**device**) with confidence scores that indicates the probability the model calculated for the predicted intent and entity. The JSON tab shows the comparative confidence for each potential intent (the one with the highest confidence score is the predicted intent)
 
-1. Clear the text box and test the model with the following utterances under *Enter your own text, or upload a text document*:
+    ![](media/results(1).png)
+
+1. Clear text box and test the model with the following utterances under *Enter your own text, or upload a text document*:
+    
     - `turn off the fan`
     - `put the light on`
     - `put the fan off`

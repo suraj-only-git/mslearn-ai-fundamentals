@@ -34,13 +34,6 @@ You can use Azure AI Face service with an **Azure AI services** multi-service re
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
   
 ### Task 2: Connect your Azure AI service resource to Vision Studio
 
@@ -48,24 +41,23 @@ Next, connect the Azure AI services resource you provisioned above to Vision Stu
 
 1. In another browser tab, navigate to [Vision Studio](https://portal.vision.cognitive.azure.com?azure-portal=true).
 
-1. Sign in with your account and making sure you are using the same directory as the one where you have created your Azure AI services resource.
+1. Sign in with your account and make sure you are using the same directory as the one where you have created your Azure AI services resource.
 
 1. On the Vision Studio home page, select **View all resources** under the **Getting started with Vision** heading.
 
     ![The View all resource link is highlighted under Getting started with Vision in Vision Studio.](./media/analyze-images-vision/vision-resources.png)
 
-1. On the **Select a resource to work with** page, hover your mouse cursor over the resource you created above in the list and then check the box to the left of the resource name, then select **Select as default resource**.
+1. On the **Select a resource to work with** page, make sure the resource you created above in the list.
 
-    > **Note** : If your resource is not listed, you may need to **Refresh** the page.
+    > **Note**: If your resource is not listed, you may need to **Refresh** the page.
 
-    ![The image and its captions are displayed.](./media/lab4-3.png)
+    ![The image and its captions are displayed.](./media/ai-900-02.png)
    
 1. Close the settings page by selecting the "x" at the top right of the screen.
 
 ### Task 3:   Detect faces in the Vision Studio 
 
-1. In a web browser, navigate to [Vision Studio](https://portal.vision.cognitive.azure.com?azure-portal=true).
-
+1. In a web browser, navigate to **Vision Studio** at [https://portal.vision.cognitive.azure.com](https://portal.vision.cognitive.azure.com?azure-portal=true).
 1. On the **Getting started with Vision** landing page, select the **Face** tab and then select the **Detect Faces in an image** tile.
 
    ![The image and its captions are displayed.](./media/lab4-1.png)

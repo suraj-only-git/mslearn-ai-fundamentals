@@ -4,7 +4,9 @@
 
 In this exercise, you'll use the automated machine learning feature in **Azure Machine Learning** to train and evaluate a machine learning model. You'll then deploy and test the trained model.
 
- 
+>**Important**
+>At this time, it is possible to author and deploy a model as a web service in the Azure Machine Learning Studio, but not to test it in the Studio. Therefore, all but the last section of steps till deploy the model can be completed. We will update as this changes.
+
 ## Lab objectives
 
 In this lab, you will perform:
@@ -80,7 +82,7 @@ Automated machine learning enables you to try multiple algorithms and parameters
 
    ![](media/lab1-1.png)  
 
-1. Create a new Automated ML job with the following settings, using **Next** as required to progress through the user interface:
+1. Create a new Automated ML job by selecting **+ New Automated ML job** with the following settings, using **Next** as required to progress through the user interface:
 
     **Basic settings**:
 
@@ -92,35 +94,35 @@ Automated machine learning enables you to try multiple algorithms and parameters
    **Task type & data**:
 
     - **Select task type**: Regression
-    - **Select dataset**: Create a new dataset with the following settings:
+    - **Select data**: Select **+ Create** to create a new data with the following settings:
         - **Data type**:
             - **Name**: bike-rentals
             - **Description**: Historic bike rental data
-            - **Type**: Tabular
+            - **Type**: Tabular and then select **Next**
         - **Data source**:
-            - Select **From web files**
+            - Select **From web files** and then select **Next**
         - **Web URL**:
-            - **Web URL**: `https://aka.ms/bike-rentals`
-            - **Skip data validation**: *do not select*
+            - **Web URL**: `https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/main/data/ml/bike-data/daily-bike-share.csv`
+            - **Skip data validation**: *do not select* and then select **Next**
         - **Settings**:
             - **File format**: Delimited
             - **Delimiter**: Comma
             - **Encoding**: UTF-8
             - **Column headers**: Only first file has headers
             - **Skip rows**: None
-            - **Dataset contains multi-line data**: *do not select*
+            - **Dataset contains multi-line data**: *do not select* and then select **Next**
         - **Schema**:
-            - Include all columns other than **Path**
+            - Include all columns other than **Path** and then select **Next**
             - Review the automatically detected types
 
-        Select **Create**. After the dataset is created, select the **bike-rentals** dataset to continue to submit the Automated ML job.
+        Select **Create**. After the dataset is created, select the **bike-rentals** dataset to continue to submit the Automated ML job. Select **Next**
 
     **Task settings**:
 
     - **Task type**: Regression
-    - **Dataset**: bike-rentals
-    - **Target column**: Rentals (integer)
-    - **Additional configuration settings**:
+    - **Data**: bike-rentals
+    - **Target column**: rentals (integer)
+    - **View additional configuration settings**:
         - **Primary metric**: Normalized root mean squared error
         - **Explain best model**: *Unselected*
         - **Use all supported models**: <u>Un</u>selected. *You'll restrict the job to try only a few specific algorithms.*
@@ -130,22 +132,22 @@ Automated machine learning enables you to try multiple algorithms and parameters
         - **Max concurrent trials**: 3
         - **Max nodes**: 3
         - **Metric score threshold**: 0.085 (*so that if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*)
-        - **Timeout**: 15
-        - **Iteration timeout**: 5
+        - **Experiment Timeout**: 15
+        - **Iteration timeout**: 15
         - **Enable early termination**: *Selected*
     - **Validation and test**:
         - **Validation type**: Train-validation split
-        - **Percentage of validation data**: 10
-        - **Test dataset**: None
+        - **Percentage validation of data**: 10
+        - **Test dataset**: None and then select **Next**
 
     **Compute**:
     - **Select compute type**: Serverless
     - **Virtual machine type**: CPU
     - **Virtual machine tier**: Dedicated
     - **Virtual machine size**: Standard_DS3_V2
-    - **Number of instances**: 1
+    - **Number of instances**: 1 and then select **Next**
 
-1. Submit the training job. It starts automatically.
+1. Select **Submit training job**. It starts automatically.
 
 1. Wait for the job to finish. It might take a while — now might be a good time for a coffee break!
 
@@ -166,7 +168,7 @@ When the automated machine learning job has completed, you can review the best m
 
     Review the charts which show the performance of the model. The **residuals** chart shows the *residuals* (the differences between predicted and actual values) as a histogram. The **predicted_true** chart compares the predicted values against the true values.
 
-### Task 3: Deploy and test the model
+### Task 3: Deploy the model
 
 1. On the **Model** tab for the best model trained by your automated machine learning job, select **Deploy** and use the **Web service** option to deploy the model with the following settings:
     - **Name**: predict-rentals  **(1)**
@@ -180,56 +182,6 @@ When the automated machine learning job has completed, you can review the best m
 1. Wait for the deployment to start - this may take a few seconds. The **Deploy status** for the **predict-rentals** endpoint will be indicated in the main part of the page as *Running*.
 1. Wait for the **Deploy status** to change to *Succeeded*. This may take 5-10 minutes.
    
-## Task 4: Test the deployed service
-
-Now you can test your deployed service.
-
-1. In Azure Machine Learning studio, on the left hand menu, select **Endpoints** and open the **predict-rentals** real-time endpoint.
-
-1. On the **predict-rentals** real-time endpoint page view the **Test** tab.
-
-1. In the **Input data to test endpoint** pane, replace the template JSON with the following input data:
-
-    ```JSON
-    {
-      "Inputs": { 
-        "data": [
-          {
-            "day": 1,
-            "mnth": 1,   
-            "year": 2022,
-            "season": 2,
-            "holiday": 0,
-            "weekday": 1,
-            "workingday": 1,
-            "weathersit": 2, 
-            "temp": 0.3, 
-            "atemp": 0.3,
-            "hum": 0.3,
-            "windspeed": 0.3 
-          }
-        ]    
-      },   
-      "GlobalParameters": 1.0
-    }
-    ```
-
-1. Click the **Test** button.
-
-1. Review the test results, which include a predicted number of rentals based on the input features - similar to this:
-
-    ```JSON
-    {
-      "Results": [
-        444.27799000000000
-      ]
-    }
-    ```
-
-    The test pane took the input data and used the model you trained to return the predicted number of rentals.
-
-Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*.
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
 - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -238,6 +190,6 @@ Let's review what you have done. You used a dataset of historical bicycle rental
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Review
-In this lab, you have created an Azure Machine Learning workspace resource, and use automated machine learning to train a model and deploy and test it.
+In this lab, you have created an Azure Machine Learning workspace resource, and use automated machine learning to train a model and deploy it
   
 ## You have successfully completed this lab.

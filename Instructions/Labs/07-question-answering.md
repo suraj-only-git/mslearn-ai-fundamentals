@@ -30,7 +30,7 @@ In this lab, you will perform:
 
 To use question answering, you need a **Language** resource.
 
-1. In azure portal, click the **&#65291;Create a resource** button and search for *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Use the following settings:
+1. In azure portal, click the **&#65291;Create a resource** button, then search and select *Language service*. Select **create** a **Language service** plan. You will be taken to a page to **Select additional features**. Use the following settings:
     - **Select Additional Features**:
         - **Default features**: *Keep the default features*.
         - **Custom features**: *Select custom question answering*.
@@ -47,7 +47,7 @@ To use question answering, you need a **Language** resource.
         - **Name**: Enter **language<inject key="DeploymentID" enableCopy="false" />**
         - **Pricing tier**: S (1K Calls per minute)
     - **Custom question answering**
-        - **Azure search region**: *Any available location*.
+        - **Azure search region**: Select **<inject key="location" enableCopy="false"/>**
         - **Azure search pricing tier**: Free F (3 Indexes) - (*If this tier is not available, select Basic*)
     - **Responsible AI Notice**
         - **By checking this box I certify that I have reviewed and acknowledge the terms in the Responsible AI Notice**: *Selected*.
@@ -59,31 +59,38 @@ To use question answering, you need a **Language** resource.
 
 ### Task 2: Create a new project
 
-1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com?azure-portal=true) and sign in using the Microsoft account associated with your Azure subscription.
+1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com?azure-portal=true)
 
-   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(2).png)
+1. Sign in using the following username and password.
+    
+    * Email/Username: <inject key="AzureAdUserEmail"></inject>
+    
+    * Password: <inject key="AzureAdUserPassword"></inject>
+    
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/mod7-01.png)
    
-1. If prompted to choose a Language resource, select the following settings:
+1. If prompted to select an Azure resource, ensure the following settings and click on **Done (5)**:
     - **Azure directory**: *The Azure directory containing your subscription*.
     - **Azure subscription**: *Your Azure subscription*.
     - **Resource type**: *Language*.
     - **Resource name**: *select the Language service resource you just created*
 
-    If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
+1. If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
    
-    1. On the bar at the top if the page, select **Settings (&#9881;)**.
+    - On the bar at the top of the page, select **Settings (&#9881;)**.
            
-    1. On the **Settings** page, view the **Resources** tab.
+    - On the **Settings** page, view the **Resources** tab.
        
-    1. Select the language resource you just created, and select **Switch resource**.
+    - Select the language resource you just created, and select **Switch resource**.
        
-    1. At the top of the page, select **Language Studio** to return to the Language Studio home page.
+    - At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
 1. At the top of the Language Studio portal, in the **Create new** menu, select **Custom question answering**.
 
     ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(3).png)
 
-1. On the **Choose language setting for resource *your resource*** page, select **I want to select the language when I create a project in this resource** (1) and click **Next** (2).
+1. On the **Choose language setting for the resource language-<inject key="DeploymentID" enableCopy="false" />** page, select **I want to select the language when I create a project in this resource** (1) and click **Next** (2).
 
     ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(4).png)
 
@@ -95,22 +102,24 @@ To use question answering, you need a **Language** resource.
     - **Source language**: English
     - **Default answer when no answer is returned**: `No answer found`
       
-1. Click **Next** page, select **Create project**.
+      ![](media/ai900mod4dimg9.png)
 
-   ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(5).png)
+
+1. On the **Review and finish** page, click **Create project**.
+
+   ![Creating a Language Service resource with custom question answering enabled.](media/ai900mod4dimg10.png)
    
 1. You will be taken to the **Manage sources** page. Select **&#65291;Add source** and select **URLs**.
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(6).png)
    
-1. In the **Add URLs** box, select **+ Add url**. Type in the following and select **Add all**:
+1. In the **Add URLs** box, select **+ Add url**. Provide the following details and select **Add all**:
     - **URL name**: `MargiesKB`
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/main/data/natural-language/margies_faq.docx`
-
-      ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(8).png)
-      
     - **Classify file structure**: *Auto-detect*
-1. Select **Add all.**  
+
+     ![Creating a Language Service resource with custom question answering enabled.](media/ai900mod4dimg12-1.png)
+      
 
 ### Task 3: Edit the knowledge base
 
@@ -121,7 +130,7 @@ Your knowledge base is based on the details in the FAQ document and some pre-def
     ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(7).png)
    
 1. In the **Add a new question answer pair** dialog box, in the **Question** type `Hello`, and in the **Answer** type `Hi`, then select **Done**.
-1. Expand **Alternate questions** and select **+ Add alternate question**. Then enter `Hiya`as an alternative phrasing for "Hello".
+1. Expand **Alternate questions** and select **+ Add alternate question**. Then enter `Hiya` as an alternative phrasing for "Hello".
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(10).png)
    
@@ -137,16 +146,16 @@ Now that you have a knowledge base, you can test it.
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(12).png)
    
-1. In the test pane, at the bottom enter the message `Hi`. The response *Hi* should be returned.
+1. In the test pane, at the bottom enter the message `Hi` and press enter. The response *Hi* should be returned.
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(11).png)
    
-1. In the test pane, at the bottom enter the message `I want to book a flight`. An appropriate response from the FAQ should be returned.
+1. In the test pane, at the bottom enter the message `I want to book a flight` and press enter. An appropriate response from the FAQ should be returned.
 
     > **Note**
     > The response includes a *short answer* as well as a more verbose *answer passage* - the answer passage shows the full text in the FAQ document for the closest matched question, while the short answer is intelligently extracted from the passage. You can control whether the short answer is from the response by using the **Include short answer** checkbox at the top of the test pane.
 
-1. Try another question, such as `How can I cancel a reservation?`
+1. Try another question, such as `How can I cancel a reservation?` and press enter.
 1. When you're done testing the knowledge base, select **Test** to close the test pane.
 
 ### Task 5: Create a bot for the knowledge base
@@ -193,7 +202,7 @@ The knowledge base provides a back-end service that client applications can use 
         - **Resource Group Name**: *Pre-populated with your resource group name*
         - **Account Name**: *Pre-populated with your resource name*
 
-1. Select **Review and Create**.
+1. Select **Review + create**.
 
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(14).png)
 
@@ -203,7 +212,13 @@ The knowledge base provides a back-end service that client applications can use 
 
 1. Use the test chat interface to ensure your bot answers questions from your knowledge base as expected. For example, try submitting `I need to cancel my hotel`.
 
+   ![Azure bot](media/mod7-03.png)
+
 Experiment with the bot. You'll probably find that it can answer questions from the FAQ quite accurately, but it will have limited ability to interpret questions that it has not been trained with. You can always use the Language Studio to edit the knowledge base to improve it, and republish it.
+
+## Validation
+
+   <validation step="11faa70c-17f5-4a89-8275-059ac6273139" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  

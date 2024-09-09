@@ -84,23 +84,23 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. If prompted to stay signed in, you can click **No**.
 
-    ![](./media/15.png)
+    ![](./media/staysigned2.png)
       
-1. If prompted **Your Microsoft account brings everything together**, then click on **continue**.
+1. If prompted **Your Microsoft account brings everything together**, then click on **Ok**.
  
-    ![](./media/16.png)
+    ![](./media/upg.png)
 
 1. Select the **profile (1)** icon in the Edge toolbar and then select **Sign in to sync data (2)**.
 
    ![](./media/14.png)
 
-1. On the create account page enter details as shown in the below picture:
+1. On the Create Account page enter details as shown in the picture below:
 
     - **Username:** odl_user_<inject key="DeploymentID" enableCopy="false" />@outlook.com
 
         ![](./media/13.png)
 
-1. On the create a password page enter details as shown in the below picture:
+1. On the create a password page enter details as shown in the picture below:
 
     - **Password**: <inject key="AzureAdUserPassword"></inject>
 

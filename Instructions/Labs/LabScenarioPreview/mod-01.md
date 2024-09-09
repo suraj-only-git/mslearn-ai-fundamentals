@@ -15,3 +15,8 @@ In this lab, you will perform:
 ## Estimated timing: 60 minutes
 
 ## Solution Architecture
+
+![](../media/lab01-arch.JPG)
+
+Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/1c4e71ee-a835-416f-8c97-185cec7bee07)
+if you want to go through detailed guide prior to launching lab environment.  

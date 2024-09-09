@@ -8,11 +8,11 @@ In this exercise, you will use Vision Studio to analyze images using the built-i
 
 ## Lab objectives
 In this lab, you will perform:
-  - Create an *Azure AI services* resource
-  - Connect Azure AI Service Resource to Vision Studio
-  - Image Analysis with Azure AI Vision Services
-  - Tagging images
-  - Object detection
+- Task 1: Create an Azure AI services resource
+- Task 2: Connect your Azure AI service resource to Vision Studio
+- Task 3: Generate captions for an image
+- Task 4: Tagging images
+- Task 5: Object detection
 
 ## Estimated timing: 60 minutes
 
@@ -34,7 +34,7 @@ You can use Azure AI Vision's image analysis capabilities with an **Azure AI ser
     - **Resource group (2)**: **AI-900-Module-03-<inject key="DeploymentID" enableCopy="false" />**
     - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
     - **Name (4)**: Enter **visionimageai<inject key="DeploymentID" enableCopy="false"/>**
-    - **Pricing tier (5)**:Select **Standard S0**.
+    - **Pricing tier (5)** :Select **Standard S0**.
     - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
@@ -75,7 +75,7 @@ Let's look at the image captioning functionality of Azure AI Vision. Image capti
 
 1. Under the **Try It Out** subheading, acknowledge the resource usage policy by reading and checking the box.  
 
-1. Select [**https://aka.ms/mslearn-images-for-analysis**](https://aka.ms/mslearn-images-for-analysis) to download **image-analysis.zip**. Open the folder on your computer and locate the file named **store-camera-1.jpg**; which contains the following image:
+1. Copy this link and paste it into the browser [**https://aka.ms/mslearn-images-for-analysis**](https://aka.ms/mslearn-images-for-analysis) to download **image-analysis.zip**. Open the folder on your computer and locate the file named **store-camera-1.jpg**; which contains the following image:
 
     ![An image of a parent using a cellphone camera to take a picture of a child in in a store](./media/analyze-images-vision/store-camera-1.jpg)
 
@@ -93,11 +93,13 @@ Let's look at the image captioning functionality of Azure AI Vision. Image capti
 
     The **Dense Captions** feature differs from the **Caption** capability in that it provides multiple human-readable captions for an image, one describing the image's content and others, each covering the essential objects detected in the picture. Each detected object includes a bounding box, which defines the pixel coordinates within the image associated with the object.
 
-1. Hover over one of the captions in the **Detected** attributes list and observe what happens within the image.
+1. upload the **store-camera-1.jpg** image by dragging it to the **Drag and drop files here** box, or by browsing to it on your file system . Hover over one of the captions in the **Detected** attributes list and observe what happens within the image.
 
     ![The image and its captions are displayed.](./media/lab3-3.png)
 
     Move your mouse cursor over the other captions in the list, and notice how the bounding box shifts in the image to highlight the portion of the image used to generate the caption.
+
+> **Note**: If you encounter any intermittent issues with Vision Studio during Task 3, proceed with the next task. You can revisit and reattempt Task 3 if necessary.
 
 ## Task 4: Tagging images
 
@@ -107,9 +109,11 @@ The next feature you will try is the **Extract Tags** functionality. Extract tag
 
    ![The image and its captions are displayed.](./media/update3.png)
 
-3. In the **Choose the model you want to try out**, leave **Prebuilt product vs. gap model** selected. In the **Choose your language**, select **English** or a language of your preference. Upload the **store-camera-2.jpg** image by dragging it to the **Drag and drop files here** box, or by browsing to it on your file system.
+3. In the **Choose your language**, select **English** or a language of your preference. Upload the **store-camera-2.jpg** image by dragging it to the **Drag and drop files here** box, or by browsing it on your file system.
 
-   ![The image and its captions are displayed.](./media/lab3-5.png)
+   ![The image and its captions are displayed.](./media/ai-900img1.png)
+
+   >**Note:** You can ignore the warning.
 
 6. Review the list of tags extracted from the image and the confidence score for each in the detected attributes panel. Here the confidence score is the likelihood that the text for the detected attribute describes what is actually in the image. Notice in the list of tags that it includes not only objects, but actions, such as *shopping*, *selling*, and *standing*.
 
@@ -122,8 +126,6 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 1. Return to the home page of Vision Studio, then select the **Detect common objects in images** tile under the **Image analysis** tab.
 
    ![The image and its captions are displayed.](./media/update4.png)
-
-1. In the **Choose the model you want to try out**, leave **Prebuilt product vs. gap model** selected.
 
 1. Open the folder containing the images you downloaded and locate the file named **store-camera-3.jpg**, which looks like this:
 
@@ -139,12 +141,17 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 
      ![An image of person with a shopping basket in a supermarket](./media/lab3-6.png)
 
+## Validation
+
+<validation step="940107bb-0097-41e1-9e10-e3095bed6061" />
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
 - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  
 
 ## Learn more
 

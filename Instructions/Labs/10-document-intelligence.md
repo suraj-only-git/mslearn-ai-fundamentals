@@ -44,7 +44,7 @@ You can use Azure AI Document Intelligence by creating either a *Document Intell
     - **Resource group (2)**: Select **AI-900-Module-10-<inject key="DeploymentID" enableCopy="false" />**
     - **New resource name(3)**:  Enter **intelligence<inject key="DeploymentID" enableCopy="false" />**
     - **Location (4)**: Select **<inject key="location" enableCopy="false"/>** 
-    - **Pricing tier(5)**: *Free FO (if available, otherwise select Standard SO)*.
+    - **Pricing tier(5)**: *FO Free (if available, otherwise select Standard SO)*.
    - Select **Continue (6)** 
 
      ![](media/lab10-07.png)
@@ -57,13 +57,6 @@ You can use Azure AI Document Intelligence by creating either a *Document Intell
 
 Keep Document Intelligence Studio open.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ### Task 2: Analyze a receipt in Document Intelligence Studio
 
 You are now ready to analyze a receipt for the fictitious Northwind Traders retail company.
@@ -72,7 +65,7 @@ You are now ready to analyze a receipt for the fictitious Northwind Traders reta
 
    ![](media/lab10-05.png).
 
-1. Select **Form Recognizer Studio** to return to the **Get Started with Document Intelligence Studio** page, and under Receipts select **Try it out**.
+1. Select **Document Intelligence Studio** to return to the **Get Started with Document Intelligence Studio** page, and under Receipts select **Try it out**.
 
    ![](media/lab10-04.png)
 
