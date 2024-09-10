@@ -23,7 +23,7 @@ In this exercise, you will perform:
 
 In this task, you will sign in to Azure AI Studio and explore its interface, learning how to navigate the platform and access its various features for managing AI resources.
 
-1. In a web browser, open https://ai.azure.com and **Sign in** using your Azure credentials. The home page of Azure AI Studio looks similar to the following image:
+1. In a edge browser, open https://ai.azure.com and **Sign in** using your Azure credentials. The home page of Azure AI Studio looks similar to the following image:
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
    - **Password:** <inject key="AzureAdUserPassword"></inject>
@@ -38,7 +38,7 @@ In this task, you will sign in to Azure AI Studio and explore its interface, lea
 
 In this task, you will create an Azure AI hub, gaining hands-on experience in setting up a collaborative workspace for AI projects and configuring essential resources and connections.
 
-1. In the **Management** section, navigate to **All hubs** and click on **+ New hub**. Set the following configuration settings for the new hub, and then click **Next** to proceed.
+1. In the **Management** section, navigate to **All hubs (1)** and click on **+ New hub (2)**. Set the following configuration settings for the new hub, and then click **Next** to proceed.
 
     ![](media/lab13-a3.png)
 
@@ -61,7 +61,7 @@ In this task, you will create an Azure AI hub, gaining hands-on experience in se
 
     ![](media/lab13-a6.png)
 
-4. Open a new browser tab (leaving the Azure AI Studio tab open) and browse to the Azure portal.
+4. While keeping the Azure AI Studio tab open in the Edge browser, open another tab within the same Edge browser and navigate to the Azure portal.
 
 5. Browse to the resource group **AI-900-Module-13-<inject key="DeploymentID" enableCopy="false" />** , and view the Azure resources that have been created.
 
@@ -77,7 +77,7 @@ In this task, you will create an Azure AI hub, gaining hands-on experience in se
 
 In this task, you will create a new project within your Azure AI hub, learning how to organize and manage your AI solutions effectively.
 
-1. In Azure AI Studio, ensure you're in the hub you just created (you can verify your location by checking the path at the top of the screen).
+1. In Azure AI Studio, navigate to the **azureai-<inject key="DeploymentID" enableCopy="false" />** hub you have created.
 
 2. Navigate to **All projects (1)** using the menu on the left, Select **+ New project (2)**.
 
@@ -98,7 +98,7 @@ In this task, you will create a new project within your Azure AI hub, learning h
 
 ### Task 4: Deploy and test a model
 
-In this task, you will deploy and test the GPT-35-Turbo model, understanding how to configure deployment settings and validate the model's functionality through interactive testing.
+In this task, you will deploy and test the [GPT-35-Turbo](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/chatgpt?tabs=python-new) model, understanding how to configure deployment settings and validate the model's functionality through interactive testing.
 
 1. In the pane on the left for your project, in the **Shared resources** section, select the **Deployments** page.
 
@@ -150,7 +150,7 @@ In this task, you will deploy and test the GPT-35-Turbo model, understanding how
 
 ### Summary
 
-After performing this lab, you learned how to navigate Azure AI Studio, create and manage Azure AI hubs and projects, and deploy and test generative AI models. You gained practical experience in setting up and configuring AI resources, as well as using Azure's tools to develop and validate AI solutions effectively.
+After performing this lab, you learned how to navigate Azure AI Studio, create and manage Azure AI hubs and projects, and deploy and test generative AI models. You gained practical experience in setting up and configuring AI resources, as well as using Azure AI Stuido tools to develop and validate AI solutions effectively.
 
 ### Review
 
