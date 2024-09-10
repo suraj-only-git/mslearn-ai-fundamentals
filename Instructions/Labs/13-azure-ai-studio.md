@@ -40,7 +40,7 @@ In this task, you will create an Azure AI hub, gaining hands-on experience in se
 
 1. In the **Management** section, navigate to **All hubs** and click on **+ New hub**. Set the following configuration settings for the new hub, and then click **Next** to proceed.
 
-    ![](media/lab13-a4.png)
+    ![](media/lab13-a3.png)
 
     | Setting | Action |
     | -- | -- |
@@ -51,7 +51,7 @@ In this task, you will create an Azure AI hub, gaining hands-on experience in se
     | **Connect Azure AI Services or Azure OpenAI** | *create a new AI Services **ai-azureai-<inject key="DeploymentID" enableCopy="false" />*** |
     | **Connect Azure AI Search** | *Skip connecting* |
 
-    ![](media/lab13-a3.png)
+    ![](media/lab13-a4.png)
 
 2. Review your details and click on **Create**.
 
@@ -139,7 +139,7 @@ In this task, you will deploy and test the GPT-35-Turbo model, understanding how
 
     ![](media/lab13-a17.png)
 
-## Validation
+### Validation
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
@@ -148,7 +148,7 @@ In this task, you will deploy and test the GPT-35-Turbo model, understanding how
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## Summary
+### Summary
 
 After performing this lab, you learned how to navigate Azure AI Studio, create and manage Azure AI hubs and projects, and deploy and test generative AI models. You gained practical experience in setting up and configuring AI resources, as well as using Azure's tools to develop and validate AI solutions effectively.
 
