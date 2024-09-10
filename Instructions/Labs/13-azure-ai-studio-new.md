@@ -134,11 +134,9 @@ You can use a project to create complex AI solutions based on generative AI mode
 
 7. In the **Chat playground** page, ensure that your model deployment is selected in the **Deployment** section.
 
-
-
 8. In the chat window, enter a query such as *What is AI?* and view the response:
 
-    ![Screenshot of the playground in Azure AI Studio.](./media/playground.png)
+    ![](media/lab13-a17.png)
 
 ## Validation
 
