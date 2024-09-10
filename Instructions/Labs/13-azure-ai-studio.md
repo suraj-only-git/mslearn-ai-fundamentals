@@ -1,11 +1,12 @@
 # Module 13: Explore the components and tools of the Azure AI Studio
 
 ## Lab overview
-In this exercise, you use Azure AI Studio to create a project and explore a generative AI model
+
+In this Exercise, you will explore Azure AI Studio and learn how to create, manage, and deploy generative AI models within the Azure ecosystem. You will gain hands-on experience working with Azure AI hubs, projects, and deploying AI models like GPT-35-Turbo.
 
 ## Lab objectives
 
-In this lab, you will perform:
+In this exercise, you will perform:
 - Task 1: Open Azure AI Studio
 - Task 2: Create an Azure AI hub
 - Task 3: Create a project
@@ -16,9 +17,11 @@ In this lab, you will perform:
 ## Architecture Diagram
 
 
-## Exercise 1: 
+## Exercise 1: Explore the components and tools of the Azure AI Studio
 
 ### Task 1: Open Azure AI Studio
+
+In this task, you will sign in to Azure AI Studio and explore its interface, learning how to navigate the platform and access its various features for managing AI resources.
 
 1. In a web browser, open https://ai.azure.com and **Sign in** using your Azure credentials. The home page of Azure AI Studio looks similar to the following image:
 
@@ -33,7 +36,7 @@ In this lab, you will perform:
 
 ### Task 2: Create an Azure AI hub
 
-You need an Azure AI hub in your Azure subscription to host projects. You can either create this resource while creating a project, or provision it ahead of time (which is what we'll do in this exercise).
+In this task, you will create an Azure AI hub, gaining hands-on experience in setting up a collaborative workspace for AI projects and configuring essential resources and connections.
 
 1. In the **Management** section, navigate to **All hubs** and click on **+ New hub**. Set the following configuration settings for the new hub, and then click **Next** to proceed.
 
@@ -72,7 +75,7 @@ You need an Azure AI hub in your Azure subscription to host projects. You can ei
 
 ### Task 3: Create a project
 
-An Azure AI hub provides a collaborative workspace within which you can define one or more *projects*. Let's create a project in your Azure AI hub.
+In this task, you will create a new project within your Azure AI hub, learning how to organize and manage your AI solutions effectively.
 
 1. In Azure AI Studio, ensure you're in the hub you just created (you can verify your location by checking the path at the top of the screen).
 
@@ -95,7 +98,7 @@ An Azure AI hub provides a collaborative workspace within which you can define o
 
 ### Task 4: Deploy and test a model
 
-You can use a project to create complex AI solutions based on generative AI models. A full exploration of all of the development options available in Azure AI Studio is beyond the scope of this exercise, but we'll explore some basic ways in which you can work with models in a project.
+In this task, you will deploy and test the GPT-35-Turbo model, understanding how to configure deployment settings and validate the model's functionality through interactive testing.
 
 1. In the pane on the left for your project, in the **Shared resources** section, select the **Deployments** page.
 
@@ -145,7 +148,16 @@ You can use a project to create complex AI solutions based on generative AI mode
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+## Summary
+
+After performing this lab, you learned how to navigate Azure AI Studio, create and manage Azure AI hubs and projects, and deploy and test generative AI models. You gained practical experience in setting up and configuring AI resources, as well as using Azure's tools to develop and validate AI solutions effectively.
+
 ### Review
 
+In this exercise, you have completed:
+- Open Azure AI Studio
+- Create an Azure AI hub
+- Create a project
+- Deploy and test a model
 
-## You have successfully completed this lab.
+##   You have successfully completed this lab.
