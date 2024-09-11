@@ -38,7 +38,7 @@ In this task, you will sign in to Azure AI Studio and explore its interface, lea
 
 In this task, you will create an Azure AI hub, gaining hands-on experience in setting up a collaborative workspace for AI projects and configuring essential resources and connections.
 
-1. In the **Management** section, navigate to **All hubs (1)** and click on **+ New hub (2)**. Set the following configuration settings for the new hub, and then click **Next** to proceed.
+1. In the **Management** section, navigate to **All resources (1)** and click on **+ New hub (2)**. Set the following configuration settings for the new hub, and then click **Next** to proceed.
 
     ![](media/lab13-a3.png)
 
