@@ -74,6 +74,15 @@ In this task, you will create an Azure AI hub, gaining hands-on experience in se
 
     ![](media/lab13-a8.png)
 
+### Validation
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. Alternatively, you can navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="7a610c9e-f8af-43f8-92f1-357e933d8a8d" />
+
 ### Task 3: Create a project
 
 In this task, you will create a new project within your Azure AI hub, learning how to organize and manage your AI solutions effectively.
@@ -96,6 +105,15 @@ In this task, you will create a new project within your Azure AI hub, learning h
     ![](media/lab13-a11.png)
 
 5. View the pages in the pane on the left side, expanding each section, and note the tasks you can perform and the resources you can manage in a project.
+
+### Validation
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. Alternatively, you can navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="b935fca8-d01f-47e4-9489-54d5c3b64e50" />
 
 ### Task 4: Deploy and test a model
 
@@ -143,11 +161,11 @@ In this task, you will deploy and test the [GPT-35-Turbo](https://learn.microsof
 ### Validation
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. Alternatively, you can navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
  
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   <validation step="6b5cc888-bc2a-47c8-b31c-e65157a50f66" />
 
 ### Summary
 
