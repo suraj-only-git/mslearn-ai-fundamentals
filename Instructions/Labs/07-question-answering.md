@@ -165,7 +165,9 @@ You can deploy the knowledge base as a client application to answer questions
    ![Creating a Language Service resource with custom question answering enabled.](media/lab-7(13).png)
 
 1. A dialogue box will ask if you want to deploy the project. Select **Deploy**.
-
+   
+     ![Creating a Language Service resource with custom question answering enabled.](media/M7T5S2.png)
+   
 ## Validation
 
    <validation step="11faa70c-17f5-4a89-8275-059ac6273139" />
