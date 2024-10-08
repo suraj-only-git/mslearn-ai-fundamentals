@@ -1,17 +1,17 @@
-# Explore Azure AI Translator
+# Module 14: Explore Azure AI Translator
 
 > **Note**
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
 
 Artificial Intelligence (AI) can help simplify translation between languages, helping to remove barriers to communication across countries and cultures.
 
-To test the capabilities of Azure AI Translator service, we'll take a look at it in action in the Azure Portal. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
+To test the capabilities of the Azure AI Translator service, we'll take a look at it in action in the Azure Portal. The same principles and functionality apply in real-world solutions, such as websites or phone apps.
 
 ## Create a *Translator* resource
 
 You can use the Translator service by creating either a **Translator** resource or an **Azure AI services** resource.
 
-For this exercise, create an **Translator** resource in your Azure subscription.
+For this exercise, create a **Translator** resource in your Azure subscription.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
 
