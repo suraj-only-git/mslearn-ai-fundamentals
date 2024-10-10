@@ -26,7 +26,7 @@ In this lab, you will perform:
 
 You can use Azure AI Vision's image analysis capabilities with an **Azure AI services** multi-service resource. If you haven't already done so, create an **Azure AI services** resource in your Azure subscription.
 
-1. In the azure portal, click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. Configure it with the following settings:
+1. In the azure portal, click the **&#65291;Create a resource** button and search for *Azure AI services*. Select **create** an **Azure AI services** plan. You will be taken to a page to create an Azure AI services resource. please click on **Create** Configure it with the following settings:
 
    ![The image and its captions are displayed.](./media/dev1.png)
    
@@ -35,7 +35,6 @@ You can use Azure AI Vision's image analysis capabilities with an **Azure AI ser
     - **Region (3)**: Select **<inject key="location" enableCopy="false"/>**
     - **Name (4)**: Enter **visionimageai<inject key="DeploymentID" enableCopy="false"/>**
     - **Pricing tier (5)** :Select **Standard S0**.
-    - **By checking this box I acknowledge that I have read and understood all the terms below**: *Selected*.
 
 1. Select **Review + create** then **Create** and wait for deployment to complete.
 
